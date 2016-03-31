@@ -9,12 +9,17 @@
 window.checkDevice = function(event) {
   var resolution = [screen.width, screen.height, window.innerWidth, window.innerHeight];
   var agent = [navigator.appCodeName, navigator.appName, navigator.platform, navigator.userAgent];
-  document.getElementById("demo").innerHTML = '<p>Event: ' + event.type + ': </p>';
-  document.getElementById("demo").innerHTML += '<p>ScrW: ' + screen.width + ': </p>';
-  document.getElementById("demo").innerHTML += '<p>ScrH: ' + screen.height + ': </p>';
-  document.getElementById("demo").innerHTML += '<p>InnW: ' + window.innerWidth + ': </p>';
-  document.getElementById("demo").innerHTML += '<p>InnH: ' + window.innerHeight + ': </p>';
-  document.getElementById("demo").innerHTML += '<p>Orie: ' + window.orientation + ': </p>';
+  document.getElementById("demo").innerHTML = '<p>Event: ' + event.type + '</p>';
+  document.getElementById("demo").innerHTML += '<p>ScrW: ' + screen.width + '</p>';
+  document.getElementById("demo").innerHTML += '<p>ScrH: ' + screen.height + '</p>';
+  document.getElementById("demo").innerHTML += '<p>InnW: ' + window.innerWidth + '</p>';
+  document.getElementById("demo").innerHTML += '<p>InnH: ' + window.innerHeight + '</p>';
+  document.getElementById("demo").innerHTML += '<p>Orie: ' + window.orientation + '</p>';
+  
+  document.getElementById("demo").innerHTML += '<p>NavCodeName: ' + navigator.appCodeName + '</p>';
+  document.getElementById("demo").innerHTML += '<p>NavAppName: ' + navigator.appName + '</p>';
+  document.getElementById("demo").innerHTML += '<p>NavPlatform: ' + navigator.platform + '</p>';
+  document.getElementById("demo").innerHTML += '<p>NavUserAgent: ' + navigator.userAgent + '</p>';
   
 }
 
