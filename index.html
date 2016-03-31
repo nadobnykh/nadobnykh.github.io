@@ -3,5 +3,32 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+
+<script>
+window.checkDevice = function(event) {
+  var resolution = [screen.width, screen.height, window.innerWidth, window.innerHeight];
+  var agent = [navigator.appCodeName, navigator.appName, navigator.platform, navigator.userAgent];
+  document.getElementById("demo").innerHTML = '<p>Event: ' + event.type + ': </p>';
+  document.getElementById("demo").innerHTML += '<p>ScrW: ' + screen.width + ': </p>';
+  document.getElementById("demo").innerHTML += '<p>ScrH: ' + screen.height + ': </p>';
+  document.getElementById("demo").innerHTML += '<p>InnW: ' + window.innerWidth + ': </p>';
+  document.getElementById("demo").innerHTML += '<p>InnH: ' + window.innerHeight + ': </p>';
+  document.getElementById("demo").innerHTML += '<p>Orie: ' + window.orientation + ': </p>';
+  
+}
+
+document.addEventListener("mousemove", function(event) {
+  window.checkDevice(event);
+});
+
+document.addEventListener("touchmove", function(event) {
+  window.checkDevice(event);
+});
+
+window.addEventListener("orientationchange", function() {
+  window.checkDevice(event);
+}, false);
+
+</script>
 </body>
 </html>
