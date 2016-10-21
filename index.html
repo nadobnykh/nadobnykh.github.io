@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
+    <!-- CUSTOM STUFF -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
     p, a {
@@ -29,6 +32,8 @@
     }
   </style>
   
+<!-- SLIDER STUFF -->
+
   <script src="slider/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_1_slider_init = function() {
@@ -114,7 +119,36 @@
         .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
         .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
     </style>
-  </head>
+
+
+
+<!-- GALLERY STUFF -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="gallery/lib/videoplayer/js/mediaelement-and-player.min.js"></script>
+  <script type="text/javascript" src="gallery/lib/fancybox2/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="gallery/lib/dateFormat.js"></script>
+  <script type="text/javascript" src="gallery/lib/easing.js"></script>
+  <script type="text/javascript" src="gallery/instagramElement.js"></script>
+
+
+  <script type="text/javascript">
+    $('.gallery').instagramElement({
+      mode : 'user',
+      userID : 'kina.studio',
+      accessToken : '2066076364.1677ed0.5ab10341f5d347d58704d8f01ad8a2b9',
+      galleryMode: 'classic',
+      video: true,
+      showVideoControls: false
+    });
+  </script>
+
+
+  <link rel="stylesheet" href="gallery/lib/videoplayer/css/style.css" media="screen">
+  <link href="gallery/lib/fancybox2/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="gallery/instagramElement.css" rel="stylesheet">
+
+</head>
   
   
   
@@ -155,7 +189,7 @@
   <img class="img-block" src="images/kinastudio_web_moment.jpg"/>
   
   
-  
+  <div class="gallery"></div>
   
   <img class="img-block" src="images/kinastudio_web_info.jpg"/>
 
