@@ -7,12 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
     p, a {
-      color:#f0f0f0;
+      color:#000;
     }
-    body {
+    .body {
       margin:0;
       padding:0;
       text-align:center;
+
+      background-color:#fff; 
+      font-family: 'Montserrat', sans-serif;
     }
     .topnav {
       margin-top:30px;
@@ -29,6 +32,9 @@
     }
     .block-separator {
       margin:5px;
+    }
+    .black-box {
+      background-color: #000;
     }
   </style>
   
@@ -125,11 +131,15 @@
   
   
   
-<body style="background-color:#000; font-family: 'Montserrat', sans-serif;">
+<body class="body">
+
+<div class="white-box">
 
   <div class="topnav"></div>
-  <img class="header" src="images/kinastudio_web_header_2.png"/>
+  <img class="header" src="images/kina-studio-stuttgart.jpg"/>
   
+
+
       <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -155,11 +165,13 @@
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
-    </div>
-    <script type="text/javascript">jssor_1_slider_init();</script>
+      </div>
+      <script type="text/javascript">jssor_1_slider_init();</script>
   
+</div>
+<div class="black-box">
+
   <img class="img-block" src="images/kinastudio_web_moment.jpg"/>
-  
   
   <div class="links">
     <a href="https://500px.com/kinastudio" target="_blank"><img src="images/500px.png" height="40px"/></a>
@@ -172,6 +184,8 @@
   <p>&copy; 2016 KINASTUDIO. Stuttgart City.</p>
   <a href="imprint.html" target="_blank">Impressum</a>
   <div class="block-separator"></div>
+
+</div>
 
 </body>
 </html>
