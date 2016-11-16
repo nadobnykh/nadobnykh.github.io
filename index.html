@@ -1,121 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet"> 
-    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+
     <!-- CUSTOM STUFF -->
     <meta charset="utf-8"/>
     <style>
-    p, a {
-      color:#000;
-      font-family: Helvetica,sans-serif;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: .8px;
-    }
-      h2, h3, h4 {
-        font-family: 'Josefin Sans', sans-serif;
-      }
-      .widetext {
-        letter-spacing: 20px;
-        margin: 10px;
-      }
-      
-  .headline {
-    margin: 0 0 30px 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
-    padding: 15px 0;
-  }
-      
-  .headline span::before, .headline span::after {
-    border-bottom: 1px solid #000000;
-    content: '';
-    position: absolute;
-    bottom: 50%;
-    width: 100%;
-  }
-      
-      
-      
-      
-      
-    .body {
-      margin:0;
-      padding:0;
-      text-align:center;
-      background-color:#fff; 
-    }
-    .topnav {
-      margin-top:30px;
-    }
-    .subnav {
-      border-top: 1px solid #dbdbdb;
-    }
-    img.header {
-      width: 100%;
-      min-width: 280px;
-      max-width: 320px;
-      margin-bottom: 10px;
-    }  
-    img.img-block {
-      width: 100%;
-      max-width: 600px;
-      min-width: 320px;
-    }
-    .block-separator {
-      margin:5px;
-    }
+        p, a {
+            color: #000;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: .8px;
+        }
 
-    /* LAYOUT */
+        h2, h3, h4 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
 
-    .wrapper {
-      max-width: 1200px;
-      margin:auto;
-    }
-    .block {
-      margin:3px;
-      margin-bottom: 50px;
-    }
-    .white {
-      color: white;
-    }
-    .bgblack {
-    	background-color: #000;
-    }
-    .two {
-      width: 40%;
-    }
-    li {
-      display: inline; /* li nebeneinander anzeigen */
-      list-style-type: none; /* ohne Aufzählungspunkte */
-    }
-  </style>
-  
-<!-- SLIDER STUFF -->
+        .widetext {
+            letter-spacing: 20px;
+            margin: 10px;
+        }
 
-  <script src="slider/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
-    
+        .headline {
+            margin: 0 0 30px 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 18px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+            padding: 15px 0;
+        }
+
+        .headline span::before, .headline span::after {
+            border-bottom: 1px solid #000000;
+            content: '';
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+        }
+
+        .body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .topnav {
+            margin-top: 30px;
+        }
+
+        .subnav {
+            border-top: 1px solid #dbdbdb;
+        }
+
+        img.header {
+            width: 100%;
+            min-width: 280px;
+            max-width: 320px;
+            margin-bottom: 10px;
+        }
+
+        img.img-block {
+            width: 100%;
+            max-width: 600px;
+            min-width: 320px;
+        }
+
+        .block-separator {
+            margin: 5px;
+        }
+
+        /* LAYOUT */
+
+        .wrapper {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .block {
+            margin: 3px;
+            margin-bottom: 50px;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .bgblack {
+            background-color: #000;
+        }
+
+        .two {
+            width: 40%;
+        }
+
+        li {
+            display: inline; /* li nebeneinander anzeigen */
+            list-style-type: none; /* ohne Aufzählungspunkte */
+        }
+    </style>
+
+    <!-- SLIDER STUFF -->
     <style>
         .jssorb05 {
             position: absolute;
         }
+
         .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
             position: absolute;
             /* size of bullet elment */
             width: 16px;
             height: 16px;
-            background: url('slider/images/b05.png') no-repeat;
+            background: url('images/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
         }
-        .jssorb05 div { background-position: -7px -7px; }
-        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-        .jssorb05 .av { background-position: -67px -7px; }
-        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        .jssorb05 div {
+            background-position: -7px -7px;
+        }
+
+        .jssorb05 div:hover, .jssorb05 .av:hover {
+            background-position: -37px -7px;
+        }
+
+        .jssorb05 .av {
+            background-position: -67px -7px;
+        }
+
+        .jssorb05 .dn, .jssorb05 .dn:hover {
+            background-position: -97px -7px;
+        }
+
         .jssora22l, .jssora22r {
             display: block;
             position: absolute;
@@ -123,307 +142,353 @@
             width: 40px;
             height: 58px;
             cursor: pointer;
-            background: url('slider/images/a22.png') center center no-repeat;
+            background: url('images/a22.png') center center no-repeat;
             overflow: hidden;
         }
-        .jssora22l { background-position: -10px -31px; }
-        .jssora22r { background-position: -70px -31px; }
-        .jssora22l:hover { background-position: -130px -31px; }
-        .jssora22r:hover { background-position: -190px -31px; }
-        .jssora22l.jssora22ldn { background-position: -250px -31px; }
-        .jssora22r.jssora22rdn { background-position: -310px -31px; }
-        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
-        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
     </style>
 
+    <script src="slider/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+
 </head>
-  
-  
-  
-  
+
+
 <body class="body">
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8&appId=557246647625482";
-  fjs.parentNode.insertBefore(js, fjs);
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8&appId=557246647625482";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-  <div class="topnav"></div>
-  <img class="header" src="images/kina-studio-stuttgart.png"/>
-  <div class="subnav"><h3 class="widetext">Find your inspiration</h3></div>
-
-
+<div class="topnav"></div>
+<img class="header" src="images/kina-studio-stuttgart.png"/>
+<div class="subnav"><h3 class="widetext">Find your inspiration</h3></div>
 <div class="wrapper">
+    <div class="block bgblack">
+        <script type="text/javascript">
+            jssor_1_slider_init = function () {
 
-<div class="block bgblack">
+                var jssor_1_SlideoTransitions = [
+                    [{b: -1, d: 1, o: -1}, {b: 0, d: 1000, o: 1}],
+                    [{b: 1900, d: 2000, x: -379, e: {x: 7}}],
+                    [{b: 1900, d: 2000, x: -379, e: {x: 7}}],
+                    [{b: -1, d: 1, o: -1, r: 288, sX: 9, sY: 9}, {
+                        b: 1000,
+                        d: 900,
+                        x: -1400,
+                        y: -660,
+                        o: 1,
+                        r: -288,
+                        sX: -9,
+                        sY: -9,
+                        e: {r: 6}
+                    }, {b: 1900, d: 1600, x: -200, o: -1, e: {x: 16}}]
+                ];
 
-  <script type="text/javascript">
-        jssor_1_slider_init = function() {
-            
-            var jssor_1_SlideoTransitions = [
-              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
-              [{b:1900,d:2000,x:-379,e:{x:7}}],
-              [{b:1900,d:2000,x:-379,e:{x:7}}],
-              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideDuration: 800,
-              $SlideEasing: $Jease$.$OutQuint,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            /*responsive code begin*/
-            /*you can remove responsive code if you don't want the slider scales while window resizing*/
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_1_slider.$ScaleWidth(refSize);
+                var jssor_1_options = {
+                    $AutoPlay: true,
+                    $SlideDuration: 800,
+                    $SlideEasing: $Jease$.$OutQuint,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: jssor_1_SlideoTransitions
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*responsive code begin*/
+                /*you can remove responsive code if you don't want the slider scales while window resizing*/
+                function ScaleSlider() {
+                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 1920);
+                        jssor_1_slider.$ScaleWidth(refSize);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
                 }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*responsive code end*/
-        };
-        
-    </script>
-  
-  
-      <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 500px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('slider/images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 500px; overflow: hidden;">
-          <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="slider/images/slides/photo1.jpg" />
-          </div>
-          <div data-p="225.00" data-po="80% 55%" style="display: none;">
-                <img data-u="image" src="slider/images/slides/photo2.jpg" />
-          </div>
-          <div data-p="225.00" data-po="80% 55%" style="display: none;">
-                <img data-u="image" src="slider/images/slides/photo3.jpg" />
-          </div>
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype" style="width:16px;height:16px;"></div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
-      </div>
-      <script type="text/javascript">jssor_1_slider_init();</script>
-  
-</div>
 
-
-
-<div class="block headline">
-    <h2 class="widetext">PHOTOGRAPHY & FILM</h2>
-</div>
-
-<div class="block">
-    
-    <script type="text/javascript">
-        jssor_2_slider_init = function() {
-
-            var jssor_2_options = {
-              $AutoPlay: true,
-              $AutoPlaySteps: 4,
-              $SlideDuration: 160,
-              $SlideWidth: 200,
-              $SlideSpacing: 3,
-              $Cols: 4,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $Steps: 4
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$,
-                $SpacingX: 1,
-                $SpacingY: 1
-              }
+                ScaleSlider();
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*responsive code end*/
             };
 
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
-
-            /*responsive code begin*/
-            /*you can remove responsive code if you don't want the slider scales while window resizing*/
-            function ScaleSlider() {
-                var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 809);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*responsive code end*/
-        };
-    </script>
-    
-    <div id="jssor_2" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </script>
+        <div id="jssor_1"
+             style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 500px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('images/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            </div>
+            <div data-u="slides"
+                 style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 500px; overflow: hidden;">
+                <div data-p="225.00" style="display: none;">
+                    <img data-u="image" src="images/slider/photo1.jpg"/>
+                </div>
+                <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                    <img data-u="image" src="images/slider/photo2.jpg"/>
+                </div>
+                <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                    <img data-u="image" src="images/slider/photo3.jpg"/>
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;"
+                  data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;"
+                  data-autocenter="2"></span>
         </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden;">
-            <a data-u="any" href="http://www.jssor.com" style="display:none">Carousel</a>
-            <div>
-                <img data-u="image" src="img/005.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/006.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/011.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/013.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/014.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/019.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/020.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/021.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/022.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/024.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/025.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/027.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/029.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/030.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/031.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/030.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/034.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/038.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/039.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/043.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/044.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/047.jpg" />
-            </div>
-            <div style="display: none;">
-                <img data-u="image" src="img/050.jpg" />
-            </div>
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb03" style="bottom:10px;right:10px;">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype" style="width:21px;height:21px;">
-                <div data-u="numbertemplate"></div>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        <script type="text/javascript">jssor_1_slider_init();</script>
     </div>
-    <script type="text/javascript">jssor_2_slider_init();</script>
-    
-    
-</div>
-  
-<div class="block bgblack">
-  <div>
-    <img class="img-block" src="images/kinastudio_web_moment.jpg"/>
-  </div>
-  
-  <div class="block">
-  <div class="fb-page" data-href="https://www.facebook.com/KINAstudio-1611943032444429/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KINAstudio-1611943032444429/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KINAstudio-1611943032444429/">KINA.studio</a></blockquote></div>
-  </div>
-  
-  <a href="https://500px.com/kinastudio" target="_blank"><img class="button" src="images/500px.png" height="200px"/></a>
-  <a href="https://www.instagram.com/kina.studio/" target="_blank"><img class="button" src="images/instagram.png" height="200px"/></a>
-</div>
+
+    <div class="block headline">
+        <h2 class="widetext">PHOTOGRAPHY & FILM</h2>
+    </div>
+
+    <div class="block">
+        <script type="text/javascript">
+            jssor_2_slider_init = function () {
+                var jssor_2_options = {
+                    $AutoPlay: true,
+                    $AutoPlaySteps: 4,
+                    $SlideDuration: 160,
+                    $SlideWidth: 200,
+                    $SlideSpacing: 3,
+                    $Cols: 4,
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,
+                        $Steps: 4
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$,
+                        $SpacingX: 1,
+                        $SpacingY: 1
+                    }
+                };
+
+                var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+
+                /*responsive code begin*/
+                /*you can remove responsive code if you don't want the slider scales while window resizing*/
+                function ScaleSlider() {
+                    var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 809);
+                        jssor_2_slider.$ScaleWidth(refSize);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*responsive code end*/
+            };
+        </script>
+
+        <div id="jssor_2"
+             style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            </div>
+            <div data-u="slides"
+                 style="cursor: default; position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden;">
+                <a data-u="any" href="http://www.jssor.com" style="display:none">Carousel</a>
+
+                <div>
+                    <img data-u="image" src="images/carousel/005.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/006.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/011.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/013.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/014.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/019.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/020.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/021.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/022.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/024.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/025.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/027.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/029.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/030.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/031.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/030.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/034.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/038.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/039.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/043.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/044.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/047.jpg"/>
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/carousel/050.jpg"/>
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb03" style="bottom:10px;right:10px;">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:21px;height:21px;">
+                    <div data-u="numbertemplate"></div>
+                </div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;"
+                  data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;"
+                  data-autocenter="2"></span>
+        </div>
+        <script type="text/javascript">jssor_2_slider_init();</script>
 
 
+    </div>
+
+    <div class="block bgblack">
+        <div>
+            <img class="img-block" src="images/kinastudio_web_moment.jpg"/>
+        </div>
+
+        <div class="block">
+            <div class="fb-page" data-href="https://www.facebook.com/KINAstudio-1611943032444429/" data-tabs="timeline"
+                 data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true"
+                 data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/KINAstudio-1611943032444429/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/KINAstudio-1611943032444429/">KINA.studio</a></blockquote>
+            </div>
+        </div>
+
+        <a href="https://500px.com/kinastudio" target="_blank"><img class="button" src="images/500px.png"
+                                                                    height="200px"/></a>
+        <a href="https://www.instagram.com/kina.studio/" target="_blank"><img class="button" src="images/instagram.png"
+                                                                              height="200px"/></a>
+    </div>
 
 
+    <div class="block">
+        <p style="margin: 5px; text-align: justify;">Als Partner von KINA.studio entdecken Sie viele neue Möglichkeiten,
+            wie Sie Ihre Produkte durch Fotografie und Video für Ihre Kunden interessanter und attraktiver machen. Als
+            Kunde von KINA.studio erfreuen Sie Ihre Kunden mit neuen Fotos für Ihre Produkte, sowie Fashion und
+            Portraitfotografie für Ihr Unternehmen. Darüber hinaus können Sie mit uns in die Welt der Produktvideos und
+            Werbevideos einsteigen. Alle Medien werden speziell für das Web optimiert, so dass die Besucher Ihrer
+            Webseite oder Online-Shop die besten Einkaufserlebnisse wahrnehmen können. Schicken Sie uns einfach eine
+            kurze Mail und wir beraten Sie gerne in allen Fragen zum Thema Werbefotografie.</p>
+    </div>
 
-<div class="block">
-<p style="margin: 5px; text-align: justify;">Als Partner von KINA.studio entdecken Sie viele neue Möglichkeiten, wie Sie Ihre Produkte durch Fotografie und Video für Ihre Kunden interessanter und attraktiver machen. Als Kunde von KINA.studio erfreuen Sie Ihre Kunden mit neuen Fotos für Ihre Produkte, sowie Fashion und Portraitfotografie für Ihr Unternehmen. Darüber hinaus können Sie mit uns in die Welt der Produktvideos und Werbevideos einsteigen. Alle Medien werden speziell für das Web optimiert, so dass die Besucher Ihrer Webseite oder Online-Shop die besten Einkaufserlebnisse wahrnehmen können. Schicken Sie uns einfach eine kurze Mail und wir beraten Sie gerne in allen Fragen zum Thema Werbefotografie.</p>
-</div>
 
-
-
-
-
-<div class="block bgblack">
-  <img class="img-block" src="images/kinastudio_web_info.jpg"/>
-</div>
+    <div class="block bgblack">
+        <img class="img-block" src="images/kinastudio_web_info.jpg"/>
+    </div>
 
 
 </div>
 
 <div class="subnav"></div>
 
-  <p>&copy; 2016 KINA.studio. Stuttgart City.</p>
-  <a href="imprint.html" target="_blank">Impressum</a>
-  <div class="block-separator"></div>
+<p>&copy; 2016 KINA.studio. Stuttgart City.</p>
+<a href="imprint.html" target="_blank">Impressum</a>
 
+<div class="block-separator"></div>
 
 
 </body>
