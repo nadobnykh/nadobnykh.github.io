@@ -1,0 +1,192 @@
+/*
+ * Instagram Element
+ * Version: 1.0
+ *
+ * Author: Chris Rivers
+ * http://codecanyon.net/user/xxcriversxx
+ *
+ *
+ * Changelog: 
+ * Version: 1.0
+ *
+ */
+
+/* BASE
+--------------------------*/
+.btn {
+	display: inline-block;
+	font-family: helvetica,arial;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: whiteSmoke;
+	background-image: -moz-linear-gradient(top, white, #E6E6E6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+	background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+	background-image: -o-linear-gradient(top, white, #E6E6E6);
+	background-image: linear-gradient(to bottom, white, #E6E6E6);
+	background-repeat: repeat-x;
+	border: 1px solid #CCC;
+	border-color: #E6E6E6 #E6E6E6 #BFBFBF;
+	border-bottom-color: #B3B3B3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-inverse {
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #006DCC;
+	background-image: -moz-linear-gradient(top, #08C, #04C);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
+	background-image: -webkit-linear-gradient(top, #08C, #04C);
+	background-image: -o-linear-gradient(top, #08C, #04C);
+	background-image: linear-gradient(to bottom, #08C, #04C);
+	background-repeat: repeat-x;
+	border-color: #04C #04C #002A80;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn:hover { color:#fff; }
+
+.clear { clear:both; }
+
+/* CORE 
+-------------------------*/
+.instagram-photo { display: inline-block; height: auto; width: 195px; }
+
+/* Classic View */
+.instagram-element .instagram-photo {
+	cursor:pointer;
+	float:left;
+	line-height:0;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+	width:20%;
+}
+
+.instagram-element .instagram-photo.image { background-color: #3dc0f1; }
+.instagram-element .instagram-photo.video { background-color: #cc0000; }
+
+.instagram-element .instagram-photo img { 
+	opacity: 1;
+	width:100%;  
+	-webkit-transition: -webkit-transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.instagram-element .instagram-photo:hover img { 
+	-webkit-transform: scale(1.2); 
+	-moz-transform: scale(1.2); 
+	-ms-transform: scale(1.2); 
+	-o-transform: scale(1.2); 
+	transform: scale(1.2); 
+	opacity: 0.1;
+}
+
+.instagram-element .instagram-photo .element-meta {
+	color: #fff;
+	filter: alpha(opacity=0);
+	font-family: 'Oswald',arial,serif; 
+	font-size: 20px;
+	font-weight: 700;
+	left: 0;
+	line-height: 11px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	text-transform:uppercase;
+	top: 10%;
+	width: 100%;
+}
+
+.instagram-element .instagram-photo .element-meta span { display: block; font-size: 10px; font-weight: 200; margin-top:10px; }
+
+.instagram-element .instagram-photo .icon {
+	display:none;
+	height:29px;
+	position:absolute;
+	right:18px;
+	text-indent:-9999px;
+	top:18px;
+	width:26px;
+}
+
+.instagram-element .instagram-photo:hover .icon { display:block; }
+.instagram-element .instagram-photo.video .icon { background:url("images/video-icon.png") no-repeat; }
+.instagram-element .instagram-photo.image .icon { background:url("images/image-icon.png") no-repeat; }
+
+/* User List */
+.instagram-user-all { background: none; cursor:pointer; display: inline-block; float: left; line-height: 0; width: 5%; }
+.instagram-user-all img { 
+	height:auto;
+	width:100%;
+}
+.instagram-user-all:hover img { opacity:.5; }
+
+/* Load More */
+.seachInstagramLoadMoreContainer { clear: both; text-align:center; }
+.seachInstagramLoadMore { margin-top: 20px; }
+
+/* Fix for landscape photos */
+body .instagram-photo img { -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -ms-transform: scale(1.3); -o-transform: scale(1.3); transform: scale(1.3); -webkit-backface-visibility: hidden; }
+body .instagram-element .instagram-photo:hover img { -webkit-transform: scale(1.5); -moz-transform: scale(1.5); -ms-transform: scale(1.5); -o-transform: scale(1.5); transform: scale(1.5); }
+body .instagram-element .instagram-media img { -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -ms-transform: scale(1.3); -o-transform: scale(1.3); transform: scale(1.3); width:100%; }
+
+/* Fancybox Information */
+.fancybox-nav { height:90%; width: 20%; }
+.fancybox-overlay .username-ui { font-family: 'Oswald',arial,serif; font-size: 20px; font-weight: 700; }
+.fancybox-overlay .date-ui { color:#a9abae; display:block; font-weight: 700; margin-bottom:3px; text-transform:uppercase; }
+.fancybox-overlay .description-ui {}
+.fancybox-overlay .likes-ui {}
+.fancybox-overlay .comments-ui {}
+.fancybox-overlay .location-ui {}
+.fancybox-overlay .link-ui {}
+
+/* Responsive Mobile
+-----------------------------*/
+/* Tablets */
+@media screen and (max-width: 1100px) {
+	/* Classic View */
+	.instagram-element .instagram-stage { width:90%; }
+	.instagram-element .instagram-media { height: auto; width:50%; }
+	.instagram-element .instagram-content { width:40%; }
+}
+
+/* iPad */
+@media screen and (max-width: 900px) {}
+
+/* iPhone */
+@media screen and (max-width: 780px) {
+	
+	/* Classic View */
+	.instagram-element .instagram-photo {}
+	.instagram-element .instagram-photo:hover img { opacity: 1; }
+	
+	.instagram-element .instagram-photo.image .icon, 
+	.instagram-element .instagram-photo .element-meta { display:none; }
+	
+	.instagram-element .instagram-stage { padding: 100px 0; }
+	.instagram-element .instagram-media { background:none; float:none; height: auto; margin:0 auto; width:90%; }
+	.instagram-element .instagram-media img { height:auto; width:100%; }
+	
+	.instagram-element .instagram-content { float:none; margin:0 auto; width:90%; }
+	.instagram-element .instagram-content ul { margin-bottom: 60px; }
+}
+

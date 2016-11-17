@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+
+    <!-- INSTAGRAM ASSETS -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="instagram/lib/videoplayer/js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="instagram/lib/fancybox2/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="instagram/lib/dateFormat.js"></script>
+    <script type="text/javascript" src="instagram/lib/easing.js"></script>
+    <script type="text/javascript" src="instagram/instagramElement.js"></script>
+    <link rel="stylesheet" href="instagram/lib/videoplayer/css/style.css" media="screen">
+    <link rel="stylesheet" href="instagram/lib/fancybox2/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="instagram/instagramElement.css">
 
     <!-- CUSTOM STUFF -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
     <meta charset="utf-8"/>
     <style>
         p, a {
@@ -387,6 +398,23 @@
 
 
     </div>
+
+
+    <!-- INSTAGRAM -->
+    <div class="block">
+        <div class="instagram"></div>
+    </div>
+    <script>
+        $('.instagram').instagramElement({
+            mode : 'user',
+            userID : '2066076364',
+            accessToken : '2066076364.1677ed0.5ab10341f5d347d58704d8f01ad8a2b9',
+            galleryMode: 'classic',
+            video: true,
+            showVideoControls: false
+        });
+    </script>
+
 
     <div class="block bgblack">
         <div>
