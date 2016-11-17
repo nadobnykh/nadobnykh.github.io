@@ -3,7 +3,12 @@
 <head>
 
     <!-- INSTAGRAM ASSETS -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="instagram/lib/videoplayer/js/mediaelement-and-player.min.js"></script>
     <script type="text/javascript" src="instagram/lib/fancybox2/source/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="instagram/lib/dateFormat.js"></script>
@@ -20,29 +25,40 @@
         p, a {
             color: #000;
             font-family: Helvetica, sans-serif;
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 21px;
+            line-height: 26px;
             letter-spacing: .8px;
+        }
+
+        p {
+            margin: 5px; 
+            text-align: center;
+            font-family: 'Josefin Sans', sans-serif;
         }
 
         h2, h3, h4 {
             font-family: 'Josefin Sans', sans-serif;
         }
 
-        h2 { font-size: 20px; }
-        h3 { font-size: 16px; }
-        h4 { font-size: 14px; }
+        h2 { font-size: 22px; }
+        h3 { font-size: 18px; }
+        h4 { font-size: 16px; }
 
         .widetext {
             letter-spacing: 16px;
             margin: 8px;
         }
 
+        h2.widetext {
+            margin-top: 12px;
+        }
+
+
         .headline {
             margin: 0 0 30px 0;
             text-align: center;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 20px;
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
             padding: 15px 0;
@@ -205,16 +221,6 @@
 
 <body class="body">
 
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8&appId=557246647625482";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div class="topnav"></div>
 <img class="header" src="images/kina-studio-stuttgart.png"/>
 <div class="subnav"><h3 class="widetext">find your inspiration</h3></div>
@@ -312,9 +318,19 @@
         <script type="text/javascript">jssor_1_slider_init();</script>
     </div>
 
+
+
+
+
+
     <div class="block headline">
         <h2 class="widetext">PHOTOGRAPHY & FILM</h2>
     </div>
+
+
+
+
+
 
 
     <!-- INSTAGRAM -->
@@ -331,6 +347,12 @@
             showVideoControls: false
         });
     </script>
+    <div class="block"></div>
+
+
+
+
+
 
 
     <div class="block bgblack">
@@ -338,32 +360,34 @@
             <img class="img-block" src="images/kinastudio_web_moment.jpg"/>
         </div>
 
-        <div class="block">
-            <div class="fb-page" data-href="https://www.facebook.com/KINAstudio-1611943032444429/" data-tabs="timeline"
-                 data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true"
-                 data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/KINAstudio-1611943032444429/" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/KINAstudio-1611943032444429/">KINA.studio</a></blockquote>
-            </div>
-        </div>
-
-        <a href="https://500px.com/kinastudio" target="_blank"><img class="button" src="images/500px.png"
-                                                                    height="200px"/></a>
-        <a href="https://www.instagram.com/kina.studio/" target="_blank"><img class="button" src="images/instagram.png"
-                                                                              height="200px"/></a>
+        <a href="https://www.facebook.com/KINAstudio-1611943032444429/" target="_blank"><img class="button" src="images/instagram.png" height="200px"/></a>
+        <a href="https://www.instagram.com/kina.studio/" target="_blank"><img class="button" src="images/instagram.png" height="200px"/></a>
+        <a href="https://500px.com/kinastudio" target="_blank"><img class="button" src="images/500px.png" height="200px"/></a>
     </div>
 
 
-    <div class="block">
-        <p style="margin: 5px; text-align: justify;">Als Partner von KINA.studio entdecken Sie viele neue Möglichkeiten,
-            Ihre Produkte durch Fotografie und Video für Ihre Kunden interessanter und attraktiver zu machen. Erfreuen Sie Ihre Kunden mit neuen Fotos für Ihre Produkte oder schöne Portraits für Ihre Mitarbeiter. Darüber hinaus können Sie mit uns in die Welt der Produkt- und
+
+
+
+
+
+    <div class="block" style="margin-left:10%;margin-right:10%;">
+        <p>Als Partner von KINA.studio entdecken Sie viele neue Möglichkeiten,
+            Ihre Produkte durch Fotografie und Video für Ihre Kunden interessanter und attraktiver zu machen. 
+            Erfreuen Sie Ihre Kunden mit neuen Fotos für Ihre Produkte oder schöne Portraits für Ihre Mitarbeiter. 
+            Darüber hinaus können Sie mit uns in die Welt der Produkt- und
             Werbevideos einsteigen. Alle Medien werden speziell für das Web optimiert, so dass die Besucher Ihrer
-            Webseite oder Online-Shop die besten Einkaufserlebnisse wahrnehmen können. Schicken Sie uns einfach eine
-            kurze Mail und wir beraten Sie gerne in allen Fragen zum Thema Fotografie.</p>
+            Webseite oder Online-Shop durch die schnellen Ladezeiten und volle Farben die besten Erlebnisse machen können. 
+            Schicken Sie uns einfach eine kurze Mail und wir beraten Sie gerne in allen Fragen zum Thema Fotografie.</p>
     </div>
 
 
-    <div class="block">
+
+
+
+
+
+    <div class="block bgblack">
         <script type="text/javascript">
             jssor_2_slider_init = function () {
                 var jssor_2_options = {
@@ -446,15 +470,18 @@
                   data-autocenter="2"></span>
         </div>
         <script type="text/javascript">jssor_2_slider_init();</script>
-    </div>
-
-
-    <div class="block bgblack">
         <img class="img-block" src="images/kinastudio_web_info.jpg"/>
     </div>
 
 
+
+
+
 </div>
+
+
+
+
 
 <div class="subnav"></div>
 
