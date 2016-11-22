@@ -39,6 +39,14 @@
     <!-- CUSTOM STUFF -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
     <style>
+        
+        .desktop {
+            display:block;
+        }
+        .mobile {
+            display:none;
+        }
+        
         p, a {
             color: #000;
             font-family: Lato, Helvetica, Arial;
@@ -201,6 +209,13 @@
         }
         
         @media (max-width: 600px) {
+            
+            .desktop {
+                display:none;
+            }
+            .mobile {
+                display:block;
+            }
             
             h2 { font-size: 18px; }
             h3 { font-size: 17px; }
