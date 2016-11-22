@@ -133,32 +133,25 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #fff;
+            background-color: #ffffff;
         }
 
-        .topnav {
-            margin-top: 30px;
-        }
-
-        .subnav {
+        .topline {
             border-top: 1px solid #dbdbdb;
         }
 
-        img.header {
+        img.logo {
             width: 100%;
-            min-width: 240px;
-            max-width: 240px;
-            margin-bottom: 10px;
+            min-width: 200px;
+            max-width: 200px;
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
 
         img.img-block {
             width: 100%;
             max-width: 600px;
             min-width: 320px;
-        }
-
-        .block-separator {
-            margin: 5px;
         }
 
         /* LAYOUT */
@@ -169,15 +162,28 @@
         }
 
         .block {
-            margin: 3px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             overflow: auto;
+        }
+
+        .header {
+            margin-top: 0px;
+            margin-bottom:0px;
+        }
+        .headertext {
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 8px;
         }
 
         .white {
             color: white;
         }
 
+        .bgwhite {
+            background-color: #fff;
+        }
+        
         .bgblack {
             background-color: #000;
         }
@@ -202,9 +208,14 @@
             
             .saletext { font-size: 17px; }
             .headline { font-size: 18px; }
-            img.header { min-width: 180px; max-width: 180px; }
-            
-            
+
+            img.logo {
+                width: 100%;
+                min-width: 160px;
+                max-width: 160px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }            
         }
         
     </style>
@@ -307,16 +318,25 @@
 
 
 <body class="body">
-
-<div class="topnav"></div>
-<img class="header" src="images/kina-studio-stuttgart.png"/>
-<div class="subnav">
-    <a href="https://www.facebook.com/KINAstudio-1611943032444429/" target="_blank">
-        <h4 class="saletext">Like our facebook page and get 20% off for next shooting!</h4>
-    </a>
-</div>
 <div class="wrapper">
-    <div class="block bgblack">
+    
+    <div class="block bgblack header mobile">
+        <img class="logo" src="images/kina-studio-stuttgart-white.jpg"/>
+    </div>
+    
+    <div class="block header desktop">
+        <img class="logo" src="images/kina-studio-stuttgart.png"/>
+    </div>
+
+    <div class="block">
+
+        <div class="topline">
+            <a href="https://www.facebook.com/KINAstudio-1611943032444429/" target="_blank">
+                <h4 class="saletext">Like our facebook page and get 20% off for next shooting!</h4>
+            </a>
+        </div>
+
+
         <script type="text/javascript">
             jssor_1_slider_init = function () {
 
@@ -595,13 +615,10 @@
 
 
 
-<div class="subnav"></div>
+<div class="topline"></div>
 
 <p style="text-align: center;">&copy; 2016 KINA.studio. Stuttgart City.</p>
 <a class="button" href="imprint.html" target="_blank">Impressum</a>
-
-<div class="block-separator"></div>
-
 
 </body>
 </html>
