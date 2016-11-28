@@ -100,8 +100,8 @@
             max-width: 800px;
             margin: auto;
             font-size: 18px;
-            margin-top: 6px;
-            margin-bottom: 3px;
+            margin-top: 9px;
+            margin-bottom: 6px;
         }
         
         .headline {
@@ -273,6 +273,17 @@
             background-image: url('images/mail.png');
         }
         
+        body .instagram-photo img {
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+            -webkit-backface-visibility: hidden;
+        }
+        
+        .instagram-element .instagram-photo { margin: 0px; width: 20%; }
+        
         @media (max-width: 800px) {
             
             .desktop {
@@ -300,22 +311,9 @@
                 width: 16px;
                 height: 16px;
             }
+            
+            .instagram-element .instagram-photo { margin: 0px; width: 33%; }
         }
-        
-    </style>
-
-    <!-- INSTAGRAM FIXES -->
-    <style>
-        body .instagram-photo img {
-            -webkit-transform: scale(1.0);
-            -moz-transform: scale(1.0);
-            -ms-transform: scale(1.0);
-            -o-transform: scale(1.0);
-            transform: scale(1.0);
-            -webkit-backface-visibility: hidden;
-        }
-        
-        .instagram-element .instagram-photo { margin: 0px; width: 25%; }
         
     </style>
     
@@ -544,7 +542,7 @@
             userID : '2066076364',
             accessToken : '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
             galleryMode: 'classic',
-            limit: 8,
+            limit: 15,
             video: true,
             showVideoControls: false
         });
@@ -569,7 +567,7 @@
             userID : '2066076364',
             accessToken : '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
             galleryMode: 'classic',
-            limit: 8,
+            limit: 15,
             video: true,
             showVideoControls: false
         });
