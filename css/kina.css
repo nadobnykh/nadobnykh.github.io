@@ -205,10 +205,10 @@
             margin:8px;
         }
         .icon-whatsapp {
-            background-image: url('images/whatsapp.png');
+            background-image: url('../images/whatsapp.png');
         }
         .icon-mail {
-            background-image: url('images/mail.png');
+            background-image: url('../images/mail.png');
         }
         
         body .instagram-photo img {
@@ -231,7 +231,7 @@
             background-repeat: no-repeat;
             background-size: 100%;
             margin:0px;
-            background-image: url('images/gotostartbutton.png');
+            background-image: url('../images/gotostartbutton.png');
             opacity: 0.3;
         }
         .gotostartbutton:hover {
