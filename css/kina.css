@@ -12,10 +12,6 @@
             line-height: 18px;
             letter-spacing: .8px;
         }
-        
-        p, a, h4 {
-            font-family: Lato,Helvetica Neue,Verdana,Arial,sans-serif;
-        }
         p {
             text-align: center;
         }
@@ -29,10 +25,16 @@
             text-decoration: none;
             color: #58595b;
         }
-        h2, h3, h4 {
+        h1, h2, h3, h4 {
             font-family: 'Josefin Sans', sans-serif;
         }
-        h2 { font-size: 26px; }
+
+        p, a, h4 {
+            font-family: Lato,Helvetica Neue,Verdana,Arial,sans-serif;
+        }
+
+        h1 { font-size: 26px; }
+        h2 { font-size: 22px; }
         h3 { font-size: 20px; }
         h4 { font-size: 16px; }
         .middletext {
@@ -251,6 +253,7 @@
                 display:block;
             }
             
+            h1 { font-size: 18px; }
             h2 { font-size: 18px; }
             h3 { font-size: 17px; }
             h4 { font-size: 14px; }
