@@ -244,6 +244,10 @@
             width: 24.6%;
         }
 
+        .instagram-element .instagram-photo.image {
+            background-color: #ffffff;
+        }
+
         body .instagram-element .instagram-photo:hover img {
             -webkit-transform: scale(1.1);
             -moz-transform: scale(1.1);
