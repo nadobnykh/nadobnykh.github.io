@@ -222,11 +222,11 @@ body .instagram-photo img {
 
 
 .photographyweblogo {
-    max-width: 320px;
+    max-width: 280px;
     width: 80%;
     min-width: 160px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .gotostartbutton {
