@@ -220,6 +220,14 @@ body .instagram-photo img {
     -webkit-backface-visibility: hidden;
 }
 
+
+.photographyweblogo {
+    max-width: 320px;
+    width: 80%;
+    min-width: 160px;
+    margin-top: 20px;
+}
+
 .gotostartbutton {
     position: fixed;
     bottom: 70px;
