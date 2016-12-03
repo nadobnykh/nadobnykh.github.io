@@ -227,6 +227,10 @@ body .instagram-photo img {
     min-width: 160px;
     margin-top: 20px;
     margin-bottom: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../images/logobg.png');
 }
 
 .gotostartbutton {
@@ -234,12 +238,12 @@ body .instagram-photo img {
     bottom: 70px;
     right: 10px;
     display: inline-block;
-    background-position: center;
     width: 36px;
     height: 36px;
+    margin:0px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin:0px;
     background-image: url('../images/gotostartbutton.png');
     opacity: 0.3;
 }
