@@ -267,8 +267,8 @@ body .instagram-element .instagram-photo:hover img {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    opacity: 0.8;
 }
-
 
 @media (max-width: 800px) {
 
