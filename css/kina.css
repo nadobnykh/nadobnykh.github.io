@@ -40,6 +40,9 @@ h4 { font-size: 16px; }
 
 .mainnav {
 }
+.mainnav a {
+    margin:5px;
+}
 .mainnav h4 {
     margin:0;
     display: inline;
