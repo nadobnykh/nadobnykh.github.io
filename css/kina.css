@@ -37,6 +37,14 @@ h1 { font-size: 26px; }
 h2 { font-size: 22px; }
 h3 { font-size: 20px; }
 h4 { font-size: 16px; }
+
+.mainnav {
+}
+.mainnav h4 {
+    margin:0;
+    display: inline;
+}
+
 .middletext {
     letter-spacing: 2px;
 }
