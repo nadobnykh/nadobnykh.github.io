@@ -24,6 +24,28 @@
     <script type="text/javascript" src="instagram/lib/dateFormat.js"></script>
     <script type="text/javascript" src="instagram/lib/easing.js"></script>
     <script type="text/javascript" src="instagram/instagramElement.js"></script>
+    
+    <script type="text/javascript"> 
+	
+        $(document).ready(function() {
+            // Alle internen Links auswählen
+            $('a[href*=#]').bind("click", function(event) {
+                // Standard Verhalten unterdrücken
+                event.preventDefault();
+                // Linkziel in Variable schreiben
+                var ziel = $(this).attr("href");
+                //Scrollen der Seite animieren, body benötigt für Safari
+                $('html,body').animate({
+                    //Zum Ziel scrollen (Variable)
+                    scrollTop: $(ziel).offset().top
+                // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
+                }, 2000 , function (){location.hash = ziel;});
+           });
+        return false;
+        });
+    </script>
+    
+    
     <link rel="stylesheet" href="instagram/lib/videoplayer/css/style.css" media="screen">
     <link rel="stylesheet" href="instagram/lib/fancybox2/source/jquery.fancybox.css">
     <link rel="stylesheet" href="instagram/instagramElement.css">
