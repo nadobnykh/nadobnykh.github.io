@@ -39,6 +39,7 @@ h3 { font-size: 20px; }
 h4 { font-size: 16px; }
 
 .mainnav {
+    margin-top: 5px;
 }
 .mainnav a {
     margin:5px;
@@ -152,7 +153,7 @@ img.logo {
     min-width: 240px;
     max-width: 240px;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 img.img-block {
     width: 100%;
