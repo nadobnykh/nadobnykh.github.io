@@ -38,17 +38,6 @@ h2 { font-size: 22px; }
 h3 { font-size: 20px; }
 h4 { font-size: 16px; }
 
-.mainnav {
-    margin: 5px;
-}
-.mainnav a {
-    margin: 5px;
-}
-.mainnav h4 {
-    margin: 0;
-    display: inline;
-}
-
 .middletext {
     letter-spacing: 2px;
 }
@@ -148,18 +137,33 @@ h2.widetext {
 .topline {
     border-top: 1px solid #dbdbdb;
 }
+
 img.logo {
     width: 100%;
     min-width: 260px;
     max-width: 260px;
     margin-top: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 img.img-block {
     width: 100%;
     max-width: 600px;
     min-width: 320px;
 }
+
+.mainnav {
+    margin: 5px;
+    margin-top: 10px;
+}
+.mainnav a {
+    margin: 5px;
+}
+.mainnav h4 {
+    margin: 0;
+    display: inline;
+}
+
+
 /* LAYOUT */
 .wrapper {
     max-width: 1200px;
