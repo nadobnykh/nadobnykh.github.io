@@ -9,7 +9,7 @@ $('.gotostartbutton').on('click', function(e){
 
 $(document).ready(function() {
     // Alle internen Links auswählen
-    $('a[href*=#]').bind("click", function(event) {
+    $('a[href*=\\#]').bind("click", function(event) {
       // Standard Verhalten unterdrücken
       event.preventDefault();
       // Linkziel in Variable schreiben
