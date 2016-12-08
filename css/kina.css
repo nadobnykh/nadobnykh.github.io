@@ -174,10 +174,8 @@ img.img-block {
     padding: 10px;
     padding-bottom: 6px;
     margin: 0px;
-    background-color: white;
+    background-color: black;
     z-index: 999;
-    opacity: 0.85;
-    border-bottom: 1px solid #dbdbdb;
 }
 
 
