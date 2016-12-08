@@ -27,9 +27,9 @@ $(document).ready(function() {
 $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
     if(scrollValue > 200){
-      $('.mainnav').addClass('stickytop');
+      $('.mainnav-wrapper').addClass('stickytop');
     } else {
-      $('.mainnav').removeClass('stickytop');
+      $('.mainnav-wrapper').removeClass('stickytop');
     }
 });
 
