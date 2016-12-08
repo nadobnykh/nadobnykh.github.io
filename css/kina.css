@@ -278,10 +278,10 @@ body .instagram-photo img {
 .instagram-element .instagram-photo.image {
     background-color: transparent;
 }
-
-.instagram-element .instagram-photo.image {
+.instagram-element .instagram-photo.image:hover {
     background-color: black;
 }
+
 body .instagram-element .instagram-photo:hover img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
