@@ -176,6 +176,7 @@ img.img-block {
     background-color: white;
     z-index: 999;
     opacity: 0.85;
+    border-bottom: 1px solid black;
 }
 
 
