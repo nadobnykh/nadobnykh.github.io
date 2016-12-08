@@ -229,16 +229,6 @@ li {
     background-image: url('../images/mail.png');
 }
 
-body .instagram-photo img {
-    -webkit-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    transform: scale(1.0);
-    -webkit-backface-visibility: hidden;
-}
-
-
 .photographyweblogo {
     max-width: 640px;
     width: 100%;
@@ -270,6 +260,16 @@ body .instagram-photo img {
 }
 
 
+
+body .instagram-photo img {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-backface-visibility: hidden;
+}
+
 .instagram-element .instagram-photo {
     margin: 0.2%;
     width: 24.6%;
@@ -279,6 +279,9 @@ body .instagram-photo img {
     background-color: transparent;
 }
 
+.instagram-element .instagram-photo.image {
+    background-color: black;
+}
 body .instagram-element .instagram-photo:hover img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -288,6 +291,9 @@ body .instagram-element .instagram-photo:hover img {
     background-color: black;
     opacity: 0.8;
 }
+
+
+
 
 @media (max-width: 800px) {
 
