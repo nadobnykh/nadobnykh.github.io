@@ -19,7 +19,7 @@ $(document).ready(function() {
         //Zum Ziel scrollen (Variable)
         scrollTop: $(ziel).offset().top
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, 2000 , function (){location.hash = ziel;});
+      }, 1000 , function (){location.hash = ziel;});
      });
   return false;
 });
