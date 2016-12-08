@@ -177,6 +177,9 @@ img.img-block {
     background-color: black;
     z-index: 999;
 }
+.stickytop a {
+    color: white;
+}
 
 
 /* LAYOUT */
