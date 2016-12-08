@@ -28,11 +28,6 @@ $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
     if(scrollValue > 200){
       $('.mainnav').addClass('stickytop');
-      
-      $( "#mainnav" ).fadeOut( "slow", function() {
-        $('.mainnav').removeClass('stickytop');
-      });
-      
     } else {
       $('.mainnav').removeClass('stickytop');
     }
