@@ -17,7 +17,7 @@ $(document).ready(function() {
       //Scrollen der Seite animieren, body benötigt für Safari
       $('html,body').animate({
         //Zum Ziel scrollen (Variable)
-        scrollTop: $(ziel).offset().top
+        scrollTop: ($(ziel).offset().top - 30)
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
       }, 1000 , function (){location.hash = ziel;});
      });
