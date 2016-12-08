@@ -10,6 +10,7 @@ $('.gotostartbutton').on('click', function(e){
 $(document).ready(function() {
   var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
+  stickyMenuDiv.hide();
   
   $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
