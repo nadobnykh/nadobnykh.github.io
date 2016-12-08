@@ -25,8 +25,8 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    if(scroll > 100){
+    var scrollValue = $(window).scrollTop();
+    if(scrollValue > 250){
       alert('BLA');
     }
 });
