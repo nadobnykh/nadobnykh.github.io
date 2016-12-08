@@ -276,7 +276,7 @@ body .instagram-photo img {
 }
 
 .instagram-element .instagram-photo.image {
-    background-color: #000;
+    background-color: transparent;
 }
 
 body .instagram-element .instagram-photo:hover img {
