@@ -172,11 +172,12 @@ img.img-block {
     width: 100%;
     text-align: center;
     padding: 10px;
+    padding-bottom: 6px;
     margin: 0px;
     background-color: white;
     z-index: 999;
     opacity: 0.85;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 
