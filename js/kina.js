@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
-    if(scrollValue > 200){
+    if(scrollValue > 120){
       $('.mainnav-wrapper').addClass('stickytop');
     } else {
       $('.mainnav-wrapper').removeClass('stickytop');
