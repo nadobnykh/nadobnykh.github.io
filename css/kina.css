@@ -6,19 +6,6 @@
     display:none;
 }
 
-.stickytop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-    background-color: white;
-    z-index: 999;
-    opacity: 0.85;
-}
-
 p, a {
     color: #000;
     font-size: 13px;
@@ -176,6 +163,19 @@ img.img-block {
 .mainnav h4 {
     margin: 0;
     display: inline;
+}
+/* Sticky NAV */
+.stickytop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    background-color: white;
+    z-index: 999;
+    opacity: 0.85;
 }
 
 
