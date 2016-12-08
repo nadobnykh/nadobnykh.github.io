@@ -8,23 +8,6 @@ $('.gotostartbutton').on('click', function(e){
 });
 
 $(document).ready(function() {
-    // Alle internen Links auswählen
-    $('a[href*=\\#]').bind("click", function(event) {
-      // Standard Verhalten unterdrücken
-      event.preventDefault();
-      // Linkziel in Variable schreiben
-      var ziel = $(this).attr("href");
-      //Scrollen der Seite animieren, body benötigt für Safari
-      $('html,body').animate({
-        //Zum Ziel scrollen (Variable)
-        scrollTop: $(ziel).offset().top
-      // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, 1000 , function (){location.hash = ziel;});
-     });
-  return false;
-});
-
-$(document).ready(function() {
   var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
   
@@ -37,6 +20,24 @@ $(document).ready(function() {
       stickyMenuDiv.hide();
     }
   });
+  
+  
+  
+  
+  // Alle internen Links auswählen
+    $('a[href*=\\#]').bind("click", function(event) {
+      // Standard Verhalten unterdrücken
+      event.preventDefault();
+      // Linkziel in Variable schreiben
+      var ziel = $(this).attr("href");
+      //Scrollen der Seite animieren, body benötigt für Safari
+      $('html,body').animate({
+        //Zum Ziel scrollen (Variable)
+        scrollTop: $(ziel).offset().top
+      // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
+      }, 1000 , function (){location.hash = ziel;});
+     });
+  
 });
 
 
