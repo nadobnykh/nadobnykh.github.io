@@ -23,3 +23,12 @@ $(document).ready(function() {
      });
   return false;
 });
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll > 100){
+      alert('BLA');
+    }
+});
+
+
