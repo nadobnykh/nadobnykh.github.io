@@ -26,16 +26,18 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var stickyMenuDiv = $('.mainnav-wrapper').clone();
+  
+  $(window).scroll(function (event) {
+    var scrollValue = $(window).scrollTop();
+    if(scrollValue > 120){
+      stickyMenuDiv.addClass('stickytop');
+      stickyMenuDiv.show();
+    } else {
+      stickyMenuDiv.hide();
+    }
+  });
 });
 
-$(window).scroll(function (event) {
-  var scrollValue = $(window).scrollTop();
-  if(scrollValue > 120){
-    stickyMenuDiv.addClass('stickytop');
-    stickyMenuDiv.show();
-  } else {
-    stickyMenuDiv.hide();
-  }
-});
+
 
 
