@@ -333,8 +333,8 @@ body .instagram-element .instagram-photo:hover img {
         width: 100%;
         min-width: 80px;
         max-width: 80px;
-        margin-top: 5px;
-        margin-bottom: 0px;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
     
     .saletext { font-size: 17px; }
