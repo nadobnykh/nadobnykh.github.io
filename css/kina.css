@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
 }
 
 p, a {
-    font-family: Lato,Helvetica Neue,Verdana,Arial,sans-serif;
+    font-family: Lato,Helvetica,Verdana,Arial,sans-serif;
 }
 
 h1 { font-size: 26px; }
@@ -105,7 +105,7 @@ h2.widetext {
     padding: 14px 20px;
     font-size: 16px;
     font-weight: normal;
-    font-family: Lato, Helvetica-Neue, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
@@ -124,7 +124,7 @@ h2.widetext {
     color: #000000;
     display: inline-block;
     font-weight: normal;
-    font-family: Lato, Helvetica-Neue, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     line-height: 19px;
     text-align: center;
     white-space: nowrap;
@@ -188,7 +188,7 @@ img.img-block {
 
 /* LAYOUT */
 .wrapper {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 .block {
