@@ -140,9 +140,9 @@ h2.widetext {
 
 img.logo {
     width: 100%;
-    min-width: 100px;
-    max-width: 100px;
-    margin-top: 40px;
+    min-width: 180px;
+    max-width: 180px;
+    margin-top: 35px;
     margin-bottom: 25px;
 }
 img.img-block {
@@ -331,10 +331,10 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        min-width: 80px;
-        max-width: 80px;
-        margin-top: 15px;
-        margin-bottom: 10px;
+        min-width: 100px;
+        max-width: 100px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
     
     .saletext { font-size: 17px; }
