@@ -291,8 +291,8 @@ body .instagram-photo img {
 }
 
 .instagram-element .instagram-photo {
-    margin: 0.2%;
-    width: 24.6%;
+    margin: 0;
+    width: 25%;
 }
 
 .instagram-element .instagram-photo.image {
