@@ -312,6 +312,19 @@ body .instagram-element .instagram-photo:hover img {
     opacity: 0.8;
 }
 
+/* CUSTOMIZING FOR EACH INSTAGRAM GRID */
+
+.instagram-kinastudio-inspire {
+    margin: -10px;
+}
+
+.instagram-kinastudio-inspire .instagram-element {
+    margin: 0.5%;
+    width: 32.33%;
+}
+
+
+
 
 
 
