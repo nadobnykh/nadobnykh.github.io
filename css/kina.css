@@ -193,7 +193,7 @@ img.img-block {
 }
 .block {
     margin-bottom: 40px;
-    overflow: auto;
+    overflow: hidden;
 }
 .header {
     margin-top: 0px;
