@@ -318,9 +318,14 @@ body .instagram-element .instagram-photo:hover img {
     margin: -0.5%;
 }
 
-.instagram-element .instagram-photo {
+/*.instagram-element .instagram-photo {
     margin: 0.5%;
     width: 24%;
+}*/
+
+.instagram-element .instagram-photo {
+    width: 32.9%;
+    margin: 0.2%;
 }
 
 @media (max-width: 1000px) {
