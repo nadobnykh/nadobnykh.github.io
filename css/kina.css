@@ -1,6 +1,6 @@
 
 .desktop {
-    display:block;
+    display:inline;
 }
 .mobile {
     display:none;
