@@ -442,5 +442,12 @@ body .instagram-element .instagram-photo:hover img {
     pointer-events: none;
 }
 
-.fancybox-overlay .username-ui { font-family: 'Oswald',arial,serif; font-size: 16px; font-weight: 400; }
-.fancybox-overlay .description-ui { white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;  }
+.fancybox-wrap .username-ui,
+.fancybox-overlay .username-ui,
+.fancybox-wrap .likes-ui,
+.fancybox-overlay .likes-ui,
+.fancybox-wrap .comments-ui,
+.fancybox-overlay .comments-ui,
+.fancybox-wrap .description-ui,
+.fancybox-overlay .description-ui
+{ display: none; }
