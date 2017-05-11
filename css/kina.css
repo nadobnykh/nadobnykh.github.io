@@ -447,7 +447,5 @@ body .instagram-element .instagram-photo:hover img {
 .fancybox-wrap .likes-ui,
 .fancybox-overlay .likes-ui,
 .fancybox-wrap .comments-ui,
-.fancybox-overlay .comments-ui,
-.fancybox-wrap .description-ui,
-.fancybox-overlay .description-ui
+.fancybox-overlay .comments-ui
 { display: none; }

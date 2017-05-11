@@ -1,3 +1,11 @@
+/* KINA STUFF */
+function getFormattedInstatext(s)
+{
+    return (s.indexOf('.') > -1) ? s.substr(0, s.indexOf('.')+1) + ' ' : '';
+}
+/* END: KINA STUFF */
+
+
 function instagramFetch(e) {
     var a = e.accessToken, t = {access_token: a};
     fetchCMD(t, e)
@@ -125,7 +133,7 @@ function onPhotoLoaded(e, a, t) {
                     var m = parseInt(s.created_time);
                     m = new Date(1e3 * m), m = dateFormat(m, "dddd, mmmm dS, yyyy, h:MM TT"), l += "<span class='date-ui'>" + m + "</span> "
                 }
-                a.showDescription && s.caption && (l += "<span class='description-ui'>" + s.caption.text.replace(/"/g, "'").substr(0, 30) + "..." + ".</span>"), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLocation && s.location && (l += " <span class='location-ui'>Location: " + s.location.name.replace(/"/g, "'") + "</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> View on Instagram</a>");
+                a.showDescription && s.caption && (l += "<span class='description-ui'>" + getFormattedInstatext(s.caption.text.replace(/"/g, "'")) + "</span>"), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLocation && s.location && (l += " <span class='location-ui'>Location: " + s.location.name.replace(/"/g, "'") + "</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> View on Instagram</a>");
                 var c = "None";
                 s.videos && (c = s.videos.standard_resolution.url);
                 var d = a.element.selector.replace(".", "");
