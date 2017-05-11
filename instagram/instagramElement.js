@@ -1,7 +1,7 @@
 /* KINA STUFF */
-function getFormattedInstatext(s)
+function getFormattedInstaDescription(s)
 {
-    return (s.indexOf('.') > -1) ? s.substr(0, s.indexOf('.')+1) + ' ' : '';
+    return '<span class="description-ui">' + (s.indexOf('.') > -1) ? s.substr(0, s.indexOf('.')+1) + '</span> | ' : '';
 }
 /* END: KINA STUFF */
 
@@ -129,11 +129,17 @@ function onPhotoLoaded(e, a, t) {
                 var s = o[r];
                 if ("contest" == a.mode && 0 == s.user_has_liked)continue;
                 var i = "", l = "";
+
+                a.showDescription && s.caption && (l += getFormattedInstaDescription(s.caption.text.replace(/"/g, "'"))), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> Show on Instagram</a>");
+
+                a.showLocation && s.location && (l += " <span class='location-ui'>Location: " + s.location.name.replace(/"/g, "'") + " | </span> ");
+
                 if ("" == s.user.full_name && (s.user.full_name = s.user.username), s.user.full_name = s.user.full_name.replace(/"/g, "'"), a.showUsername && (l += "<span class='username-ui'>" + s.user.full_name + "</span>"), a.showDate) {
                     var m = parseInt(s.created_time);
-                    m = new Date(1e3 * m), m = dateFormat(m, "dddd, mmmm dS, yyyy, h:MM TT"), l += "<span class='date-ui'>" + m + "</span> "
+                    m = new Date(1e3 * m), m = dateFormat(m, "dd.mm.yyyy hh:MM"), l += " <span class='date-ui'>" + m + "</span> "
                 }
-                a.showDescription && s.caption && (l += "<span class='description-ui'>" + getFormattedInstatext(s.caption.text.replace(/"/g, "'")) + "</span>"), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLocation && s.location && (l += " <span class='location-ui'>Location: " + s.location.name.replace(/"/g, "'") + "</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> View on Instagram</a>");
+
+
                 var c = "None";
                 s.videos && (c = s.videos.standard_resolution.url);
                 var d = a.element.selector.replace(".", "");

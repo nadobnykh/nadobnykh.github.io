@@ -449,3 +449,9 @@ body .instagram-element .instagram-photo:hover img {
 .fancybox-wrap .comments-ui,
 .fancybox-overlay .comments-ui
 { display: none; }
+
+.fancybox-wrap .date-ui,
+.fancybox-overlay .date-ui,
+.fancybox-wrap .location-ui,
+.fancybox-overlay .location-ui
+{ color:#dddddd; font-size: 12px; font-weight: 300; margin-bottom:3px; text-transform:none; }
