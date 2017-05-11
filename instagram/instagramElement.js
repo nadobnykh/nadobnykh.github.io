@@ -1,7 +1,7 @@
 /* KINA STUFF */
 function getFormattedInstaDescription(s)
 {
-    return '<span class="description-ui">' + (s.indexOf('.') > -1) ? s.substr(0, s.indexOf('.')+1) + '</span> | ' : '';
+    return (s.indexOf('.') > -1) ? s.substr(0, s.indexOf('.')+1) : false;
 }
 /* END: KINA STUFF */
 
@@ -130,7 +130,7 @@ function onPhotoLoaded(e, a, t) {
                 if ("contest" == a.mode && 0 == s.user_has_liked)continue;
                 var i = "", l = "";
 
-                a.showDescription && s.caption && (l += getFormattedInstaDescription(s.caption.text.replace(/"/g, "'"))), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> Show on Instagram</a>");
+                getFormattedInstaDescription(s.caption.text.replace(/"/g, "'")) && a.showDescription && s.caption && (l += " <span class='description-ui'> " + getFormattedInstaDescription(s.caption.text.replace(/"/g, "'")) + " | </span> "), a.showLikes && (l += " <span class='likes-ui'>(" + s.likes.count + " Likes)</span>"), a.showComments && (l += " <span class='comments-ui'>(" + s.comments.count + " Comments)</span>"), a.showLink && null != s.link && (l += "<a target='_blank' class='link-ui' href='" + s.link + "'> Show on Instagram</a>");
 
                 a.showLocation && s.location && (l += " <span class='location-ui'>Location: " + s.location.name.replace(/"/g, "'") + " | </span> ");
 
