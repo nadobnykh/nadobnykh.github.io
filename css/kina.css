@@ -315,29 +315,35 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element .instagram-photo .element-meta { color: #fff; font-size: 16px; font-weight: 100; line-height: 16px; }
 
 
+
+
+
+
+
 /* CUSTOMIZING FOR EACH INSTAGRAM GRID */
 
-.instagram-kinastudio-inspire {
-    margin: -0.5%;
-}
+/* DESKTOP */
 
-/*.instagram-element .instagram-photo {
-    margin: 0.5%;
-    width: 24%;
-}*/
+/* Klaeren wo sich das auswirkt */
+.instagram-kinastudio-inspire { margin: -0.8%; }
 
-.instagram-element .instagram-photo {
-    width: 32.9%;
-    margin: 0.2%;
-}
+/* 4 Spalten */
+/* .instagram-element .instagram-photo { margin: 0.5%; width: 24%; } */
 
+/* 3 Spalten, kleiner Abstand */
+.instagram-element { margin: -0.2%; }
+.instagram-element .instagram-photo { width: 32.9%; margin: 0.2%; }
+
+
+/* 3 Spalten, Mehr Abstand zwischen Elements */
+.instagram-element { margin: -0.8%; }
+.instagram-element .instagram-photo { width: 31.7%; margin: 0.8%; }
+
+/* MOBILE */
 @media (max-width: 1000px) {
-    .instagram-element .instagram-photo {
-        width: 32.33%;
-    }
+    .instagram-element { margin: -0.2%; }
+    .instagram-element .instagram-photo { width: 32.33%; margin: 0.2%; }
 }
-
-
 
 
 @media (max-width: 800px) {
@@ -371,6 +377,9 @@ body .instagram-element .instagram-photo:hover img {
     }
 }
         
+
+
+
 
 
 
