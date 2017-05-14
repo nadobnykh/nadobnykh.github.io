@@ -347,12 +347,13 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
-
 /* MOBILE */
 @media (max-width: 1000px) {
     .instagram-element { margin: -0.2%; }
-    .instagram-element .instagram-photo { width: 32.9%; margin: 0.2%; }
+    /* .instagram-element .instagram-photo { width: 32.9%; margin: 0.2%; } */
     .instagram-element .instagram-photo { width: 49.6%; margin: 0.2%; }
+
+    .instagram-kinastudio-wedding .instagram-photo { width: 32.9%; margin: 0.2%; }
 }
 
 
