@@ -2,7 +2,7 @@
 .desktop {
     display:inline;
 }
-.mobile {
+.mobile, .mobile-inline {
     display:none;
 }
 
@@ -368,6 +368,9 @@ body .instagram-element .instagram-photo:hover img {
     }
     .mobile {
         display:block;
+    }
+    .mobile-inline {
+        display:inline;
     }
 
     h1 { font-size: 22px; }
