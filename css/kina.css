@@ -29,7 +29,7 @@ a {
 }
 h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #6C6C6C;
 }
 
@@ -154,24 +154,23 @@ img.img-block {
 }
 
 .mainnav {
-    margin-top: 3px;
+    margin-top: 5px;
     padding: 5px;
 }
 
 .mainnav a {
+    margin-left: 12px;
+    margin-right: 12px;
     padding:5px;
-    margin-left: 8px;
-    margin-right: 8px;
+    padding-top: 8px;
 
     font-family: "lato", sans-serif;
-    font-weight: 200;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 20px;
     color: #6C6C6C;
 }
 
 .mainnav a:hover {
-    background-color: #f9f9f9;
-    /*color: white;*/
     color: black;
 }
 
