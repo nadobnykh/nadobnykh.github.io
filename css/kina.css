@@ -6,6 +6,11 @@
     display:none;
 }
 
+p, a, h1, h2, h3, h4 {
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    color: black;
+}
 p, a {
     color: #000;
     font-size: 13px;
@@ -18,24 +23,13 @@ p {
     text-align: center;
 }
 p.info {
-    text-align: justify;
-    max-width: 800px;
+    max-width: 780px;
     margin: auto;
 }
 a {
     font-size:13px;
     text-decoration: none;
     color: #58595b;
-}
-h1, h2, h3, h4 {
-    font-family: "lato", sans-serif;
-    font-weight: 400;
-    color: black;
-}
-
-p, a {
-    font-family: "lato", sans-serif;
-    font-weight: 300;
 }
 
 h1 { font-size: 28px; }
