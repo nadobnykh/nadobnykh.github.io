@@ -28,17 +28,19 @@ a {
     color: #58595b;
 }
 h1, h2, h3, h4 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "lato", sans-serif;
+    font-weight: 200;
+    color: #6C6C6C;
 }
 
 p, a {
     font-family: Lato,Helvetica,Verdana,Arial,sans-serif;
 }
 
-h1 { font-size: 26px; }
-h2 { font-size: 22px; }
-h3 { font-size: 20px; }
-h4 { font-size: 16px; }
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
 
 .middletext {
     letter-spacing: 2px;
@@ -58,8 +60,8 @@ h2.widetext {
     color: #9f2943;
     max-width: 800px;
     margin: auto;
-    font-size: 18px;
-    margin-top: 9px;
+    font-size: 16px;
+    margin-top: 6px;
     margin-bottom: 6px;
 }
 
@@ -152,19 +154,25 @@ img.img-block {
 }
 
 .mainnav {
-    margin: 5px;
-    margin-top: 8px;
+    margin-top: 3px;
     padding: 5px;
 }
 
 .mainnav a {
-    margin-left: 5px;
-    margin-right: 5px;
+    padding:5px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    font-family: "lato", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #6C6C6C;
 }
 
-.mainnav h4 {
-    margin: 0;
-    display: inline;
+.mainnav a:hover {
+    background-color: #f9f9f9;
+    /*color: white;*/
+    color: black;
 }
 
 .topline {
