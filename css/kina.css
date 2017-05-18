@@ -137,8 +137,8 @@ h2.widetext {
 
 img.logo {
     width: 100%;
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 170px;
+    max-width: 170px;
     margin-top: 35px;
     margin-bottom: 15px;
 }
@@ -190,7 +190,7 @@ img.img-block {
 
 /* LAYOUT */
 .wrapper {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
 }
 .block {
@@ -339,29 +339,29 @@ body .instagram-element .instagram-photo:hover img {
 /* .instagram-element { margin: -0.8%; } */
 /* .instagram-element .instagram-photo { width: 31.7%; margin: 0.8%; } */
 
-/* 3 Spalten, kleiner Abstand */
-/* .instagram-element { margin: -0.1%; } */
-/* .instagram-element .instagram-photo { width: 33.1%; margin: 0.1%; } */
-
 /* 3 Spalten, kein Abstand */
-.instagram-element { margin: 0; }
-.instagram-element .instagram-photo { width: 33.33%; margin: 0; }
+/*.instagram-element { margin: 0; }
+.instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
 
 
 
-/* MOBILE */
-@media (max-width: 1000px) {
-    /* .instagram-element { margin: -0.2%; } */
-    /* .instagram-element .instagram-photo { width: 32.9%; margin: 0.2%; } */
-    /* .instagram-element .instagram-photo { width: 49.6%; margin: 0.2%; } */
+/* 3 Spalten, kleiner Abstand */
+.instagram-element { margin: -0.4%; }
+.instagram-element .instagram-photo { width: 32.5%; margin: 0.4%; }
 
-    .instagram-element { margin: 0; }
-    .instagram-element .instagram-photo { width: 50%; margin: 0; }
-
-    /* .instagram-kinastudio-wedding .instagram-photo { width: 32.9%; margin: 0.2%; } */
-    .instagram-kinastudio-wedding .instagram-photo { width: 33.33%; margin: 0; }
+/* PHOTOS LAYOUTS */
+@media (max-width: 1400px) {
+    .instagram-element { margin: 0.4%; }
+    .instagram-element .instagram-photo { width: 32.5%; margin: 0.4%; }
 }
-
+@media (max-width: 900px) {
+    .instagram-element { margin: 0.7%; }
+    .instagram-element .instagram-photo { width: 48.6%; margin: 0.7%; }
+}
+@media (max-width: 600px) {
+    .instagram-element { margin: 1%; }
+    .instagram-element .instagram-photo { width: 98%; margin: 1%; }
+}
 
 @media (max-width: 800px) {
 
