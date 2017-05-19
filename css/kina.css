@@ -372,6 +372,11 @@ body .instagram-element .instagram-photo:hover img {
     }
 
 
+	.mainnav {
+	    margin-top: 0px;
+	    padding: 0px;
+	}
+
 	.mainnav a {
 		padding: 10px 5px;
 	    text-align: left;

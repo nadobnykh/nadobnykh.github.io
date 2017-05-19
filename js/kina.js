@@ -48,8 +48,6 @@ $(document).ready(function() {
     menuLinks.addClass('desktop');
     menuLinks.removeClass('mobile');
   });
-
-  
   // END: MOBILE MENU
   
   // Alle internen Links auswählen
@@ -58,10 +56,11 @@ $(document).ready(function() {
       event.preventDefault();
       // Linkziel in Variable schreiben
       var ziel = $(this).attr("href");
+
       //Scrollen der Seite animieren, body benötigt für Safari
       $('html,body').animate({
         //Zum Ziel scrollen (Variable)
-        scrollTop: $(ziel).offset().top
+        scrollTop: $(ziel).offset().top - 100
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
       }, 1000 , function (){location.hash = ziel;});
      });
