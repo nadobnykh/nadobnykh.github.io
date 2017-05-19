@@ -60,14 +60,12 @@ $(document).ready(function() {
       var currentScrollTop = window.pageYOffset;
       var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
 
-      alert(scrollDiff);
-
       //Scrollen der Seite animieren, body benötigt für Safari
       $('html,body').animate({
         //Zum Ziel scrollen (Variable)
         scrollTop: newScrollTop
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, scrollDiff/2 , function (){location.hash = ziel;});
+      }, 300000 / scrollDiff , function (){location.hash = ziel;});
      });
   
 });
