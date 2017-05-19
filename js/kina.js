@@ -16,7 +16,7 @@ $(document).ready(function() {
   
   $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
-    if(scrollValue > 100){
+    if(scrollValue > 120){
       
       stickyMenuDiv.show();
     } else {
@@ -56,13 +56,18 @@ $(document).ready(function() {
       event.preventDefault();
       // Linkziel in Variable schreiben
       var ziel = $(this).attr("href");
+      var newScrollTop = $(ziel).offset().top - 100;
+      var currentScrollTop = window.pageYOffset;
+      var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
+
+      alert(scrollDiff);
 
       //Scrollen der Seite animieren, body benötigt für Safari
       $('html,body').animate({
         //Zum Ziel scrollen (Variable)
-        scrollTop: $(ziel).offset().top - 100
+        scrollTop: newScrollTop
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, 1000 , function (){location.hash = ziel;});
+      }, scrollDiff/2 , function (){location.hash = ziel;});
      });
   
 });
