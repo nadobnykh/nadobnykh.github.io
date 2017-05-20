@@ -65,7 +65,7 @@ $(document).ready(function() {
         //Zum Ziel scrollen (Variable)
         scrollTop: newScrollTop
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, 300000 / scrollDiff , function (){location.hash = ziel;});
+      }, ((scrollDiff > 2000) ? 0 : 1000) , function (){location.hash = ziel;});
      });
   
 });
