@@ -8,9 +8,14 @@
 
 p, a, h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
 }
+h1, h2, h3, h4 {
+	font-family: "Didot W02 Roman","Didot", serif;
+
+}
+
 p, a {
     color: #000;
     font-size: 13px;
@@ -42,7 +47,7 @@ h4 { font-size: 18px; }
 }
 
 .widetext {
-    letter-spacing: 7px;
+    letter-spacing: 6px;
     margin: 8px;
 }
 
@@ -97,12 +102,11 @@ h2.widetext {
 
 .whitebutton {
     background: #ffffff;
-    color: #000000;
+    color: grey;
     display: inline-block;
     padding: 14px 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
-    font-family: Lato, Helvetica, sans-serif;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
@@ -158,10 +162,7 @@ img.img-block {
     margin-right: 6px;
     padding:5px;
     padding-top: 6px;
-
-    font-family: "lato", sans-serif;
-    font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
     color: #6C6C6C;
 }
 
