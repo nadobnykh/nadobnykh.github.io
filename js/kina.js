@@ -51,25 +51,20 @@ $(document).ready(function() {
   // END: MOBILE MENU
   
   // Alle internen Links auswählen
-    $('a[href*=\\#]').bind("click", function(event) {
-      // Standard Verhalten unterdrücken
-      event.preventDefault();
-      // Linkziel in Variable schreiben
-      var ziel = $(this).attr("href");
-      var newScrollTop = $(ziel).offset().top - 100;
-      var currentScrollTop = window.pageYOffset;
-      var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
+  $('a[href*=\\#]').bind("click", function(event) {
+    // Standard Verhalten unterdrücken
+    event.preventDefault();
+    // Linkziel in Variable schreiben
+    var ziel = $(this).attr("href");
+    var newScrollTop = $(ziel).offset().top - 100;
+    var currentScrollTop = window.pageYOffset;
+    var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
 
-      //Scrollen der Seite animieren, body benötigt für Safari
-      $('html,body').animate({
-        //Zum Ziel scrollen (Variable)
-        scrollTop: newScrollTop
-      // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-      }, ((scrollDiff > 2000) ? 0 : 1000) , function (){location.hash = ziel;});
-     });
-  
+    //Scrollen der Seite animieren, body benötigt für Safari
+    $('html,body').animate({
+      //Zum Ziel scrollen (Variable)
+      scrollTop: newScrollTop
+    // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
+    }, ((scrollDiff > 2000) ? 0 : 1000) , function (){location.hash = ziel;});
+   });
 });
-
-
-
-

@@ -110,11 +110,11 @@ function startVideoPlayer(e) {
     }
 }
 function startFancybox(e) {
-    jQuery(".instagram-photo").fancybox({
+    /*jQuery(".instagram-photo").fancybox({
         openEffect: "elastic",
         closeEffect: "elastic",
         helpers: {title: {type: "inside"}}
-    })
+    })*/
 }
 function convertDate(e, a) {
     var t = parseInt(e);
@@ -143,7 +143,7 @@ function onPhotoLoaded(e, a, t) {
                 var c = "None";
                 s.videos && (c = s.videos.standard_resolution.url);
                 var d = a.element.selector.replace(".", "");
-                d = d.replace("#", ""), "video" == s.type && 1 == a.video ? (i = '<a class="instagram-photo video" id="p' + s.id + '" href="#video-' + s.id + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-video="' + c + '" data-profile="' + s.user.profile_picture + '" rel="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>", i += '<span class="icon">Video</span>', i += '<div id="video-' + s.id + '" style="display:none; height:auto; width:1080px;">', i += '<video class="instagram-element-video" width="100%" height="100%">', i += '<source src="' + c + '"></source>', i += "</video>", i += "</div>", i += "</a>") : (i = '<a class="instagram-photo image" id="p' + s.id + '" href="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-profile="' + s.user.profile_picture + '" rel="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>", i += '<span class="icon">Image</span>', i += "</a>"), jQuery(i).appendTo(a.element)
+                d = d.replace("#", ""), "video" == s.type && 1 == a.video ? (i = '<a class="instagram-photo video" id="p' + s.id + '" href="#video-' + s.id + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-video="' + c + '" data-profile="' + s.user.profile_picture + '" data-fancybox="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>", i += '<span class="icon">Video</span>', i += '<div id="video-' + s.id + '" style="display:none; height:auto; width:1080px;">', i += '<video class="instagram-element-video" width="100%" height="100%">', i += '<source src="' + c + '"></source>', i += "</video>", i += "</div>", i += "</a>") : (i = '<a class="instagram-photo image" id="p' + s.id + '" href="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-profile="' + s.user.profile_picture + '" data-fancybox="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>", i += '<span class="icon">Image</span>', i += "</a>"), jQuery(i).appendTo(a.element)
             }
             var u = jQuery(".instagram-photo").size() - 1;
             0 == n && 0 == a.isDemo && jQuery(".instagram-photo").hide(), jQuery(".instagram-photo").each(function (e) {
