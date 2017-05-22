@@ -66,13 +66,13 @@ h2.widetext {
 }
 
 .headline {
-    margin: 0 0 30px 0;
+    margin: 0 0 0px 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .headline span::before, .headline span::after {
     border-bottom: 1px solid #000000;
@@ -125,8 +125,8 @@ img.logo {
     width: 100%;
     min-width: 170px;
     max-width: 170px;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 img.img-block {
     width: 100%;
@@ -135,15 +135,16 @@ img.img-block {
 }
 
 .mainnav {
-    padding: 5px;
+    padding: 10px;
 }
 
 .mainnav a {
+    letter-spacing: 2px;
     margin-left: 6px;
     margin-right: 6px;
     padding:5px;
     padding-top: 6px;
-    font-size: 16px;
+    font-size: 14px;
     color: #6C6C6C;
 }
 
