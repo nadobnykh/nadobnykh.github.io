@@ -56,7 +56,7 @@ $(document).ready(function() {
     event.preventDefault();
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var newScrollTop = $(ziel).offset().top - 100;
+    var newScrollTop = $(ziel).offset().top - 54;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
 
@@ -65,6 +65,6 @@ $(document).ready(function() {
       //Zum Ziel scrollen (Variable)
       scrollTop: newScrollTop
     // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-    }, ((scrollDiff > 2000) ? 0 : 1000) , function (){location.hash = ziel;});
+    }, ((scrollDiff > 2000) ? 0 : 1000) , function (){/*location.hash = ziel;*/});
    });
 });
