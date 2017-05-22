@@ -27,8 +27,10 @@ $(document).ready(function() {
   
   $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
-    if(scrollValue > 120){
-      
+
+    //var kinaShowStickyScrollValue = ($(document).width() > kinaMobileBreakpoint) ? 120 : 0;
+
+    if($(document).width() < kinaMobileBreakpoint || scrollValue > 120){
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
