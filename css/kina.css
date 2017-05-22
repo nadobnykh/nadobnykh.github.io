@@ -136,6 +136,7 @@ img.img-block {
 }
 
 .mainnav {
+	padding: 5px;
 }
 
 .mainnav a {
@@ -168,15 +169,13 @@ img.img-block {
     background-color: white;
     opacity: 0.96;
     z-index: 999;
-    padding-bottom: 12px;
-	padding-top: 10px;
 }
 
 .mobilemenuicon {
 	position: absolute;
     left: 10px;
-    top: 18px;
-    font-size: 14px;
+    top: 19px;
+    font-size: 12px;
     color: antiquewhite;
 }
 
@@ -361,6 +360,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 	.mainnav {
+		padding: 0;
 	    margin-top: 0px;
 	}
 

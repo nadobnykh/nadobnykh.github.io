@@ -1,4 +1,6 @@
 
+var kinaMobileBreakpoint = 800;
+
 
 /* $('a[href^=#]').on('click', function(e){ */
 $('.gotostartbutton').on('click', function(e){
@@ -10,6 +12,15 @@ $('.gotostartbutton').on('click', function(e){
 });
 
 $(document).ready(function() {
+
+
+  
+  
+
+
+
+
+
   var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
   stickyMenuDiv.hide();
@@ -54,9 +65,11 @@ $(document).ready(function() {
   $('a[href*=\\#]').bind("click", function(event) {
     // Standard Verhalten unterdrücken
     event.preventDefault();
+
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var newScrollTop = $(ziel).offset().top - 54;
+    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 75 : 100;
+    var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
 
