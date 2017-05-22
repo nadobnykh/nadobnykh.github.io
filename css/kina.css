@@ -336,12 +336,12 @@ body .instagram-element .instagram-photo:hover img {
     .instagram-element .instagram-photo { width: 32.5%; margin: 0.4%; }
 }
 @media (max-width: 900px) {
-    .instagram-element { margin: 0.9%; }
-    .instagram-element .instagram-photo { width: 47.8%; margin: 0.9%; }
+    .instagram-element { margin: 0.8%; }
+    .instagram-element .instagram-photo { width: 48.4%; margin: 0.8%; }
 }
 @media (max-width: 600px) {
-    .instagram-element { margin: 1.6%; }
-    .instagram-element .instagram-photo { width: 96.8%; margin: 1.6%; }
+    .instagram-element { margin: 1.4%; }
+    .instagram-element .instagram-photo { width: 97.2%; margin: 1.4%; }
 }
 
 @media (max-width: 800px) {
