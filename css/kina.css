@@ -55,6 +55,8 @@ h2.widetext {
     margin-top: 12px;
 }
 
+.welcomerow { display: block; font-weight:700; padding-top:10px; font-size:11px; }
+
 .saletext {
     letter-spacing: 1px;
     color: #9f2943;
@@ -347,6 +349,9 @@ body .instagram-element .instagram-photo:hover img {
     .desktop {
         display:none;
     }
+    .desktop-inline {
+        display:none;
+    }
     .mobile {
         display:block;
     }
@@ -378,6 +383,7 @@ body .instagram-element .instagram-photo:hover img {
         margin-bottom: 5px;
     }
     
+    .welcomerow { display: none; }
     .headline { font-size: 18px; }
     
     .icon {
