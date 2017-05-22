@@ -127,7 +127,7 @@ img.logo {
     min-width: 170px;
     max-width: 170px;
     margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 img.img-block {
     width: 100%;
@@ -136,7 +136,6 @@ img.img-block {
 }
 
 .mainnav {
-    padding: 10px;
 }
 
 .mainnav a {
@@ -169,6 +168,8 @@ img.img-block {
     background-color: white;
     opacity: 0.96;
     z-index: 999;
+    padding-bottom: 12px;
+	padding-top: 10px;
 }
 
 .mobilemenuicon {
@@ -327,7 +328,7 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
 
 /* 3 Spalten, kleiner Abstand */
-.instagram-element { margin: 0.4% -0.4%; padding-top: 7px; }
+.instagram-element { margin: 0.4% -0.4%; padding-top: 0px; }
 .instagram-element .instagram-photo { width: 32.5%; margin: 0.416%; }
 
 @media (max-width: 1400px) {
@@ -361,7 +362,6 @@ body .instagram-element .instagram-photo:hover img {
 
 	.mainnav {
 	    margin-top: 0px;
-	    padding: 0px;
 	}
 
 	.mainnav a {
@@ -381,9 +381,12 @@ body .instagram-element .instagram-photo:hover img {
         margin-top: 10px;
         margin-bottom: 5px;
     }
-    
+
+    .stickytop { padding: 0px; }
     .welcomerow { display: none; }
     .headline { font-size: 18px; }
+
+    .instagram-element { padding-top: 7px; }
     
     .icon {
         width: 16px;
