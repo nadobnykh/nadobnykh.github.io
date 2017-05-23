@@ -135,6 +135,8 @@ img.img-block {
     min-width: 320px;
 }
 
+.mainnav-wrapper { border-bottom: 1px solid #dfdfdf; }
+
 .mainnav {
     display: block;
 	padding: 10px;
@@ -360,6 +362,7 @@ body .instagram-element .instagram-photo:hover img {
         display:inline;
     }
 
+    .mainnav-wrapper { border-bottom: none; }
 
 	.mainnav {
 	    margin-top: 2px; /* compensation for -2px in a tag */
