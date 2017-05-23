@@ -11,8 +11,12 @@ $('.gotostartbutton').on('click', function(e){
   },'slow');
 });
 
-$(document).ready(function() {
 
+
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+$(document).ready(function() {
   $(this).scrollTop(0);
 
   var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
@@ -21,8 +25,6 @@ $(document).ready(function() {
   
   $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
-
-    //var kinaShowStickyScrollValue = ($(document).width() > kinaMobileBreakpoint) ? 120 : 0;
 
     if($(document).width() < kinaMobileBreakpoint || scrollValue > 130){
       stickyMenuDiv.show();
