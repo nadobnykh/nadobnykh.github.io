@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 80 : 97; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 52 : 68; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
