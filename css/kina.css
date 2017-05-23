@@ -362,11 +362,11 @@ body .instagram-element .instagram-photo:hover img {
 
 	.mainnav {
 		padding: 0;
-	    margin-top: 0px;
+	    margin-top: 0px; /* compensation for -2px in a tag */
 	}
 
 	.mainnav a {
-        margin-top: -2px;
+        margin-top: 0px; /* FIXME: should be -2 because of font */
         padding: 12px 5px;
 	    text-align: left;
 	    border-top: 1px solid #dedede;
