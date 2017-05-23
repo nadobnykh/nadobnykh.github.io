@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     //var kinaShowStickyScrollValue = ($(document).width() > kinaMobileBreakpoint) ? 120 : 0;
 
-    if($(document).width() < kinaMobileBreakpoint || scrollValue > 120){
+    if($(document).width() < kinaMobileBreakpoint || scrollValue > 130){
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 75 : 100;
+    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 85 : 100;
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
