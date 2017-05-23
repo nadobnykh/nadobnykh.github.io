@@ -88,7 +88,7 @@ h2.widetext {
     background: #ffffff;
     color: black;
     display: inline-block;
-    padding: 8px 28px;
+    padding: 8px 28px 6px 28px;
     font-size: 11px;
     font-weight: normal;
     text-align: center;
@@ -331,7 +331,7 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
 
 /* 3 Spalten, kleiner Abstand */
-.instagram-element { margin: 0.4% -0.4%; padding-top: 0px; }
+.instagram-element { margin: 0.4% -0.4%; padding-top: 2%; }
 .instagram-element .instagram-photo { width: 32.5%; margin: 0.416%; }
 
 @media (max-width: 1400px) {
@@ -377,9 +377,7 @@ body .instagram-element .instagram-photo:hover img {
 	    border-top: 1px solid #dedede;
 	}
 
-	.mainnav a:hover {
-	    color: black;
-	}
+	.mainnav a:hover { color: black; }
 
     img.logo {
         width: 100%;
@@ -392,13 +390,7 @@ body .instagram-element .instagram-photo:hover img {
     .stickytop { padding: 0px; }
     .welcomerow { display: none; }
     .headline { font-size: 18px; }
-
-    .instagram-element { padding-top: 7px; }
-    
-    .icon {
-        width: 16px;
-        height: 16px;
-    }
+    .icon { width: 16px; height: 16px; }
 }
         
 
