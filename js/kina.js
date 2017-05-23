@@ -1,5 +1,5 @@
 
-var kinaMobileBreakpoint = 800;
+var kinaMobileBreakpoint = 900;
 
 
 /* $('a[href^=#]').on('click', function(e){ */

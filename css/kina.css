@@ -146,7 +146,7 @@ img.img-block {
     margin-right: 6px;
     padding:5px;
     padding-top: 6px;
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
 }
 
@@ -344,7 +344,7 @@ body .instagram-element .instagram-photo:hover img {
     .instagram-element .instagram-photo { width: 97.2%; margin: 1.4%; }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .desktop {
         display:none;
