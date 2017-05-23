@@ -30,28 +30,29 @@ $(document).ready(function() {
   });
   
   //  MOBILE MENU
+  var menuLinksWrapper = $('.mainnav-wrapper .mainnav');
   var menuLinks = $('.mainnav-wrapper .mainnav a');
   var mobileMenuOpened = false;
-  menuLinks.addClass('desktop');
-  menuLinks.removeClass('mobile');
+  menuLinksWrapper.addClass('desktop');
+  menuLinksWrapper.removeClass('mobile');
 
   $('.mobilemenuicon').on('click', function(e){
     e.preventDefault();
     if(mobileMenuOpened) {
       mobileMenuOpened = false;
-      menuLinks.addClass('desktop');
-      menuLinks.removeClass('mobile');
+      menuLinksWrapper.addClass('desktop');
+      menuLinksWrapper.removeClass('mobile');
     } else {
-      menuLinks.removeClass('desktop');
-      menuLinks.addClass('mobile');
+      menuLinksWrapper.removeClass('desktop');
+      menuLinksWrapper.addClass('mobile');
       mobileMenuOpened = true;
     }
   });
 
   menuLinks.on('click', function(e){
     mobileMenuOpened = false;
-    menuLinks.addClass('desktop');
-    menuLinks.removeClass('mobile');
+    menuLinksWrapper.addClass('desktop');
+    menuLinksWrapper.removeClass('mobile');
   });
   // END: MOBILE MENU
   

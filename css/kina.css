@@ -136,6 +136,7 @@ img.img-block {
 }
 
 .mainnav {
+    display: block;
 	padding: 10px;
 }
 
@@ -361,12 +362,13 @@ body .instagram-element .instagram-photo:hover img {
 
 
 	.mainnav {
-		padding: 0;
-	    margin-top: 0px; /* compensation for -2px in a tag */
+	    margin-top: 2px; /* compensation for -2px in a tag */
+        padding: 0;
 	}
 
 	.mainnav a {
-        margin-top: 0px; /* FIXME: should be -2 because of font */
+        display: block;
+        margin-top: -2px; /* FIXME: should be -2 because of font */
         padding: 12px 5px;
 	    text-align: left;
 	    border-top: 1px solid #dedede;
