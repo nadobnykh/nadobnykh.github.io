@@ -13,6 +13,8 @@ $('.gotostartbutton').on('click', function(e){
 
 $(document).ready(function() {
 
+  $(this).scrollTop(0);
+
   var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
   stickyMenuDiv.hide();
