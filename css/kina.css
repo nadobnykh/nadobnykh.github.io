@@ -1,10 +1,7 @@
+/* KINA.studio CSS */
 
-.desktop {
-    display:inline;
-}
-.mobile, .mobile-inline {
-    display:none;
-}
+.desktop { display:inline; }
+.mobile, .mobile-inline { display:none; }
 
 p, a, h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
@@ -24,13 +21,10 @@ p, a {
     margin: 0;
     color: #999;
 }
-p {
-    text-align: center;
-}
-p.info {
-    max-width: 780px;
-    margin: auto;
-}
+
+p { text-align: center; }
+p.info { max-width: 780px; margin: auto; }
+
 a {
     font-size:13px;
     text-decoration: none;
@@ -42,19 +36,9 @@ h2 { font-size: 20px; }
 h3 { font-size: 18px; }
 h4 { font-size: 14px; }
 
-.middletext {
-    letter-spacing: 2px;
-}
-
-.widetext {
-    letter-spacing: 6px;
-    margin: 8px;
-}
-
-h2.widetext {
-    margin-top: 12px;
-}
-
+.middletext { letter-spacing: 2px; }
+.widetext { letter-spacing: 6px; margin: 8px; }
+h2.widetext { margin-top: 12px; }
 .welcomerow { display: block; font-weight:700; padding-top:10px; font-size:11px; }
 
 .saletext {
@@ -343,36 +327,24 @@ body .instagram-element .instagram-photo:hover img {
     .instagram-element .instagram-photo { width: 48.4%; margin: 0.8%; }
 }
 @media (max-width: 600px) {
-    .instagram-element { margin: 1.4%; }
+    .instagram-element { margin: 1.4%; padding-top: 3%; }
     .instagram-element .instagram-photo { width: 97.2%; margin: 1.4%; }
 }
 
 @media (max-width: 900px) {
 
-    .desktop {
-        display:none;
-    }
-    .desktop-inline {
-        display:none;
-    }
-    .mobile {
-        display:block;
-    }
-    .mobile-inline {
-        display:inline;
-    }
-
+    .desktop { display:none; }
+    .desktop-inline { display:none; }
+    .mobile { display:block; }
+    .mobile-inline { display:inline; }
     .mainnav-wrapper { border-bottom: none; }
 
-	.mainnav {
-	    margin-top: 2px; /* compensation for -2px in a tag */
-        padding: 0;
-	}
+	.mainnav { margin-top: 2px; padding: 0; }
 
 	.mainnav a {
         display: block;
-        margin-top: -2px; /* FIXME: should be -2 because of font */
-        padding: 12px 5px;
+        margin-top: -2px; /* FONT ISSUE */
+        padding: 16px 5px;
 	    text-align: left;
 	    border-top: 1px solid #dedede;
 	}
