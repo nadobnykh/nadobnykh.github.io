@@ -339,11 +339,14 @@ body .instagram-element .instagram-photo:hover img {
     .mobile-inline { display:inline; }
     .mainnav-wrapper { border-bottom: none; }
 
-	.mainnav { margin-top: 2px; padding: 0; }
+	.mainnav { 
+        margin-top: 3px; /* FONT ISSUE compensation */
+        padding: 0;
+    }
 
 	.mainnav a {
         display: block;
-        margin-top: -2px; /* FONT ISSUE */
+        margin-top: -3px; /* FONT ISSUE */
         padding: 16px 5px;
 	    text-align: left;
 	    border-top: 1px solid #dedede;
