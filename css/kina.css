@@ -7,19 +7,25 @@ p, a, h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
     font-weight: 400;
     color: black;
-}
-h1, h2, h3, h4 {
-	font-family: "Didot W02 Roman","Didot", serif;
 
+    font-family: Gillsans,sans-serif;
+    letter-spacing: .1em;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
+
+h1, h2 {
+    font-family: "Didot W02 Roman","Didot", serif;
+    font-family: CormorantGaramond-Light,serif;
+}
+
+
 
 p, a {
     color: #000;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
     letter-spacing: .8px;
     margin: 0;
-    color: #999;
 }
 
 p { text-align: center; }
@@ -31,15 +37,15 @@ a {
     color: #58595b;
 }
 
-h1 { font-size: 28px; }
-h2 { font-size: 20px; }
-h3 { font-size: 18px; }
-h4 { font-size: 14px; }
+h1 { font-size: 38px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+h4 { font-size: 16px; }
 
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 6px; margin: 8px; }
 h2.widetext { margin-top: 12px; }
-.welcomerow { display: block; font-weight:700; padding-top:10px; font-size:11px; }
+.welcomerow { display: block; font-weight:700; padding-top:10px; font-size:12px; }
 
 .saletext {
     letter-spacing: 1px;
@@ -133,7 +139,7 @@ img.img-block {
     margin-right: 6px;
     padding:5px;
     padding-top: 6px;
-    font-size: 13px;
+    font-size: 14px;
     color: #999;
 }
 
@@ -144,6 +150,10 @@ img.img-block {
 .topline {
     padding: 5px;
     border-top: 1px solid #dbdbdb;
+}
+
+.biggertext, .biggertext a {
+    font-size: 18px;
 }
 
 /* Sticky NAV */
@@ -338,6 +348,13 @@ body .instagram-element .instagram-photo:hover img {
     .mobile { display:block; }
     .mobile-inline { display:inline; }
     .mainnav-wrapper { border-bottom: none; }
+
+
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 14px; }
+
 
 	.mainnav { 
         margin-top: 3px; /* FONT ISSUE compensation */
