@@ -60,17 +60,18 @@ h2.widetext { margin-top: 12px; }
 */
 
 .welcomerow {
-    width: 100%;
+    width: 98.4%;
     display: block;
     font-weight: 300;
     padding: 9px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #666;
-    background: #e4e4e4;
+    background: #ededed;
     left: 0;
     position: absolute;
     opacity: 0.96;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .saletext {
