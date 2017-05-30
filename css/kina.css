@@ -45,7 +45,16 @@ h4 { font-size: 16px; }
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 4px; margin: 8px; }
 h2.widetext { margin-top: 12px; }
-.welcomerow { display: block; font-weight:400; padding-top:10px; font-size:14px; color:#999; letter-spacing: 1px; }
+
+.welcomerow {
+    display: block;
+    font-weight: 300;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    background: black;
+}
 
 .saletext {
     letter-spacing: 1px;
@@ -111,13 +120,12 @@ h2.widetext { margin-top: 12px; }
     background-color: #ffffff;
 }
 
-
 img.logo {
     width: 100%;
-    min-width: 170px;
-    max-width: 170px;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    min-width: 180px;
+    max-width: 180px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 img.img-block {
     width: 100%;
@@ -140,11 +148,11 @@ img.img-block {
     padding:5px;
     padding-top: 6px;
     font-size: 14px;
-    color: #999;
+    color: black;
 }
 
 .mainnav a:hover {
-    color: black;
+    color: grey;
 }
 
 .topline {
