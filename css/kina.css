@@ -45,7 +45,7 @@ h4 { font-size: 16px; }
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 6px; margin: 8px; }
 h2.widetext { margin-top: 12px; }
-.welcomerow { display: block; font-weight:700; padding-top:10px; font-size:12px; }
+.welcomerow { display: block; font-weight:700; padding-top:10px; font-size:12px; color:#999; }
 
 .saletext {
     letter-spacing: 1px;
