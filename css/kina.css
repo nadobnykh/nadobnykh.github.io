@@ -201,6 +201,8 @@ img.img-block {
     top: 39px;
     font-size: 12px;
     color: antiquewhite;
+
+    color: black;
 }
 
 
@@ -232,6 +234,11 @@ img.img-block {
 .bgblack {
     background-color: #000;
 }
+
+.transp {
+    opacity: .9;
+}
+
 li {
     display: inline; /* li nebeneinander anzeigen */
     list-style-type: none; /* ohne Aufzählungspunkte */
@@ -373,7 +380,7 @@ body .instagram-element .instagram-photo:hover img {
     .desktop-inline { display:none; }
     .mobile { display:block; }
     .mobile-inline { display:inline; }
-    .mainnav-wrapper { border-bottom: none; }
+    .mainnav-wrapper { border-bottom: none; border-bottom: 1px solid black; }
 
 
     h1 { font-size: 22px; }
