@@ -47,18 +47,6 @@ h4 { font-size: 16px; }
 .widetext { letter-spacing: 4px; margin: 8px; }
 h2.widetext { margin-top: 12px; }
 
-/*
-.welcomerow {
-    display: block;
-    font-weight: 300;
-    padding: 5px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #f0f0f0;
-    background: black;
-}
-*/
-
 .welcomerow {
     width: 98.4%;
     display: block;
@@ -70,8 +58,48 @@ h2.widetext { margin-top: 12px; }
     background: #ededed;
     left: 0;
     position: absolute;
-    opacity: 0.96;
+    opacity: 0.95;
     border-bottom: 1px solid #eaeaea;
+}
+
+.imprintrow {
+    z-index: 1000;
+    width: 96%;
+    display: block;
+    background: transparent;
+    left: 0;
+    top: 9px;
+    position: absolute;
+    text-align: right;
+}
+
+.imprintrow a {
+    font-family: Gillsans,sans-serif;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.cookiesrow {
+    z-index: 1000;
+    width: 98.4%;
+    display: block;
+    font-weight: 300;
+    padding: 9px 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #eaeaea;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    opacity: 0.9;
+    border-top: 1px solid #000;
+}
+.cookiesrow a {
+    color: white; text-decoration: underline;
 }
 
 .saletext {
@@ -274,18 +302,6 @@ li {
     background-image: url('../images/mail.png');
 }
 
-.photographyweblogo {
-    max-width: 640px;
-    width: 100%;
-    min-width: 320px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-    background-image: url('../images/logobg.jpg');
-}
-
 .gotostartbutton {
     position: fixed;
     bottom: 70px;
@@ -380,7 +396,7 @@ body .instagram-element .instagram-photo:hover img {
     .desktop-inline { display:none; }
     .mobile { display:block; }
     .mobile-inline { display:inline; }
-    .mainnav-wrapper { border-bottom: none; border-bottom: 1px solid black; }
+    .mainnav-wrapper { border-bottom: none; border-bottom: 1px solid #111; }
 
 
     h1 { font-size: 22px; }
@@ -414,6 +430,8 @@ body .instagram-element .instagram-photo:hover img {
 
     .stickytop { padding: 0px; }
     .welcomerow { display: none; }
+    .imprintrow { position: fixed; top: 5px; }
+    .imprintrow a { padding: 5px; font-size: 11px; }
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
 }
