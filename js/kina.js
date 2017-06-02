@@ -79,6 +79,24 @@ $(document).ready(function() {
     // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
     }, ((scrollDiff > 2000) ? 0 : 1000) , function (){/*location.hash = ziel;*/});
    });
+
+
+  // Cookie law rules
+  if(document.cookie.indexOf('informedAboutCookies=1') != -1){
+    $('.cookiesrow').slideUp(500);
+  }
+
+  $('.informedAboutCookies').on('click', function(e){
+    document.cookie = "informedAboutCookies=1; path=/";
+    $('.cookiesrow').slideUp(500);
+  });
+
+  $('.closeCookieWindow').on('click', function(e){
+    e.preventDefault();
+    $('.cookiesrow').slideUp(500);
+  });
+
+
 });
 
 

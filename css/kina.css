@@ -39,7 +39,7 @@ a {
 h1 { font-size: 26px; }
 h2 { font-size: 28px; }
 h3 { font-size: 22px; }
-h4 { font-size: 16px; }
+h4 { font-size: 18px; }
 
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 4px; margin: 8px; }
@@ -65,7 +65,7 @@ h2.widetext { margin-top: 12px; }
     width: 98.4%;
     display: block;
     font-weight: 300;
-    padding: 9px 5px;
+    padding: 20px 5px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #eaeaea;
@@ -73,7 +73,7 @@ h2.widetext { margin-top: 12px; }
     left: 0;
     bottom: 0;
     position: fixed;
-    opacity: 0.9;
+    opacity: 0.75;
     border-top: 1px solid #000;
 }
 .cookiesrow a {
@@ -132,7 +132,7 @@ h2.widetext { margin-top: 12px; }
     display: inline-block;
     font-weight: normal;
     font-family: Lato, Helvetica, sans-serif;
-    line-height: 19px;
+    line-height: 28px;
     text-align: center;
     white-space: nowrap;
     margin: 0px;
@@ -379,8 +379,8 @@ body .instagram-element .instagram-photo:hover img {
 
     h1 { font-size: 22px; }
     h2 { font-size: 24px; }
-    h3 { font-size: 18px; }
-    h4 { font-size: 14px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
 
 
 	.mainnav { 
