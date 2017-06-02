@@ -64,7 +64,7 @@ h2.widetext { margin-top: 12px; }
 
 .imprintrow {
     z-index: 1000;
-    width: 96%;
+    width: 98.4%;
     display: block;
     background: transparent;
     left: 0;
@@ -76,7 +76,7 @@ h2.widetext { margin-top: 12px; }
 .imprintrow a {
     font-family: Gillsans,sans-serif;
     padding: 10px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 300;
     letter-spacing: 1px;
     color: #111;
@@ -431,7 +431,7 @@ body .instagram-element .instagram-photo:hover img {
     .stickytop { padding: 0px; }
     .welcomerow { display: none; }
     .imprintrow { position: fixed; top: 5px; }
-    .imprintrow a { padding: 5px; font-size: 11px; }
+    .imprintrow a { font-size: 11px; }
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
 }
