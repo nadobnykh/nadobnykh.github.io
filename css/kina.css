@@ -7,7 +7,6 @@ p, a, h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
     font-weight: 400;
     color: black;
-
     font-family: Gillsans,sans-serif;
     letter-spacing: .1em;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -23,7 +22,7 @@ h1, h2 {
 
 p, a {
     color: #000;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
     letter-spacing: .8px;
     margin: 0;
@@ -33,7 +32,6 @@ p { text-align: center; }
 p.info { max-width: 780px; margin: auto; }
 
 a {
-    font-size:13px;
     text-decoration: none;
     color: #58595b;
 }
