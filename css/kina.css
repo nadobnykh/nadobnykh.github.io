@@ -148,8 +148,8 @@ img.logo {
     width: 100%;
     min-width: 160px;
     max-width: 160px;
-    margin-top: 65px;
-    margin-bottom: 0px;
+    margin-top: 70px;
+    margin-bottom: 25px;
 }
 img.img-block {
     width: 100%;
@@ -157,7 +157,7 @@ img.img-block {
     min-width: 320px;
 }
 
-.mainnav-wrapper { border-bottom: 1px solid #dfdfdf; }
+.mainnav-wrapper { border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; }
 
 .mainnav {
     display: block;
