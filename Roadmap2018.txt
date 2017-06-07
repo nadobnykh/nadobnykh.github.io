@@ -1,0 +1,11 @@
+Roadmap 2018
+
+* File system integration
+
+Use filesystem for media instead of insta
+
+* Masonry Integration
+
+https://masonry.desandro.com/
+https://github.com/desandro/masonry/tree/master/dist
+Best example: http://iam.beyonce.com/tagged/my_work
