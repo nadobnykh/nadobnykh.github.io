@@ -353,11 +353,11 @@ body .instagram-element .instagram-photo:hover img {
 
 /* 3 Spalten, kleiner Abstand */
 .instagram-element { margin: -0.5%; padding-top: 2%; }
-.instagram-element .instagram-photo { width: 32.3%; margin: 0.5%; }
+.instagram-element .instagram-photo { width: 32.33%; margin: 0.5%; }
 
 @media (max-width: 1680px) {
     .instagram-element { margin: 0; }
-    .instagram-element .instagram-photo { width: 33.332%; margin: -0.01%; }
+    .instagram-element .instagram-photo { width: 33.34%; margin: -0.01%; }
 }
 
 @media (max-width: 860px) {
