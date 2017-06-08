@@ -18,7 +18,9 @@ h1, h2 {
     font-family: 'Oswald', sans-serif;
 }
 
-
+h4 {
+    color: grey;
+}
 
 p, a {
     color: #000;
@@ -29,7 +31,7 @@ p, a {
 }
 
 p { text-align: center; }
-p.info { max-width: 780px; margin: auto; }
+p.info { max-width: 760px; margin: auto; text-align: justify }
 
 a {
     text-decoration: none;
@@ -38,8 +40,8 @@ a {
 
 h1 { font-size: 26px; }
 h2 { font-size: 28px; }
-h3 { font-size: 22px; }
-h4 { font-size: 18px; }
+h3 { font-size: 18px; }
+h4 { font-size: 17px; }
 
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 4px; margin: 8px; }
@@ -383,8 +385,8 @@ body .instagram-element .instagram-photo:hover img {
 
     h1 { font-size: 22px; }
     h2 { font-size: 24px; }
-    h3 { font-size: 20px; }
-    h4 { font-size: 18px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 17px; }
 
 
 	.mainnav { 
