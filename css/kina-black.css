@@ -59,6 +59,7 @@ h2.widetext { margin-top: 12px; }
     left: 0;
     position: relative;
     opacity: 0.95;
+    z-index: 10;
     border-bottom: 1px solid #eaeaea;
 }
 
