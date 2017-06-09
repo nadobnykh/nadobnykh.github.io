@@ -389,14 +389,13 @@ body .instagram-element .instagram-photo:hover img {
     .desktop-inline { display:none; }
     .mobile { display:block; }
     .mobile-inline { display:inline; }
-    .mainnav-wrapper { border-bottom: none; border-bottom: 1px solid #111; }
-
 
     h1 { font-size: 22px; }
     h2 { font-size: 24px; }
     h3 { font-size: 18px; }
     h4 { font-size: 17px; }
 
+    .mainnav-wrapper { border-bottom: none; border-bottom: 1px solid #dfdfdf; }
 
 	.mainnav { 
         margin-top: 3px; /* FONT ISSUE compensation */
