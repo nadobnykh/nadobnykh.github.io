@@ -48,7 +48,8 @@ h4 { font-size: 17px; }
 h2.widetext { margin-top: 12px; }
 
 .welcomerow {
-    width: 98.4%;
+    width: 100%;
+    box-sizing: border-box;
     display: block;
     font-weight: 300;
     padding: 9px;
@@ -65,10 +66,11 @@ h2.widetext { margin-top: 12px; }
 
 .cookiesrow {
     z-index: 1000;
-    width: 98.4%;
+    width: 100%;
+    box-sizing: border-box;
     display: block;
     font-weight: 300;
-    padding: 20px 5px;
+    padding: 10px;
     font-size: 14px;
     letter-spacing: 1px;
     color: black;
@@ -76,8 +78,8 @@ h2.widetext { margin-top: 12px; }
     left: 0;
     bottom: 0;
     position: fixed;
-    opacity: 0.9;
-    border-top: 1px solid grey;
+    opacity: 0.95;
+    border-top: 1px solid black;
 }
 .cookiesrow a {
     color: #505050; text-decoration: underline;
