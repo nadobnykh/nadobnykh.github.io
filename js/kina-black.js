@@ -15,7 +15,7 @@ $('.gotostartbutton').on('click', function(e){
 function showHideStickyMenuDiv()
 {
   var scrollValue = $(window).scrollTop();
-    if(window.innerWidth < kinaMobileBreakpoint || scrollValue > 40){ // mobile immer, desktop ab 40 px
+    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 || scrollValue > 40){ // mobile immer, desktop ab 40 px
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
