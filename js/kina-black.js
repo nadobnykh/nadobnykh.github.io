@@ -25,8 +25,7 @@ $(document).ready(function() {
   
   $(window).scroll(function (event) {
     var scrollValue = $(window).scrollTop();
-
-    if($(document).width() < kinaMobileBreakpoint || scrollValue > 40){
+    if(window.innerWidth < kinaMobileBreakpoint || scrollValue > 40){ // mobile immer, desktop ab 40 px
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
@@ -67,7 +66,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = ($(document).width() > kinaMobileBreakpoint) ? 60 : 95; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 : 95; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
