@@ -1,5 +1,6 @@
 
 var kinaMobileBreakpoint = 1100;
+var stickyMenuDiv = {};
 
 
 /* $('a[href^=#]').on('click', function(e){ */
@@ -11,7 +12,15 @@ $('.gotostartbutton').on('click', function(e){
   },'slow');
 });
 
-
+function showHideStickyMenuDiv()
+{
+  var scrollValue = $(window).scrollTop();
+    if(window.innerWidth < kinaMobileBreakpoint || scrollValue > 40){ // mobile immer, desktop ab 40 px
+      stickyMenuDiv.show();
+    } else {
+      stickyMenuDiv.hide();
+    }
+}
 
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
@@ -19,17 +28,15 @@ $(window).on('beforeunload', function() {
 $(document).ready(function() {
   $(this).scrollTop(0);
 
-  var stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
+  stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
   stickyMenuDiv.hide();
   
   $(window).scroll(function (event) {
-    var scrollValue = $(window).scrollTop();
-    if(window.innerWidth < kinaMobileBreakpoint || scrollValue > 40){ // mobile immer, desktop ab 40 px
-      stickyMenuDiv.show();
-    } else {
-      stickyMenuDiv.hide();
-    }
+    showHideStickyMenuDiv();
+  });
+  $(window).resize(function (event) {
+    showHideStickyMenuDiv();
   });
   
   //  MOBILE MENU
@@ -66,7 +73,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 : 95; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 : 92; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
