@@ -70,15 +70,14 @@ h2.widetext { margin-top: 12px; }
     box-sizing: border-box;
     display: block;
     font-weight: 300;
-    padding: 10px;
-    font-size: 14px;
+    padding: 5px;
+    font-size: 13px;
     letter-spacing: 1px;
     color: black;
     background: white;
     left: 0;
     bottom: 0;
     position: fixed;
-    opacity: 0.95;
     border-top: 1px solid black;
 }
 .cookiesrow a {
