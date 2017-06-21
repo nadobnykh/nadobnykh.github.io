@@ -66,7 +66,6 @@ h2.widetext { margin-top: 12px; }
 
 .cookiesrow {
     z-index: 1000;
-    width: 100%;
     box-sizing: border-box;
     display: block;
     font-weight: 300;
@@ -76,10 +75,13 @@ h2.widetext { margin-top: 12px; }
     color: black;
     background: white;
     left: 0;
+    right: 0;
     bottom: 0;
     position: fixed;
-    border-top: 1px solid black;
+    border: 1px solid black;
+    margin: 3px;
 }
+
 .cookiesrow a {
     color: #505050; text-decoration: underline;
 }
