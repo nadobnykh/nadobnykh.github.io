@@ -3,10 +3,9 @@
 <head>
     <!-- CUSTOM STUFF BEFORE PLUGINS -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>KINA.studio | Fotografie für Fashion, Portrait, Produkte. Luxury Photography for Designer clothing, beauty,
-        fashion, products. Web optimized images for your online business.</title>
+    <title>KINA.studio Hochzeitsreportage</title>
     <meta name="description"
-          content="Als Partner von KINA.studio entdecken Sie viele neue Möglichkeiten, Ihre Produkte durch Fotografie und Video für Ihre Kunden interessanter und attraktiver zu machen. Erfreuen Sie Ihre Kunden mit neuen Fotos für Ihre Produkte oder schöne Portraits für Ihre Mitarbeiter. Darüber hinaus können Sie mit uns in die Welt der Produkt- und Werbevideos einsteigen."/>
+          content="Hochzeit"/>
     <meta name="robots" content="INDEX,FOLLOW"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" href="http://kina.studio/images/favicon.ico" type="image/x-icon"/>
@@ -22,26 +21,26 @@
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="instagram/lib/videoplayer/js/mediaelement-and-player.min.js"></script>
-    <script type="text/javascript" src="fancybox3/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="instagram/lib/dateFormat.js"></script>
-    <script type="text/javascript" src="instagram/lib/easing.js"></script>
-    <script type="text/javascript" src="instagram/instagramElement.js"></script>
+    <script type="text/javascript" src="../instagram/lib/videoplayer/js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="../fancybox3/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../instagram/lib/dateFormat.js"></script>
+    <script type="text/javascript" src="../instagram/lib/easing.js"></script>
+    <script type="text/javascript" src="../instagram/instagramElement.js"></script>
 
-    <link rel="stylesheet" href="instagram/lib/videoplayer/css/style.css" media="screen">
-    <link rel="stylesheet" href="fancybox3/jquery.fancybox.css">
-    <link rel="stylesheet" href="instagram/instagramElement.css">
+    <link rel="stylesheet" href="../instagram/lib/videoplayer/css/style.css" media="screen">
+    <link rel="stylesheet" href="../fancybox3/jquery.fancybox.css">
+    <link rel="stylesheet" href="../instagram/instagramElement.css">
 
     <!-- SLIDER STUFF -->
-    <script src="slider/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+    <script src="../slider/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
 
     <!-- CUSTOM STUFF AFTER PLUGINS -->
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
 
-    <script type="text/javascript" src="js/kina.js"></script>
-    <link rel="stylesheet" href="css/kina.css">
+    <script type="text/javascript" src="../js/kina-white.js"></script>
+    <link rel="stylesheet" href="../css/kina-white.css">
 </head>
 
 
@@ -49,14 +48,11 @@
 
 <div id="start" class="wrapper">
 
-    <p class="welcomerow desktop">Willkommen bei kina.studio - Dienstleister für Lifestyle und Business Fotografie. </p>
+    <p class="welcomerow desktop">Willkommen bei kina.studio - Professionelle Fotografie an dem schönsten Tag Ihres Lebens. </p>
 
     <div class="logo-wrapper logo-wrapper-desktop block header desktop">
         <img class="logo" src="images/kina-black.png"/>
-        <!--<h1 class="widetext">K I N A S T U D I O</h1>-->
-
     </div>
-
 
     <div class="mainnav-wrapper">
         <div class="logo-wrapper logo-wrapper-mobile block bgwhite transp header mobile">
@@ -64,11 +60,8 @@
             <a href="#start"><img class="logo" src="images/kina-black.png"/></a>
         </div>
         <div class="mainnav">
-            <!--<a href="#start"><img class="menulogo" src="images/kina-black.png"/></a>-->
-            <a href="#nav-fashion" class="">FASHION & BEAUTY</a>
-            <a href="#nav-business" class="">BUSINESS</a>
             <a href="#nav-events" class="">HOCHZEIT</a>
-            <a href="#nav-lifestyle" class="">LIFESTYLE</a>
+            <a href="#nav-lovestory" class="">LOVESTORY</a>
             <a href="#info" class="">INFO</a>
             <a href="#contact" class="">KONTAKT</a>
         </div>
@@ -105,20 +98,6 @@
                 </a>
             </div>
 
-            <div data-p="225.00" style="display: none;">
-                <a href="#nav-fashion">
-                    <img data-u="image" src="photos/slides/03.jpg"/>
-                </a>
-            </div>
-            
-            <!--
-            <div data-p="225.00" style="display: none;">
-                <a href="#contact">
-                    <img data-u="image" src="photos/slides/04.jpg"/>
-                </a>
-            </div>
-            -->
-
         </div>
 
         <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
@@ -132,86 +111,9 @@
     </div>
 
 
-    <!-- INSTAGRAM STUFF HERE -->
-
-    <!--
-        <div id="nav-beauty"></div>
-
-        <div class="headline">
-            <h2 class="widetext">BEAUTY</h2>
-        </div>
-
-        <div class="block">
-            <div class="instagram-kinastudio-beauty"></div>
-            <a class="whitebutton" href="https://www.instagram.com/explore/tags/kinastudio_beauty/" target="_blank">Mehr auf Instagram ></a>
-        </div>
-        <script>
-            $('.instagram-kinastudio-beauty').instagramElement({
-                mode : 'tag',
-                tag : 'kinastudio_beauty',
-                userID : '2066076364',
-                accessToken : '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
-                galleryMode: 'classic',
-                limit: 12,
-                video: true,
-                showVideoControls: false
-            });
-        </script>
-    -->
 
 
-    <div id="nav-fashion"></div>
-
-    <div class="headline">
-        <h2 class="widetext">FASHION & BEAUTY</h2>
-        <h4 class="widetext">GET INSPIRED</h4>
-    </div>
-
-    <div class="block">
-        <div class="instagram-kinastudio-fashion"></div>
-        <a class="whitebutton" href="https://www.instagram.com/explore/tags/kinastudio_fashion/" target="_blank">Mehr
-            auf Instagram ></a>
-    </div>
-    <script>
-        $('.instagram-kinastudio-fashion').instagramElement({
-            mode: 'tag',
-            tag: 'kinastudio_fashion',
-            userID: '2066076364',
-            accessToken: '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
-            galleryMode: 'classic',
-            limit: 12,
-            video: true,
-            showVideoControls: false
-        });
-    </script>
-
-
-    <div id="nav-business"></div>
-
-    <div class="headline">
-        <h2 class="widetext">BUSINESS LOOKS</h2>
-        <h4 class="widetext">LIFESTYLE IM GESCHÄFT</h4>
-    </div>
-    <div class="block">
-        <div class="instagram-kinastudio-business"></div>
-        <a class="whitebutton" href="https://www.instagram.com/explore/tags/kinastudio_business/" target="_blank">Mehr
-            auf Instagram ></a>
-    </div>
-    <script>
-        $('.instagram-kinastudio-business').instagramElement({
-            mode: 'tag',
-            tag: 'kinastudio_business',
-            userID: '2066076364',
-            accessToken: '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
-            galleryMode: 'classic',
-            limit: 12,
-            video: true,
-            showVideoControls: false
-        });
-    </script>
-
-
-    <div id="nav-events"></div>
+    <div id="nav-wedding"></div>
 
     <div class="headline">
         <h2 class="widetext">HOCHZEIT</h2>
@@ -236,20 +138,21 @@
     </script>
 
 
-    <div id="nav-lifestyle"></div>
+    <div id="nav-lovestory"></div>
 
     <div class="headline">
-        <h2 class="widetext">LIFESTYLE</h2>
+        <h2 class="widetext">LOVESTORY</h2>
+        <h4 class="widetext">Die schönsten Momente</h4>
     </div>
     <div class="block">
-        <div class="instagram-kinastudio-lifestyle"></div>
-        <a class="whitebutton" href="https://www.instagram.com/explore/tags/kinastudio_lifestyle/" target="_blank">Mehr
+        <div class="instagram-kinastudio-lovestory"></div>
+        <a class="whitebutton" href="https://www.instagram.com/explore/tags/kinastudio_lovestory/" target="_blank">Mehr
             auf Instagram ></a>
     </div>
     <script>
-        $('.instagram-kinastudio-lifestyle').instagramElement({
+        $('.instagram-kinastudio-lovestory').instagramElement({
             mode: 'tag',
-            tag: 'kinastudio_lifestyle',
+            tag: 'kinastudio_lovestory',
             userID: '2066076364',
             accessToken: '2066076364.e029fea.4dbedd300a3648a58c0588998712cb5f',
             galleryMode: 'classic',
@@ -263,7 +166,7 @@
     <div id="info"></div>
 
     <div class="headline">
-        <h2 class="widetext">PHOTOGRAPHY</h2>
+        <h2 class="widetext">HOCHZEITSFOTOGRAFIE</h2>
         <h4 class="widetext">by kina studio</h4>
     </div>
 
