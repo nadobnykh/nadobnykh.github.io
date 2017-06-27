@@ -64,15 +64,15 @@ h2.widetext { margin-top: 12px; }
 
 .cookiesrow {
     z-index: 1000;
-    width: 98.4%;
     display: block;
     font-weight: 300;
-    padding: 20px 5px;
+    padding: 9px 5px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #eaeaea;
     background: #000;
     left: 0;
+    right: 0;
     bottom: 0;
     position: fixed;
     opacity: 0.85;
@@ -171,7 +171,7 @@ img.img-block {
 
 .mainnav {
     display: block;
-	padding: 15px;
+	padding: 23px;
 }
 
 .mainnav a {
