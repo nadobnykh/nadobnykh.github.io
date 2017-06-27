@@ -224,6 +224,12 @@ img.img-block {
     text-decoration: underline;
 }
 
+.mainnav a.weddinglink {
+    font-family: 'Alex Brush', cursive;
+    color: antiquewhite;
+    font-size: 28px;
+}
+
 .topline {
     padding: 5px;
     border-top: 1px solid #dbdbdb;
