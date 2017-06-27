@@ -257,7 +257,7 @@ img.img-block {
 
 /* LAYOUT */
 .wrapper {
-    max-width: 1860px;
+    max-width: 1920px;
     margin: auto;
 }
 .block {
@@ -403,7 +403,7 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element { margin: -0.5%; padding-top: 2%; }
 .instagram-element .instagram-photo { width: 32.33%; margin: 0.5%; }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .instagram-element { margin: 0; }
     .instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }
 }
