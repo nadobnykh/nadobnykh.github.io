@@ -189,9 +189,16 @@ img.img-block {
     color: grey;
 }
 
+.mainnav a.weddinglink {
+    font-family: 'Alex Brush', cursive;
+    color: black;
+    font-size: 24px;
+}
+
 .mainnav a.studiolink {
-    font-family: "Didot W02 Roman","Didot", serif;
-    font-size: 11px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 .topline {
