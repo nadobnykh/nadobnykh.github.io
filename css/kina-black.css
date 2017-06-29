@@ -332,10 +332,10 @@ li {
     margin:8px;
 }
 .icon-whatsapp {
-    background-image: url('../images/whatsapp.png');
+    background-image: url('../images/whatsapp-white.png');
 }
 .icon-mail {
-    background-image: url('../images/mail.png');
+    background-image: url('../images/mail-white.png');
 }
 
 .gotostartbutton {
