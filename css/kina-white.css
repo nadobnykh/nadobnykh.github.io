@@ -189,6 +189,11 @@ img.img-block {
     color: grey;
 }
 
+.mainnav a.studiolink {
+    font-family: "Didot W02 Roman","Didot", serif;
+    font-size: 11px;
+}
+
 .topline {
     padding: 5px;
     border-top: 1px solid #dbdbdb;
