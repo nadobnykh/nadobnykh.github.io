@@ -178,15 +178,15 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 170px;
+    max-width: 170px;
     margin-top: 60px;
     margin-bottom: 15px;
 }
 
 img.menulogo {
-    min-width: 121px;
-    max-width: 121px;
+    min-width: 170px;
+    max-width: 170px;
     margin-top: 0px;
     margin-bottom: -11px;
     margin-right: 50px;
@@ -259,7 +259,7 @@ img.img-block {
 .mobilemenuicon {
 	position: absolute;
     left: 10px;
-    top: 39px;
+    top: 34px;
     font-size: 12px;
     color: white;
 }
@@ -430,7 +430,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .desktop { display:none; }
     .desktop-inline { display:none; }
@@ -463,10 +463,10 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 30px;
-        margin-bottom: 25px;
+        min-width: 170px;
+        max-width: 170px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .stickytop { padding: 0px; margin-top: 0; }
