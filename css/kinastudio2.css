@@ -259,7 +259,7 @@ img.img-block {
 .mobilemenuicon {
 	position: absolute;
     left: 10px;
-    top: 29px;
+    top: 28px;
     font-size: 12px;
     color: white;
 }
@@ -476,11 +476,11 @@ body .instagram-element .instagram-photo:hover img {
 }
 
 /* Fix because logo is too long */     
-@media (max-width: 1100px) {
+@media (max-width: 700px) {
     img.logo {
-        min-width: 220px;
-        max-width: 220px;
-        margin-left: 55px;
+        min-width: 210px;
+        max-width: 210px;
+        margin-left: 52px;
     }
 }
 
