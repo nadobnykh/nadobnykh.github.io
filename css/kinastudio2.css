@@ -474,7 +474,15 @@ body .instagram-element .instagram-photo:hover img {
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
 }
-        
+
+/* Fix because logo is too long */     
+@media (max-width: 1100px) {
+    img.logo {
+        min-width: 220px;
+        max-width: 220px;
+        margin-left: 55px;
+    }
+}
 
 
 
