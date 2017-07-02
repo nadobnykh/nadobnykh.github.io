@@ -472,9 +472,14 @@ body .instagram-element .instagram-photo:hover img {
         width: 100%;
         min-width: 240px;
         max-width: 240px;
-        margin-top: 25px;
+        margin-top: 0px;
         margin-bottom: 19px;
     }
+
+    .logotext {
+        font-size: 8px;
+        margin: 6px 0px 0px 0px;
+}
 
     .stickytop { padding: 0px; margin-top: 0; }
     .welcomerow { display: none; }
@@ -489,6 +494,7 @@ body .instagram-element .instagram-photo:hover img {
         max-width: 210px;
         margin-left: 55px;
     }
+    .logotext { margin-left: 55px; }
 }
 
 
