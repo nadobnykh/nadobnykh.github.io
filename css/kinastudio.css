@@ -178,20 +178,30 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    min-width: 150px;
-    max-width: 150px;
-    margin-top: 60px;
-    margin-bottom: 15px;
+    min-width: 320px;
+    max-width: 320px;
+    margin-top: 0px;
+    margin-bottom: -10px;
 }
 
 img.menulogo {
-    min-width: 121px;
-    max-width: 121px;
+    min-width: 240px;
+    max-width: 240px;
     margin-top: 0px;
-    margin-bottom: -11px;
     margin-right: 50px;
     margin-left: 100px;
-    margin-left: 9%;
+    margin-left: 4%;
+    margin-bottom: -6px;
+}
+
+.logotext {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 6px;
+    color: #ccc;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 15px 0px 5px 0px;
 }
 
 img.img-block {
@@ -200,15 +210,15 @@ img.img-block {
     min-width: 320px;
 }
 
-.mainnav-wrapper { border-bottom: 1px solid #dfdfdf; }
+.mainnav-wrapper { border-bottom: 1px solid #f0f0f0; }
 
 .mainnav {
-    text-align: left;
-    margin-top: -5px;
+    /* text-align: left; */
+    margin-top: 0px;
     display: block;
 	padding: 20px;
     background-color: black;
-    opacity: 0.95;
+    padding-top: 24px;
 }
 
 .mainnav a {
@@ -252,14 +262,13 @@ img.img-block {
     text-align: center;
     margin: 0px;
     margin-top: -2px;
-    opacity: 0.96;
     z-index: 999;
 }
 
 .mobilemenuicon {
 	position: absolute;
     left: 10px;
-    top: 39px;
+    top: 28px;
     font-size: 12px;
     color: white;
 }
@@ -430,7 +439,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .desktop { display:none; }
     .desktop-inline { display:none; }
@@ -441,8 +450,6 @@ body .instagram-element .instagram-photo:hover img {
     h2 { font-size: 24px; }
     h3 { font-size: 18px; }
     h4 { font-size: 17px; }
-
-    .mainnav-wrapper { border-bottom: 1px solid #dfdfdf; }
 
 	.mainnav { 
         margin-top: 0px; /* FONT ISSUE compensation */
@@ -463,10 +470,10 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 30px;
-        margin-bottom: 25px;
+        min-width: 240px;
+        max-width: 240px;
+        margin-top: 25px;
+        margin-bottom: 19px;
     }
 
     .stickytop { padding: 0px; margin-top: 0; }
@@ -474,7 +481,15 @@ body .instagram-element .instagram-photo:hover img {
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
 }
-        
+
+/* Fix because logo is too long */     
+@media (max-width: 500px) {
+    img.logo {
+        min-width: 210px;
+        max-width: 210px;
+        margin-left: 55px;
+    }
+}
 
 
 
