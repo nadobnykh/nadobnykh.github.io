@@ -266,15 +266,18 @@ img.img-block {
 }
 
 .mobilemenuicon {
-	position: absolute;
+    position: absolute;
+    top: 27px;
     left: 15px;
-    top: 23px;
-    color: white;
+}
+.mobilecontacticon {
+    position: absolute;
+    top: 24px;
+    right: 15px;
 }
 
-.mobilemenuicon img {
-    width: 40px;
-}
+.mobilemenuicon img { width: 30px; }
+.mobilecontacticon img { width: 28px; }
 
 /* LAYOUT */
 .wrapper {
@@ -492,8 +495,11 @@ body .instagram-element .instagram-photo:hover img {
 /* Fix because logo is too long */     
 @media (max-width: 500px) {
     img.logo {
-        margin-left: 30px;
-    }
+    min-width: 220px;
+    max-width: 220px;
+    margin-top: 26px;
+    margin-bottom: 19px;
+}
 }
 
 
