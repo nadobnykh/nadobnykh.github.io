@@ -484,6 +484,7 @@ body .instagram-element .instagram-photo:hover img {
     .logotext {
         font-size: 8px;
         margin: 6px 0px 0px 0px;
+        color:#666;
     }
 
     .stickytop { padding: 0px; margin-top: 0; }
