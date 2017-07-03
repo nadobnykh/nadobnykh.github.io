@@ -268,12 +268,12 @@ img.img-block {
 .mobilemenuicon {
 	position: absolute;
     left: 15px;
-    top: 30px;
+    top: 23px;
     color: white;
 }
 
 .mobilemenuicon img {
-    width:15px;
+    width: 40px;
 }
 
 /* LAYOUT */
