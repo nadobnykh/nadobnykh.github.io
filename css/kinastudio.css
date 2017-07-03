@@ -482,7 +482,7 @@ body .instagram-element .instagram-photo:hover img {
     }
 
     .logotext {
-        font-size: 9px;
+        font-size: 8px;
         margin: 6px 0px 0px 0px;
     }
 
@@ -495,11 +495,11 @@ body .instagram-element .instagram-photo:hover img {
 /* Fix because logo is too long */     
 @media (max-width: 500px) {
     img.logo {
-    min-width: 220px;
-    max-width: 220px;
-    margin-top: 26px;
-    margin-bottom: 19px;
-}
+        min-width: 220px;
+        max-width: 220px;
+        margin-top: 2px;
+        margin-bottom: 19px;
+    }
 }
 
 
