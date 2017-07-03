@@ -271,7 +271,7 @@ img.img-block {
     top: 29px;
     font-size: 24px;
     color: white;
-    letter-spacing: -2px;
+    letter-spacing: -8px;
 }
 
 
@@ -471,8 +471,8 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        min-width: 240px;
-        max-width: 240px;
+        min-width: 250px;
+        max-width: 250px;
         margin-top: 24px;
         margin-bottom: 19px;
     }
