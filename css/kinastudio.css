@@ -267,13 +267,14 @@ img.img-block {
 
 .mobilemenuicon {
 	position: absolute;
-    left: 10px;
-    top: 29px;
-    font-size: 24px;
+    left: 15px;
+    top: 30px;
     color: white;
-    letter-spacing: -3px;
 }
 
+.mobilemenuicon img {
+    width:15px;
+}
 
 /* LAYOUT */
 .wrapper {
