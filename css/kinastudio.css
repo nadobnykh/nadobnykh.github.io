@@ -269,8 +269,9 @@ img.img-block {
 	position: absolute;
     left: 10px;
     top: 29px;
-    font-size: 12px;
+    font-size: 24px;
     color: white;
+    letter-spacing: -2px;
 }
 
 
@@ -490,11 +491,11 @@ body .instagram-element .instagram-photo:hover img {
 /* Fix because logo is too long */     
 @media (max-width: 500px) {
     img.logo {
-        margin-left: 55px;
+        margin-left: 45px;
     }
     .logotext {
         font-size: 8px;
-        margin-left: 55px;
+        margin-left: 45px;
     }
 }
 
