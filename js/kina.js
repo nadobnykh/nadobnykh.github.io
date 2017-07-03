@@ -1,5 +1,5 @@
 
-var kinaMobileBreakpoint = 1000;
+var kinaMobileBreakpoint = 900;
 var stickyMenuDiv = {};
 
 
