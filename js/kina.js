@@ -116,15 +116,16 @@ function checkCookie()
 }
 $(document).ready(function() {
   checkCookie();
+  $('.informedAboutCookies').on('click', function(e){
+    document.cookie = "informedAboutCookies=1; path=/";
+    checkCookie();
+  });
+  $(window).resize(function (event) {
+    readCookierowHeight();
+    checkCookie();
+  });
 });
-$('.informedAboutCookies').on('click', function(e){
-  document.cookie = "informedAboutCookies=1; path=/";
-  checkCookie();
-});
-$(window).resize(function (event) {
-  readCookierowHeight();
-  checkCookie();
-});
+
 /* END: Cookie law rules */
 
 
