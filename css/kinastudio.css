@@ -48,9 +48,9 @@ h4 { font-size: 17px; }
 h2.widetext { margin-top: 12px; }
 
 .welcomerow {
+    display: none;
     width: 100%;
     box-sizing: border-box;
-    display: block;
     font-weight: 300;
     padding: 9px;
     font-size: 14px;
@@ -59,7 +59,6 @@ h2.widetext { margin-top: 12px; }
     background: #ededed;
     left: 0;
     position: relative;
-    opacity: 0.95;
     z-index: 10;
     border-bottom: 1px solid #eaeaea;
 }
@@ -78,30 +77,20 @@ h2.widetext { margin-top: 12px; }
     font-size: 14px;
     letter-spacing: 1px;
     color: #666;
-    background: #ededed;
+    background: #efefef;
     left: 0;
     position: relative;
-    opacity: 0.95;
     z-index: 10;
     border-bottom: 1px solid #eaeaea;
 }
-
-.cookiesrow .informedAboutCookies {
-    margin: 10px;
-    padding: 7px 12px 6px 12px;
-    display: inline;
-}
-
 .cookiesrow .cookielink {
     display: inline-block;
-    font-weight: normal;
-    font-family: Lato, Helvetica, sans-serif;
-    line-height: 20px;
     text-align: center;
     text-decoration: underline;
     margin: 0px;
+    cursor: help;
 }
-.cookiebutton {
+.cookiesrow .cookiebutton {
     background: transparent;
     color: grey;
     display: inline-block;
@@ -110,7 +99,9 @@ h2.widetext { margin-top: 12px; }
     text-align: center;
     text-transform: uppercase;
     border: grey solid 1px;
-
+    padding: 4px 10px 2px 10px;
+    margin: 1px 10px;
+    cursor: pointer;
 }
 /* END: Cookie overlay stuff */
 
@@ -495,8 +486,8 @@ body .instagram-element .instagram-photo:hover img {
 
     .logotext {
         font-size: 8px;
-        margin: 6px 0px 0px 0px;
-        color:#666;
+        margin: 6px 0px -1px 0px;
+        color:#aaa;
     }
 
     .stickytop { padding: 0px; margin-top: 0; }

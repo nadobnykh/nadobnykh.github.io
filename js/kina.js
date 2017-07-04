@@ -2,8 +2,7 @@
 var kinaMobileBreakpoint = 900;
 var stickyMenuDiv = {};
 
-var cookieOverlayHeight = 110;
-
+var cookieOverlayHeight = 70;
 
 /* $('a[href^=#]').on('click', function(e){ */
 $('.gotostartbutton').on('click', function(e){
@@ -90,8 +89,12 @@ $(document).ready(function() {
 
 
 /* Cookie law rules */
+  cookieOverlayHeight = $('.cookiesrow').height();
+
   if(document.cookie.indexOf('informedAboutCookies=1') == -1){
     $('.cookiesrow').slideDown(500);
+  } else {
+    $('.welcomerow').slideDown(500);
   }
 
   $('.informedAboutCookies').on('click', function(e){
