@@ -65,21 +65,20 @@ h2.widetext { margin-top: 12px; }
 }
 
 .cookiesrow {
-    z-index: 1000;
+    width: 100%;
     box-sizing: border-box;
     display: block;
     font-weight: 300;
-    font-size: 13px;
+    padding: 9px;
+    font-size: 14px;
     letter-spacing: 1px;
-    color: black;
-    background: white;
+    color: #666;
+    background: #ededed;
     left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    padding: 15px 5px;
-    border: 5px solid grey;
-    margin: 8px;
+    position: relative;
+    opacity: 0.95;
+    z-index: 10;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .cookiesrow .informedAboutCookies {
@@ -488,7 +487,6 @@ body .instagram-element .instagram-photo:hover img {
     }
 
     .stickytop { padding: 0px; margin-top: 0; }
-    .welcomerow { display: none; }
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
 }
