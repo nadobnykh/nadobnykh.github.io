@@ -105,20 +105,25 @@ function readCookierowHeight()
     cookieOverlayHeight = cookiesrow.height() + 8;
   }
 }
-$(document).ready(function() {
+function checkCookie()
+{
   if(document.cookie.indexOf('informedAboutCookies=1') == -1){
     $('#cookiesrow').slideDown(500, readCookierowHeight);
   } else {
-    if(window.innerWidth >= kinaMobileBreakpoint) $('.welcomerow').slideDown(500);
-  }
-  $('.informedAboutCookies').on('click', function(e){
-    document.cookie = "informedAboutCookies=1; path=/";
     $('#cookiesrow').slideUp(500, readCookierowHeight);
     if(window.innerWidth >= kinaMobileBreakpoint) $('.welcomerow').slideDown(500);
-  });
+  }
+}
+$(document).ready(function() {
+  checkCookie();
+});
+$('.informedAboutCookies').on('click', function(e){
+  document.cookie = "informedAboutCookies=1; path=/";
+  checkCookie();
 });
 $(window).resize(function (event) {
   readCookierowHeight();
+  checkCookie();
 });
 /* END: Cookie law rules */
 
