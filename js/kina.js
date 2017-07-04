@@ -111,7 +111,7 @@ function checkCookie()
     $('#cookiesrow').slideDown(500, readCookierowHeight);
   } else {
     $('#cookiesrow').slideUp(500, readCookierowHeight);
-    if(window.innerWidth >= kinaMobileBreakpoint) $('.welcomerow').slideDown(500);
+    if(window.innerWidth < kinaMobileBreakpoint) $('.welcomerow').slideUp(500); else $('.welcomerow').slideDown(500);
   }
 }
 $(document).ready(function() {
