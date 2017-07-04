@@ -2,6 +2,8 @@
 var kinaMobileBreakpoint = 900;
 var stickyMenuDiv = {};
 
+var cookieOverlayHeight = 110;
+
 
 /* $('a[href^=#]').on('click', function(e){ */
 $('.gotostartbutton').on('click', function(e){
@@ -15,7 +17,7 @@ $('.gotostartbutton').on('click', function(e){
 function showHideStickyMenuDiv()
 {
   var scrollValue = $(window).scrollTop();
-    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 || scrollValue > 105){ // mobile immer, desktop ab 40 px
+    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 + cookieOverlayHeight || scrollValue > 105 + cookieOverlayHeight){ // mobile immer, desktop ab 40 px
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
@@ -46,7 +48,7 @@ $(document).ready(function() {
   menuLinksWrapper.addClass('desktop');
   menuLinksWrapper.removeClass('mobile');
 
-  $('.mobilemenuicon').on('click', function(e){
+  $('.menuicon').on('click', function(e){
     e.preventDefault();
     if(mobileMenuOpened) {
       mobileMenuOpened = false;
@@ -73,7 +75,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 : 70; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 + cookieOverlayHeight : 70 + cookieOverlayHeight; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
@@ -87,9 +89,9 @@ $(document).ready(function() {
    });
 
 
-  // Cookie law rules
-  if(document.cookie.indexOf('informedAboutCookies=1') != -1){
-    $('.cookiesrow').slideUp(500);
+/* Cookie law rules */
+  if(document.cookie.indexOf('informedAboutCookies=1') == -1){
+    $('.cookiesrow').slideDown(500);
   }
 
   $('.informedAboutCookies').on('click', function(e){
@@ -101,7 +103,7 @@ $(document).ready(function() {
     e.preventDefault();
     $('.cookiesrow').slideUp(500);
   });
-
+/* END: Cookie law rules */
 
 });
 

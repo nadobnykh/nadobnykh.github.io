@@ -64,12 +64,17 @@ h2.widetext { margin-top: 12px; }
     border-bottom: 1px solid #eaeaea;
 }
 
+
+
+
+/* Cookie overlay stuff */
+
 .cookiesrow {
+    display: none;
     width: 100%;
     box-sizing: border-box;
-    display: block;
     font-weight: 300;
-    padding: 9px;
+    padding: 6px 20px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #666;
@@ -84,9 +89,30 @@ h2.widetext { margin-top: 12px; }
 .cookiesrow .informedAboutCookies {
     margin: 10px;
     padding: 7px 12px 6px 12px;
-    font-size: 10px;
     display: inline;
 }
+
+.cookiesrow .cookielink {
+    display: inline-block;
+    font-weight: normal;
+    font-family: Lato, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0px;
+}
+.cookiebutton {
+    background: transparent;
+    color: grey;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    border: grey solid 1px;
+
+}
+/* END: Cookie overlay stuff */
 
 
 
@@ -168,6 +194,7 @@ h2.widetext { margin-top: 12px; }
     white-space: nowrap;
     margin: 0px;
 }
+
 .body {
     margin: 0;
     padding: 0;
