@@ -5,9 +5,10 @@
 
 p, a, h1, h2, h3, h4 {
     font-family: "lato", sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: 300;
     color: white;
-    font-family: Gillsans,sans-serif;
     letter-spacing: .1em;
     -webkit-font-smoothing: subpixel-antialiased;
 }
