@@ -2,8 +2,6 @@
 var kinaMobileBreakpoint = 900;
 var stickyMenuDiv = {};
 
-var cookieOverlayHeight = 70;
-
 /* $('a[href^=#]').on('click', function(e){ */
 $('.gotostartbutton').on('click', function(e){
   e.preventDefault();
@@ -16,12 +14,13 @@ $('.gotostartbutton').on('click', function(e){
 function showHideStickyMenuDiv()
 {
   var scrollValue = $(window).scrollTop();
-    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 + cookieOverlayHeight || scrollValue > 105 + cookieOverlayHeight){ // mobile immer, desktop ab 40 px
+    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 + cookieOverlayHeight || scrollValue > 105){ // mobile immer, desktop ab N px
       stickyMenuDiv.show();
     } else {
       stickyMenuDiv.hide();
     }
 }
+
 
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
@@ -32,7 +31,8 @@ $(document).ready(function() {
   stickyMenuDiv = $('.mainnav-wrapper').clone().appendTo('.body');
   stickyMenuDiv.addClass('stickytop');
   stickyMenuDiv.hide();
-  
+
+
   $(window).scroll(function (event) {
     showHideStickyMenuDiv();
   });
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 + cookieOverlayHeight : 70 + cookieOverlayHeight; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 60 : 70; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
@@ -86,32 +86,41 @@ $(document).ready(function() {
     // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
     }, ((scrollDiff > 2000) ? 0 : 1000) , function (){/*location.hash = ziel;*/});
    });
-
-
-/* Cookie law rules */
-  cookieOverlayHeight = $('.cookiesrow').height();
-
-  if(document.cookie.indexOf('informedAboutCookies=1') == -1){
-    $('.cookiesrow').slideDown(500);
-  } else {
-    $('.welcomerow').slideDown(500);
-  }
-
-  $('.informedAboutCookies').on('click', function(e){
-    document.cookie = "informedAboutCookies=1; path=/";
-    $('.cookiesrow').slideUp(500);
-  });
-
-  $('.closeCookieWindow').on('click', function(e){
-    e.preventDefault();
-    $('.cookiesrow').slideUp(500);
-  });
-/* END: Cookie law rules */
-
 });
 
 
 
+
+
+
+/* Cookie law rules */
+// Set cookierow height
+var cookieOverlayHeight = 0;
+function readCookierowHeight()
+{
+  var cookiesrow = $('#cookiesrow');
+  if(cookiesrow.css('display') == 'none') {
+    cookieOverlayHeight = 0;
+  } else {
+    cookieOverlayHeight = cookiesrow.height() + 8;
+  }
+}
+$(document).ready(function() {
+  if(document.cookie.indexOf('informedAboutCookies=1') == -1){
+    $('#cookiesrow').slideDown(500, readCookierowHeight);
+  } else {
+    if(window.innerWidth >= kinaMobileBreakpoint) $('.welcomerow').slideDown(500);
+  }
+  $('.informedAboutCookies').on('click', function(e){
+    document.cookie = "informedAboutCookies=1; path=/";
+    $('#cookiesrow').slideUp(500, readCookierowHeight);
+    if(window.innerWidth >= kinaMobileBreakpoint) $('.welcomerow').slideDown(500);
+  });
+});
+$(window).resize(function (event) {
+  readCookierowHeight();
+});
+/* END: Cookie law rules */
 
 
 
