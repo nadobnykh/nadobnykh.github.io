@@ -264,20 +264,6 @@ img.img-block {
     z-index: 999;
 }
 
-.mobilemenuicon {
-    position: absolute;
-    top: 27px;
-    left: 15px;
-}
-.mobilecontacticon {
-    position: absolute;
-    top: 24px;
-    right: 15px;
-}
-
-.mobilemenuicon img { width: 30px; }
-.mobilecontacticon img { width: 28px; }
-
 /* LAYOUT */
 .wrapper {
     max-width: 1920px;
@@ -489,6 +475,39 @@ body .instagram-element .instagram-photo:hover img {
     .stickytop { padding: 0px; margin-top: 0; }
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
+
+
+
+/* mobile header elements */
+
+    .menuicon {
+        margin-top: 3px;
+        position: relative;
+        text-align: center;
+        width: 15%;
+        float: left;
+    }
+    .menuicon img { width: 30px; }
+
+    .logoicon {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        float: left;
+    }
+
+    .contacticon {
+        position: relative;
+        text-align: center;
+        width: 15%;
+
+    }
+    .contacticon img { width: 28px; }
+
+/* END: mobile header elements */
+
+
+
 }
 
 /* Fix because logo is too long */     
