@@ -434,10 +434,10 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
 
 /* 3 Spalten, kleiner Abstand */
-.instagram-element { margin: -0.4%; padding-top: 2%; }
-.instagram-element .instagram-photo { width: 32.53%; margin: 0.4%; }
+.instagram-element { margin: -0.6%; padding-top: 2%; }
+.instagram-element .instagram-photo { width: 32.13%; margin: 0.6%; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1700px) {
     .instagram-element { margin: 0; }
     .instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }
 }
