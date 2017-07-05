@@ -103,7 +103,7 @@ function readCookierowHeight()
     cookieOverlayHeight = 0;
   } else {
     // height value is wrong & should be corrected. But not on top...
-    cookieOverlayHeight = cookiesrow.height() + 8;
+    cookieOverlayHeight = cookiesrow.outerHeight() + 5;
   }
 }
 function checkCookie()
