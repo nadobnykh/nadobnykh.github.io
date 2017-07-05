@@ -102,6 +102,7 @@ function readCookierowHeight()
   if(cookiesrow.css('display') == 'none') {
     cookieOverlayHeight = 0;
   } else {
+    // height value is wrong & should be corrected. But not on top...
     cookieOverlayHeight = cookiesrow.height() + 8;
   }
 }

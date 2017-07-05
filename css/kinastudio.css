@@ -47,8 +47,8 @@ a {
 
 h1 { font-size: 28px; }
 h2 { font-size: 36px; }
-h3 { font-size: 18px; }
-h4 { font-size: 17px; }
+h3 { font-size: 16px; }
+h4 { font-size: 16px; }
 
 .middletext { letter-spacing: 2px; }
 .widetext { letter-spacing: 4px; margin: 8px; }
@@ -463,8 +463,8 @@ body .instagram-element .instagram-photo:hover img {
 
     h1 { font-size: 22px; }
     h2 { font-size: 24px; }
-    h3 { font-size: 18px; }
-    h4 { font-size: 17px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 16px; }
 
 	.mainnav { 
         margin-top: 0px; /* FONT ISSUE compensation */
