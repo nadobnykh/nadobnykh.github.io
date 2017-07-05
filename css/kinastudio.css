@@ -19,11 +19,10 @@ h1, h2 {
 }
 
 h4 {
-    color: grey;
+    color: #dfdfdf;
 }
 
 p, a {
-    color: white;
     font-size: 13px;
     line-height: 19px;
     letter-spacing: .8px;
