@@ -30,12 +30,13 @@ p, a {
 p { text-align: center; }
 
 p.info { 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 17px;
     font-family: Arial,Helvetica,sans-serif; 
-    max-width: 760px; 
+    color:#ccc;
+    max-width: 780px; 
     margin: auto; 
-    text-align: left;
+    text-align: justify;
 }
 
 a {
@@ -244,7 +245,7 @@ img.img-block {
 }
 
 .mainnav a {
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
     font-weight: 200;
     margin-left: 6px;
     margin-right: 6px;
