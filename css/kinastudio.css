@@ -289,8 +289,8 @@ img.img-block {
     margin: auto;
 }
 .block {
-    padding-bottom: 3%;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .header {
     margin-top: 0px;
@@ -660,6 +660,8 @@ body .instagram-element .instagram-photo:hover img {
 }
 .whitebox {
     background-color: white;
+    padding-bottom: 3%;
+    margin-bottom: 0;
 }
 .whitebox p {
     color: black;
