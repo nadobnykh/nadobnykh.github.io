@@ -13,7 +13,7 @@ p, a, h1, h2, h3, h4 {
 }
 
 h1, h2 {
-    font-weight: 300;
+    letter-spacing: 1.5px;
 }
 
 h4 {
@@ -45,13 +45,13 @@ a {
     color: grey;
 }
 
-h1 { font-size: 24px; }
-h2 { font-size: 24px; }
+h1 { font-size: 32px; }
+h2 { font-size: 32px; }
 h3 { font-size: 14px; }
 h4 { font-size: 14px; }
 
 .middletext { letter-spacing: 2px; }
-.widetext { letter-spacing: 6px; margin: 8px; }
+.widetext { letter-spacing: 4px; margin: 8px; }
 h2.widetext { margin-top: 12px; }
 
 .welcomerow {
@@ -461,8 +461,8 @@ body .instagram-element .instagram-photo:hover img {
     .mobile { display:block; }
     .mobile-inline { display:inline; }
 
-    h1 { font-size: 20px; }
-    h2 { font-size: 22px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 24px; }
     h3 { font-size: 14px; }
     h4 { font-size: 14px; }
 
