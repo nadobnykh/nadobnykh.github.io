@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 h4 {
-    color: #dfdfdf;
+    color: #ccc;
 }
 
 p, a {
@@ -43,8 +43,8 @@ a {
     color: grey;
 }
 
-h1 { font-size: 28px; }
-h2 { font-size: 36px; }
+h1 { font-size: 24px; }
+h2 { font-size: 24px; }
 h3 { font-size: 14px; }
 h4 { font-size: 14px; }
 
@@ -459,8 +459,8 @@ body .instagram-element .instagram-photo:hover img {
     .mobile { display:block; }
     .mobile-inline { display:inline; }
 
-    h1 { font-size: 22px; }
-    h2 { font-size: 24px; }
+    h1 { font-size: 20px; }
+    h2 { font-size: 22px; }
     h3 { font-size: 14px; }
     h4 { font-size: 14px; }
 
