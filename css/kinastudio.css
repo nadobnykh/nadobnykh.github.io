@@ -15,9 +15,10 @@ h1, h2 {
     font-family: 'Bellefair', serif;
 }
 
-h4 {
-    color: #ccc;
-}
+h1 { font-size: 32px; }
+h2 { font-size: 48px; }
+h3 { font-size: 18px; }
+h4 { font-size: 18px; }
 
 p, a {
     font-size: 13px;
@@ -31,11 +32,11 @@ p { text-align: center; }
 p.info { 
     font-size: 13px;
     line-height: 19px;
-    font-weight: 300;
-    color:#ccc;
+    font-weight: 400;
     max-width: 800px; 
     margin: auto; 
     text-align: left;
+    padding:10px;
 }
 
 a {
@@ -43,13 +44,8 @@ a {
     color: grey;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 32px; }
-h3 { font-size: 14px; }
-h4 { font-size: 14px; }
-
 .middletext { letter-spacing: 2px; }
-.widetext { letter-spacing: 7px; margin: 8px; }
+.widetext { letter-spacing: 7px; margin: 14px 0; }
 h2.widetext { margin-top: 12px; }
 
 .welcomerow {
@@ -293,7 +289,7 @@ img.img-block {
     margin: auto;
 }
 .block {
-    margin-bottom: 40px;
+    padding-bottom: 3%;
     overflow: hidden;
 }
 .header {
@@ -635,5 +631,43 @@ body .instagram-element .instagram-photo:hover img {
 .slider-wrapper { margin-bottom: -1px; } /* hide the gap between slider and border of headline */
 /* .slider-wrapper { margin-bottom: 12px; } */
 .slider-slides { cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 800px; overflow: hidden; }
+
+
+
+
+
+
+
+
+.headline {
+    background-color: white;
+}
+.headline h2 {
+    padding: 15px 10px 10px 10px;
+    background: grey;
+}
+.headline h4 {
+    color: #111;
+    padding: 15px 0 12px 0;
+
+    margin: 10px 0;
+    background: antiquewhite;
+}
+
+.whitebox h4 {
+    margin-bottom: -5px;
+    color: #111;
+}
+.whitebox {
+    background-color: white;
+}
+.whitebox p {
+    color: black;
+}
+.contacts {
+    padding-top: 40px;
+}
+
+
 
 
