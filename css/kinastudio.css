@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 h1 { font-size: 32px; }
-h2 { font-size: 48px; }
+h2 { font-size: 36px; }
 h3 { font-size: 18px; }
 h4 { font-size: 18px; }
 
@@ -246,7 +246,7 @@ img.img-block {
     margin-right: 6px;
     padding:5px;
     padding-top: 6px;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     /*font-family: 'Oswald', sans-serif;*/
 }
