@@ -651,7 +651,8 @@ body .instagram-element .instagram-photo:hover img {
     padding: 15px 0 12px 0;
 
     margin: 10px 0;
-    background: antiquewhite;
+    background-color: antiquewhite;
+    background-color: #eecbc2;
 }
 
 .whitebox h4 {
