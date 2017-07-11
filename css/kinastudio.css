@@ -196,13 +196,13 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    max-width: 150px;
+    max-width: 140px;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
 img.menulogo {
-    margin-top: 7px;
+    margin-top: 12px;
     margin-right: 50px;
     margin-left: 0px;
     margin-bottom: -7px;
@@ -220,7 +220,7 @@ img.img-block {
     /* text-align: left; */
     margin-top: 0px;
     display: block;
-	padding: 20px;
+	padding: 25px;
     background-color: black;
     padding-top: 11px;
 }
