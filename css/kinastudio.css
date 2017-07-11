@@ -196,30 +196,16 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    min-width: 320px;
-    max-width: 320px;
-    margin-top: 0px;
-    margin-bottom: -10px;
+    max-width: 150px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 img.menulogo {
-    min-width: 240px;
-    max-width: 240px;
-    margin-top: 0px;
+    margin-top: 7px;
     margin-right: 50px;
-    margin-left: 100px;
-    margin-left: 4%;
-    margin-bottom: -6px;
-}
-
-.logotext {
-    display: block;
-    font-size: 10px;
-    letter-spacing: 6px;
-    color: #ccc;
-    font-family: Lato, Helvetica, sans-serif;
-    font-weight: 300;
-    margin: 15px 0px 5px 0px;
+    margin-left: 0px;
+    margin-bottom: -8px;
 }
 
 img.img-block {
@@ -236,19 +222,17 @@ img.img-block {
     display: block;
 	padding: 20px;
     background-color: black;
-    padding-top: 24px;
+    padding-top: 10px;
 }
 
 .mainnav a {
     letter-spacing: 1.2px;
     font-weight: 300;
-    margin-left: 6px;
-    margin-right: 6px;
-    padding:5px;
-    padding-top: 6px;
-    font-size: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding:0 0px;
+    font-size: 15px;
     color: white;
-    /*font-family: 'Oswald', sans-serif;*/
 }
 
 .mainnav a:hover {
@@ -448,7 +432,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 
     .desktop { display:none; }
     .desktop-inline { display:none; }
@@ -479,16 +463,9 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        min-width: 250px;
-        max-width: 250px;
+        max-width: 130px;
         margin-top: 0px;
         margin-bottom: 19px;
-    }
-
-    .logotext {
-        font-size: 8px;
-        margin: 6px 0px -1px 0px;
-        color:#aaa;
     }
 
     .stickytop { padding: 0px; margin-top: 0; }
@@ -506,10 +483,13 @@ body .instagram-element .instagram-photo:hover img {
         width: 15%;
         float: left;
     }
-    .menuicon img { width: 30px; margin-top: 20px; }
+    .menuicon img { 
+        width: 30px;
+        margin-top: 20px;
+    }
 
     .logoicon {
-        margin-top: 3px;
+        margin-top: 23px;
         position: relative;
         text-align: center;
         width: 70%;
@@ -530,18 +510,6 @@ body .instagram-element .instagram-photo:hover img {
 
 
 }
-
-/* Fix because logo is too long */     
-@media (max-width: 500px) {
-    img.logo {
-        min-width: 220px;
-        max-width: 220px;
-        margin-top: 2px;
-        margin-bottom: 19px;
-    }
-}
-
-
 
 
 
