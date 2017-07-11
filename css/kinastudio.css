@@ -674,3 +674,45 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
+/* LOGOLINE */
+.logoline {
+    
+}
+.logoline h2 {
+    margin: 10px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.logoline h4 {
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@media (max-width: 900px) {
+    .logoline {
+        margin-bottom: 10px;
+    }
+    .logoline h2 {
+        margin: 3px;
+        font-size: 17px;
+    }
+    .logoline h4 {
+        margin: 0px;
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
