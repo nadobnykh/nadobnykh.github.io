@@ -506,7 +506,7 @@ body .instagram-element .instagram-photo:hover img {
         width: 15%;
         float: left;
     }
-    .menuicon img { width: 30px; margin-top: 17px; }
+    .menuicon img { width: 30px; margin-top: 20px; }
 
     .logoicon {
         margin-top: 3px;
@@ -523,7 +523,7 @@ body .instagram-element .instagram-photo:hover img {
         width: 15%;
 
     }
-    .contacticon img { width: 28px; margin-top: 17px; }
+    .contacticon img { width: 28px; margin-top: 20px; }
 
 /* END: mobile header elements */
 
@@ -679,10 +679,11 @@ body .instagram-element .instagram-photo:hover img {
 /* LOGOLINE */
 .logoline {
     display: block;
-    margin-top: 15px;
+    margin-top: 17px;
+    margin-bottom: 0px;
 }
 .logoline h2 {
-    margin: 3px;
+    margin: 5px;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -706,7 +707,7 @@ body .instagram-element .instagram-photo:hover img {
     }
     .logoline h2 {
         margin: 3px;
-        font-size: 17px;
+        font-size: 16px;
     }
     .logoline h4 {
         margin: 0px;
