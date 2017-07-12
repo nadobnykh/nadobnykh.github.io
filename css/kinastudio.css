@@ -503,7 +503,10 @@ body .instagram-element .instagram-photo:hover img {
         width: 15%;
 
     }
-    .contacticon img { width: 28px; margin-top: 20px; }
+    .contacticon img { 
+        width: 27px;
+        margin-top: 21px;
+    }
 
 /* END: mobile header elements */
 
