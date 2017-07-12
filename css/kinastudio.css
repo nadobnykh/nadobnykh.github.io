@@ -203,7 +203,7 @@ img.logo {
 
 img.menulogo {
     margin-top: 7px;
-    margin-right: 30px;
+    margin-right: 40px;
     margin-left: 0px;
     margin-bottom: -12px;
 }
@@ -220,7 +220,7 @@ img.img-block {
     /* text-align: left; */
     margin-top: 0px;
     display: block;
-	padding: 25px;
+	padding: 25px 0;
     background-color: black;
     padding-top: 11px;
 }
@@ -297,7 +297,7 @@ img.img-block {
 }
 
 .transp {
-    opacity: .95;
+    opacity: .92;
 }
 
 li {
