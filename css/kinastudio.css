@@ -191,7 +191,7 @@ h2.widetext { margin-top: 12px; }
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: black;
+    background-color: white;
 }
 
 img.logo {
@@ -308,7 +308,6 @@ li {
 .socialbutton {
     width: 30%;
     max-width: 50px;
-    margin-top: 10px;
 }
 
 .contacts {
@@ -324,6 +323,12 @@ li {
 .contacts h4 {
     margin-top:0px;
 }
+
+.footerlinks{
+    border-top: 1px solid grey;
+    padding: 5px; 
+}
+
 .icon {
     display: inline-block;
     background-position: center;
@@ -412,7 +417,7 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
 
 /* 3 Spalten, kleiner Abstand */
-.instagram-element { margin: -0.6%; padding-top: 2%; }
+.instagram-element { margin: -0.6%; padding-top: 0; }
 .instagram-element .instagram-photo { width: 32.13%; margin: 0.6%; }
 
 @media (max-width: 1700px) {
@@ -421,8 +426,7 @@ body .instagram-element .instagram-photo:hover img {
 }
 
 @media (max-width: 800px) {
-    .instagram-element { margin: 0.8%; }
-    .instagram-element .instagram-photo { width: 48.4%; margin: 0.8%; }
+    .instagram-element .instagram-photo { width: 50%; }
 }
 @media (max-width: 600px) {
     .instagram-element { margin: 1.2%; padding-top: 3%; }
@@ -642,6 +646,6 @@ body .instagram-element .instagram-photo:hover img {
 .whitebox p {
     color: black;
 }
-.contacts {
+.contacts, .social {
     padding-top: 40px;
 }
