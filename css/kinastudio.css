@@ -231,7 +231,7 @@ img.img-block {
     margin-left: 12px;
     margin-right: 12px;
     padding:0 0px;
-    font-size: 15px;
+    font-size: 14px;
     color: white;
 }
 
@@ -450,6 +450,7 @@ body .instagram-element .instagram-photo:hover img {
     }
 
 	.mainnav a {
+        font-size: 16px;
         display: block;
         margin-top: 0px; /* FONT ISSUE */
         padding: 20px 5px;
