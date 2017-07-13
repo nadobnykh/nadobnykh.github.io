@@ -14,11 +14,11 @@ $('.gotostartbutton').on('click', function(e){
 function showHideStickyMenuDiv()
 {
   var scrollValue = $(window).scrollTop();
-    if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 + cookieOverlayHeight || scrollValue > 47){ // mobile immer, desktop ab N px
-      stickyMenuDiv.show();
-    } else {
-      stickyMenuDiv.hide();
-    }
+  if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 2 + cookieOverlayHeight || window.innerWidth >= kinaMobileBreakpoint && scrollValue > 47){ // mobile immer, desktop ab N px
+    stickyMenuDiv.show();
+  } else {
+    stickyMenuDiv.hide();
+  }
 }
 
 
