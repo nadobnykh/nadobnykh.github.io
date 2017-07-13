@@ -259,7 +259,7 @@ img.img-block {
 }
 .block {
     overflow: hidden;
-    margin-bottom: 30px;
+    
 }
 .header {
     margin-top: 0px;
@@ -319,7 +319,10 @@ li {
 
 .footerlinks{
     border-top: 1px solid grey;
-    padding: 5px; 
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .icon {
