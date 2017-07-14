@@ -209,18 +209,18 @@ img.img-block {
 }
 
 .mainnav a {
-    letter-spacing: 1.1px;
+    letter-spacing: 0.5px;
     font-weight: 300;
     margin-left: 10px;
     margin-right: 10px;
     padding:0 0px;
     font-size: 16px;
     color: white;
+    border-bottom: 1px solid transparent;
 }
 
 .mainnav a.menuitem:hover {
-    color: #dfdfdf;
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid white;
 }
 
 .mainnav a.weddinglink {
@@ -456,7 +456,11 @@ body .instagram-element .instagram-photo:hover img {
 	    border-top: 1px solid #dedede;
 	}
 
-	.mainnav a:hover { color: #dfdfdf; text-decoration: underline; }
+	.mainnav a:hover { 
+        color: #dfdfdf;
+        text-decoration: underline;
+        border-bottom: 1px solid transparent;
+    }
 
     .mainnav a.menulogo-wrapper { display: none; }
 
