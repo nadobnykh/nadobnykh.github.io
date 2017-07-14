@@ -141,7 +141,7 @@ h2.widetext { margin-top: 12px; }
 
 .mainbutton {
     background: black;
-    color: white;
+    color: #dfdfdf;
     display: inline-block;
     padding: 8px 28px 6px 28px;
     font-size: 11px;
@@ -155,8 +155,8 @@ h2.widetext { margin-top: 12px; }
     margin-bottom: 30px;
 }
 .mainbutton:hover {
-    background: white;
-    color:black;
+    background: #666;
+    color:white;
 }
 
 
@@ -209,12 +209,12 @@ img.img-block {
 }
 
 .mainnav a {
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
     font-weight: 300;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding:0 0px;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
 }
 
