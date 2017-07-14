@@ -456,7 +456,7 @@ body .instagram-element .instagram-photo:hover img {
 	    border-top: 1px solid #dedede;
 	}
 
-	.mainnav a:hover { 
+	.mainnav a.menuitem:hover {
         color: #dfdfdf;
         text-decoration: underline;
         border-bottom: 1px solid transparent;
