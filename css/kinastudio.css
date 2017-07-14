@@ -218,9 +218,9 @@ img.img-block {
     color: white;
 }
 
-.mainnav a:hover {
+.mainnav a.menuitem:hover {
     color: #dfdfdf;
-    text-decoration: underline;
+    border-bottom: 2px solid #eee;
 }
 
 .mainnav a.weddinglink {
@@ -414,8 +414,8 @@ body .instagram-element .instagram-photo:hover img {
 .instagram-element { margin: -0.6%; padding-top: 0; }
 .instagram-element .instagram-photo { width: 32.13%; margin: 0.6%; }
 
-@media (max-width: 1700px) {
-    .instagram-element { margin: 0; }
+@media (max-width: 1800px) {
+    .instagram-element { }
     .instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }
 }
 
