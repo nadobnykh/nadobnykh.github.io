@@ -153,12 +153,10 @@ h2.widetext { margin-top: 12px; }
     text-decoration: none;
     margin: 20px;
     margin-bottom: 30px;
-    border: white solid 1px;
 }
 .mainbutton:hover {
     background: white;
-    color: black;
-    border: black solid 1px;
+    color:black;
 }
 
 
