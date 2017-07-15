@@ -1,5 +1,5 @@
 
-var kinaMobileBreakpoint = 1080;
+var kinaMobileBreakpoint = 1000;
 var stickyMenuDiv = {};
 
 /* $('a[href^=#]').on('click', function(e){ */
