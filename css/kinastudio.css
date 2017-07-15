@@ -226,7 +226,7 @@ img.img-block {
 .mainnav a.weddinglink {
     font-family: 'Alex Brush', cursive;
     color: antiquewhite;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .topline {
@@ -465,6 +465,12 @@ body .instagram-element .instagram-photo:hover img {
 
     .mainnav a.menulogo-wrapper { display: none; }
 
+.mainnav a.weddinglink {
+    font-size: 28px;
+}
+	
+	
+	
     .stickytop { padding: 0px; margin-top: 0; }
     .headline { font-size: 18px; }
     .icon { width: 16px; height: 16px; }
