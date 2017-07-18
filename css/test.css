@@ -1,0 +1,653 @@
+/* KINA.studio CSS */
+
+.desktop { display:inline; }
+.mobile, .mobile-inline { display:none; }
+
+p, a, h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: .1em;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2 {
+    font-family: 'Bellefair', serif;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 36px; }
+h3 { font-size: 18px; }
+h4 { font-size: 18px; }
+
+p, a {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: .8px;
+    margin: 0;
+}
+
+p { text-align: center; }
+
+p.info { 
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    max-width: 800px; 
+    margin: auto; 
+    text-align: left;
+    padding:10px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.middletext { letter-spacing: 2px; }
+
+.widetext { 
+    letter-spacing: 7px; 
+}
+
+h2.widetext { margin-top: 12px; }
+
+.welcomerow {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 300;
+    padding: 9px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #666;
+    background: #ededed;
+    left: 0;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+
+
+/* Cookie overlay stuff */
+
+.cookiesrow {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #666;
+    background: #efefef;
+    left: 0;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #eaeaea;
+}
+.cookiesrow .cookielink {
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    color: #333;
+    margin: 0px;
+    cursor: help;
+}
+.cookiesrow .cookiebutton {
+    background: transparent;
+    color: grey;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    border: grey solid 1px;
+    padding: 4px 10px 2px 10px;
+    margin: 1px 10px;
+    cursor: pointer;
+}
+/* END: Cookie overlay stuff */
+
+
+
+.saletext {
+    letter-spacing: 1px;
+    color: #9f2943;
+    max-width: 800px;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.headline {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 20px 0 5px 0;
+    /*border-top: 1px solid #999;*/
+    /*border-bottom: 1px solid #dfdfdf;*/
+}
+.headline span::before, .headline span::after {
+    border-bottom: 1px solid #000000;
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+}
+
+.mainbutton {
+    background: black;
+    color: #dfdfdf;
+    display: inline-block;
+    padding: 8px 28px 6px 28px;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.mainbutton:hover {
+    background: #666;
+    color:white;
+}
+
+
+.link {
+    display: inline-block;
+    font-weight: normal;
+    font-family: Lato, Helvetica, sans-serif;
+    line-height: 28px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0px;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+img.logo {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+img.menulogo {
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-bottom: -10px;
+}
+
+img.img-block {
+    width: 100%;
+    max-width: 600px;
+    min-width: 320px;
+}
+
+.mainnav-wrapper { border-bottom: 1px solid #999; }
+
+.mainnav {
+    /* text-align: left; */
+    margin-top: 0px;
+    display: block;
+	padding: 25px 0;
+    background-color: black;
+    padding-top: 11px;
+}
+
+.mainnav a {
+    letter-spacing: 1.8px;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 0px;
+    font-size: 13px;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
+.mainnav a.menuitem:hover {
+    border-bottom: 1px solid white;
+}
+
+.mainnav a.weddinglink {
+    font-family: 'Alex Brush', cursive;
+    color: antiquewhite;
+    font-size: 24px;
+}
+
+.topline {
+    padding: 5px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.biggertext, .biggertext a {
+    font-size: 16px;
+}
+
+/* Sticky NAV */
+.stickytop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    margin-top: -2px;
+    z-index: 999;
+}
+
+/* LAYOUT */
+.wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
+.block {
+    overflow: hidden;
+    
+}
+.header {
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.headertext {
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.white {
+    color: white;
+}
+.bgwhite {
+    background-color: white;
+}
+
+.bgblack {
+    background-color: black;
+}
+
+.bggrey {
+    background-color: #dfdfdf;
+}
+
+.bgnude {
+    background-color: #eecbc2;
+}
+
+.transp {
+    opacity: .92;
+}
+
+li {
+    display: inline; /* li nebeneinander anzeigen */
+    list-style-type: none; /* ohne Aufzählungspunkte */
+}
+
+.socialbutton {
+    width: 30%;
+    max-width: 50px;
+}
+
+.contacts {
+    max-width: 420px;
+    margin: auto;
+}
+.contacts a {
+    color: white;
+}
+.contacts a:hover {
+    text-decoration: underline;
+}
+.contacts h4 {
+    margin-top:0px;
+}
+
+.footerlinks{
+    border-top: 1px solid grey;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.icon {
+    display: inline-block;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:8px;
+}
+.icon-whatsapp {
+    background-image: url('../images/whatsapp-white.png');
+}
+.icon-mail {
+    background-image: url('../images/mail-white.png');
+}
+
+.gotostartbutton {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin:0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../images/gotostartbutton.png');
+    opacity: 0.4;
+}
+.gotostartbutton:hover {
+    opacity: 1;
+}
+
+
+
+body .instagram-photo img {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-backface-visibility: hidden;
+}
+
+.instagram-element .instagram-photo {
+    margin: 0;
+    width: 25%;
+}
+
+.instagram-element .instagram-photo.image {
+    background-color: transparent;
+}
+.instagram-element .instagram-photo.image:hover {
+    background-color: black;
+}
+
+body .instagram-element .instagram-photo:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: black;
+    opacity: 0.8;
+}
+
+.instagram-element .instagram-photo .element-meta { color: #fff; font-size: 16px; font-weight: 100; line-height: 16px; }
+
+
+
+
+
+
+
+/* CUSTOMIZING FOR EACH INSTAGRAM GRID */
+
+/* PHOTOS LAYOUTS */
+
+/* 3 Spalten, Mehr Abstand zwischen Elements */
+/* .instagram-element { margin: -0.8%; } */
+/* .instagram-element .instagram-photo { width: 31.7%; margin: 0.8%; } */
+
+/* 3 Spalten, kein Abstand */
+/*.instagram-element { margin: 0; }
+.instagram-element .instagram-photo { width: 33.33%; margin: 0; }*/
+
+/* 3 Spalten, kleiner Abstand */
+.instagram-element { margin: -0.6%; padding-top: 0; }
+.instagram-element .instagram-photo { width: 32.13%; margin: 0.6%; }
+
+@media (max-width: 1800px) {
+    .instagram-element { }
+    .instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }
+}
+
+@media (max-width: 800px) {
+    .instagram-element .instagram-photo { width: 50%; }
+}
+@media (max-width: 600px) {
+    .instagram-element { margin: 1.2%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 97.6%; margin: 1.2%; }
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .desktop { display:none; }
+    .desktop-inline { display:none; }
+    .mobile { display:block; }
+    .mobile-inline { display:inline; }
+
+    h1 { font-size: 24px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 14px; }
+    h4 { font-size: 14px; }
+
+	.mainnav { 
+        margin-top: 0px; /* FONT ISSUE compensation */
+        padding: 0;
+    }
+
+    .mainnav a {
+	font-weight: 400;
+        font-size: 16px;
+        display: block;
+        margin-top: 0px; /* FONT ISSUE */
+        padding: 20px 5px;
+	text-align: left;
+	border-top: 1px solid #dedede;
+    }
+
+	.mainnav a.menuitem:hover {
+        color: #dfdfdf;
+        text-decoration: underline;
+        border-bottom: 1px solid transparent;
+    }
+
+    .mainnav a.menulogo-wrapper { display: none; }
+
+.mainnav a.weddinglink {
+    font-size: 28px;
+}
+	
+	
+	
+    .stickytop { padding: 0px; margin-top: 0; }
+    .headline { font-size: 18px; }
+    .icon { width: 16px; height: 16px; }
+
+
+
+/* mobile header elements */
+
+    .menuicon {
+        margin-top: 3px;
+        position: relative;
+        text-align: center;
+        width: 15%;
+        float: left;
+    }
+    .menuicon img { 
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    .logoicon {
+        margin-top: 18px;
+        margin-bottom: -5px;
+        position: relative;
+        text-align: center;
+        width: 70%;
+        float: left;
+    }
+
+    img.logo {
+        width: 100%;
+        max-width: 180px;
+        margin-top: 2px;
+        margin-bottom: 21px;
+    }
+
+    .contacticon {
+        margin-top: 3px;
+        position: relative;
+        text-align: center;
+        width: 15%;
+
+    }
+    .contacticon img { 
+        width: 27px;
+        margin-top: 20px;
+    }
+
+/* END: mobile header elements */
+
+
+
+}
+
+
+
+
+
+
+
+/* SLIDER STUFF */
+
+.jssorb05 {
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('../images/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div {
+    background-position: -7px -7px;
+}
+.jssorb05 div:hover, .jssorb05 .av:hover {
+    background-position: -37px -7px;
+}
+.jssorb05 .av {
+    background-position: -67px -7px;
+}
+.jssorb05 .dn, .jssorb05 .dn:hover {
+    background-position: -97px -7px;
+}
+.jssora22l, .jssora22r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('../images/a22.png') center center no-repeat;
+    overflow: hidden;
+}
+.jssora22l {
+    background-position: -10px -31px;
+}
+.jssora22r {
+    background-position: -70px -31px;
+}
+.jssora22l:hover {
+    background-position: -130px -31px;
+}
+.jssora22r:hover {
+    background-position: -190px -31px;
+}
+.jssora22l.jssora22ldn {
+    background-position: -250px -31px;
+}
+.jssora22r.jssora22rdn {
+    background-position: -310px -31px;
+}
+.jssora22l.jssora22lds {
+    background-position: -10px -31px;
+    opacity: .3;
+    pointer-events: none;
+}
+.jssora22r.jssora22rds {
+    background-position: -70px -31px;
+    opacity: .3;
+    pointer-events: none;
+}
+
+.fancybox-wrap .username-ui,
+.fancybox-overlay .username-ui,
+.fancybox-wrap .likes-ui,
+.fancybox-overlay .likes-ui,
+.fancybox-wrap .comments-ui,
+.fancybox-overlay .comments-ui
+{ display: none; }
+
+.fancybox-wrap .date-ui,
+.fancybox-overlay .date-ui,
+.fancybox-wrap .location-ui,
+.fancybox-overlay .location-ui
+{ color:#aeaeae; font-size: 12px; font-weight: 300; margin-bottom:3px; text-transform:none; }
+
+/* CUSTOM SLIDER STUFF */
+.slider-wrapper { position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 800px; overflow: hidden; visibility: hidden; }
+.slider-wrapper { margin-bottom: -1px; } /* hide the gap between slider and border of headline */
+/* .slider-wrapper { margin-bottom: 12px; } */
+.slider-slides { cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 800px; overflow: hidden; }
+
+
+
+
+
+
+
+
+.headline {
+    background-color: white;
+}
+.headline h2 {
+    padding: 15px 10px 10px 10px;
+    background: grey;
+}
+.headline h4 {
+    color: #111;
+    padding: 15px 0 12px 0;
+}
+
+.whitebox h4 {
+    margin-bottom: -5px;
+    color: #111;
+}
+.whitebox {
+    background-color: white;
+    padding-bottom: 3%;
+    margin-bottom: 0;
+}
+.whitebox p {
+    color: black;
+}
+.contacts, .social {
+    padding-top: 40px;
+}
