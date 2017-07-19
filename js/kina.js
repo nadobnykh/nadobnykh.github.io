@@ -1,5 +1,5 @@
 
-var kinaMobileBreakpoint = 1000;
+var kinaMobileBreakpoint = 750;
 var stickyMenuDiv = {};
 
 /* $('a[href^=#]').on('click', function(e){ */
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 15 : 28; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 75 : 50; // DESKTOP : MOBILE
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
