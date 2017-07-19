@@ -180,16 +180,21 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    max-width: 240px;
+    max-width: 340px;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
 img.menulogo {
-    margin-top: 14px;
-    margin-right: 40px;
+    margin-top: 25px;
+    /*margin-right: 40px;*/
     margin-left: 0px;
-    margin-bottom: -3px;
+    /*margin-bottom: -3px;*/
+}
+
+.mainnav a.menulogo-wrapper {
+    display: block;
+    margin: 5px 0 10px 0;
 }
 
 img.img-block {
@@ -204,18 +209,17 @@ img.img-block {
     /* text-align: left; */
     margin-top: 0px;
     display: block;
-	padding: 25px 0;
+	padding: 6px 0;
     background-color: black;
-    padding-top: 11px;
 }
 
 .mainnav a {
-    letter-spacing: 1.8px;
+    letter-spacing: 1.5px;
     font-weight: 200;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 5px 0px;
-    font-size: 13px;
+    padding: 0px 0px;
+    font-size: 12px;
     color: white;
     border-bottom: 1px solid transparent;
 }
@@ -265,9 +269,12 @@ img.img-block {
     margin-bottom:0px;
 }
 .headertext {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 8px;
+    margin: 5px 0;
+    background-color: white;
+    color: black;
 }
 .white {
     color: white;
@@ -431,7 +438,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
 
     .desktop { display:none; }
     .desktop-inline { display:none; }
@@ -449,13 +456,13 @@ body .instagram-element .instagram-photo:hover img {
     }
 
     .mainnav a {
-	font-weight: 400;
-        font-size: 16px;
+        font-weight: 300;
+        font-size: 15px;
         display: block;
         margin-top: 0px; /* FONT ISSUE */
         padding: 20px 5px;
-	text-align: left;
-	border-top: 1px solid #dedede;
+        text-align: left;
+        border-top: 1px solid #dedede;
     }
 
 	.mainnav a.menuitem:hover {
@@ -466,9 +473,9 @@ body .instagram-element .instagram-photo:hover img {
 
     .mainnav a.menulogo-wrapper { display: none; }
 
-.mainnav a.weddinglink {
-    font-size: 28px;
-}
+    .mainnav a.weddinglink {
+        font-size: 26px;
+    }
 	
 	
 	
@@ -488,13 +495,13 @@ body .instagram-element .instagram-photo:hover img {
         float: left;
     }
     .menuicon img { 
-        width: 30px;
+        width: 29px;
         margin-top: 20px;
     }
 
     .logoicon {
-        margin-top: 18px;
-        margin-bottom: -5px;
+        margin-top: 27px;
+        margin-bottom: 20px;
         position: relative;
         text-align: center;
         width: 70%;
@@ -504,8 +511,8 @@ body .instagram-element .instagram-photo:hover img {
     img.logo {
         width: 100%;
         max-width: 200px;
-        margin-top: 8px;
-        margin-bottom: 27px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .contacticon {
@@ -516,7 +523,7 @@ body .instagram-element .instagram-photo:hover img {
 
     }
     .contacticon img { 
-        width: 27px;
+        width: 26px;
         margin-top: 20px;
     }
 
