@@ -2,6 +2,16 @@
 var kinaMobileBreakpoint = 750;
 var stickyMenuDiv = {};
 
+// SHOW STICKY: mobile immer, desktop ab N px
+var kinaShowStickyMobile = 0;
+var kinaShowStickyDesktop = 41;
+
+// SCROLL TO OFFSET:
+var kinaScrollOffsetMobile = 75;
+var kinaScrollOffsetDesktop = 50;
+
+// DESKTOP : MOBILE
+
 /* $('a[href^=#]').on('click', function(e){ */
 $('.gotostartbutton').on('click', function(e){
   e.preventDefault();
@@ -14,7 +24,8 @@ $('.gotostartbutton').on('click', function(e){
 function showHideStickyMenuDiv()
 {
   var scrollValue = $(window).scrollTop();
-  if(window.innerWidth < kinaMobileBreakpoint && scrollValue > 0 + cookieOverlayHeight || window.innerWidth >= kinaMobileBreakpoint && scrollValue > 41){ // mobile immer, desktop ab N px
+  if(window.innerWidth < kinaMobileBreakpoint && scrollValue > kinaShowStickyMobile + cookieOverlayHeight 
+  || window.innerWidth >= kinaMobileBreakpoint && scrollValue > kinaShowStickyDesktop){ // mobile immer, desktop ab N px
     stickyMenuDiv.show();
   } else {
     stickyMenuDiv.hide();
@@ -74,7 +85,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? 75 : 50; // DESKTOP : MOBILE
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? kinaScrollOffsetMobile : kinaScrollOffsetDesktop;
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
@@ -103,7 +114,7 @@ function readCookierowHeight()
     cookieOverlayHeight = 0;
   } else {
     // height value is wrong & should be corrected. But not on top...
-    cookieOverlayHeight = cookiesrow.outerHeight() + 5;
+    cookieOverlayHeight = cookiesrow.outerHeight() + 0;
   }
 }
 function checkCookie()
