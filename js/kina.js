@@ -7,8 +7,8 @@ var kinaShowStickyMobile = 0;
 var kinaShowStickyDesktop = 41;
 
 // SCROLL TO OFFSET:
-var kinaScrollOffsetMobile = 75;
-var kinaScrollOffsetDesktop = 50;
+var kinaScrollOffsetMobile = 50;
+var kinaScrollOffsetDesktop = 75;
 
 // DESKTOP : MOBILE
 
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
     // Linkziel in Variable schreiben
     var ziel = $(this).attr("href");
-    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? kinaScrollOffsetMobile : kinaScrollOffsetDesktop;
+    var kinaTopOffsetOffset = (window.innerWidth > kinaMobileBreakpoint) ? kinaScrollOffsetDesktop : kinaScrollOffsetMobile;
     var newScrollTop = $(ziel).offset().top - kinaTopOffsetOffset;
     var currentScrollTop = window.pageYOffset;
     var scrollDiff = Math.abs(currentScrollTop - newScrollTop);
