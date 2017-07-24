@@ -180,7 +180,7 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    max-width: 340px;
+    max-width: 240px;
     margin-top: 20px;
     margin-bottom: 0;
 }
@@ -512,7 +512,7 @@ body .instagram-element .instagram-photo:hover img {
 
     img.logo {
         width: 100%;
-        max-width: 190px;
+        max-width: 180px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
