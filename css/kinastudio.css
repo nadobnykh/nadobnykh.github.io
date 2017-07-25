@@ -180,13 +180,13 @@ h2.widetext { margin-top: 12px; }
 
 img.logo {
     width: 100%;
-    max-width: 240px;
+    max-width: 220px;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
 img.menulogo {
-    margin-top: 25px;
+    margin-top: 10px;
     /*margin-right: 40px;*/
     margin-left: 0px;
     /*margin-bottom: -3px;*/
@@ -272,9 +272,9 @@ img.img-block {
 }
 .headertext {
     font-family: 'Oswald', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 1px;
-    padding: 5px 0;
+    padding: 3px 0;
     background-color: white;
     color: black;
 }
@@ -502,7 +502,7 @@ body .instagram-element .instagram-photo:hover img {
     }
 
     .logoicon {
-        margin-top: 25px;
+        margin-top: 24px;
         margin-bottom: 15px;
         position: relative;
         text-align: center;
