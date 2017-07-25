@@ -30,9 +30,14 @@ p, a {
 
 p { text-align: center; }
 
-p.info { 
+.infobox h4 {
     font-size: 13px;
-    line-height: 19px;
+}
+
+p.info {
+    font-family: Avenir-Book,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
     max-width: 800px; 
     margin: auto; 
@@ -329,6 +334,7 @@ li {
 }
 .contacts h4 {
     margin-top:0px;
+    font-weight: 200;
 }
 
 .footerlinks{
