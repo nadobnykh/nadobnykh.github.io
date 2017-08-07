@@ -439,26 +439,32 @@ body .instagram-element .instagram-photo:hover img {
 
 @media (max-width: 1920px) {
     /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
-    .instagram-element { margin: -1.6% 0.8%; padding-top: 0; }
-    .instagram-element .instagram-photo { width: 31.7%; margin: 1.6% 0.8%; }
+    .instagram-element { margin: -2% 0.8%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 31.7%; margin: 2% 0.8%; }
 }
 
-@media (max-width: 850px) {
-    .instagram-element { margin: -2.8% 1.4%; padding-top: 0; }
-    .instagram-element .instagram-photo { width: 47.2%; margin: 2.8% 1.4%; }
+@media (max-width: 1200px) {
+    /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
+    .instagram-element { margin: -2% 0.9%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 31.5%; margin: 2% 0.9%; }
+}
+
+@media (max-width: 900px) {
+    .instagram-element { margin: -2.8% 1.1%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 47.8%; margin: 2.8% 1.1%; }
 }
 @media (max-width: 600px) {
     /*.instagram-element { margin: 1.2%; padding-top: 0; }
     .instagram-element .instagram-photo { width: 97.6%; margin: 1.2%; }*/
 
-    .instagram-element { margin: -4.8% 1.6%; padding-top: 0; }
-    .instagram-element .instagram-photo { width: 96.8%; margin: 4.8% 1.6%; }
+    .instagram-element { margin: -4.6% 1.6%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 96.8%; margin: 4.6% 1.6%; }
 }
 
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 820px) {
 
     .desktop { display:none; }
     .desktop-inline { display:none; }
