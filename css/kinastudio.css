@@ -421,7 +421,7 @@ body .instagram-element .instagram-photo:hover img {
     opacity: 0.8;
 }
 
-.instagram-element .instagram-photo .element-meta { color: #fff; font-size: 16px; font-weight: 100; line-height: 16px; }
+.instagram-element .instagram-photo .element-meta { display: none; color: #fff; font-size: 16px; font-weight: 100; line-height: 16px; }
 
 
 
@@ -439,8 +439,8 @@ body .instagram-element .instagram-photo:hover img {
 
 @media (max-width: 2000px) {
     /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
-    .instagram-element { margin: -1.8% 0.9%; padding-top: 0; }
-    .instagram-element .instagram-photo { width: 31.5%; margin: 1.8% 0.9%; }
+    .instagram-element { margin: -2% 0.9%; padding-top: 0; }
+    .instagram-element .instagram-photo { width: 31.5%; margin: 2% 0.9%; }
 }
 
 @media (max-width: 900px) {
@@ -665,7 +665,7 @@ body .instagram-element .instagram-photo:hover img {
 }
 .headline h4 {
     color: #111;
-    padding: 10px 0 7px 0;
+    padding: 8px 0 8px 0;
 }
 
 .whitebox h4 {
