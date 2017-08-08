@@ -668,12 +668,14 @@ body .instagram-element .instagram-photo:hover img {
     background-color: white;
 }
 .headline h2 {
-    padding: 15px 10px 10px 10px;
-    background: grey;
+    margin: 30px 0 0 0;
+    padding: 0;
+    color: black;
 }
 .headline h4 {
-    color: #111;
-    padding: 8px 0 8px 0;
+    margin: 5px 0 20px 0;
+    padding: 0;
+    color: black;
 }
 
 .whitebox h4 {
