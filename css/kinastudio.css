@@ -668,13 +668,13 @@ body .instagram-element .instagram-photo:hover img {
     background-color: white;
 }
 .headline h2 {
-    margin: 30px 0 0 0;
-    padding: 0;
+    margin: 20px 0 0 0;
+    padding: 5px 0 0 0;
     color: black;
 }
 .headline h4 {
-    margin: 5px 0 20px 0;
-    padding: 0;
+    margin: 0 0 10px 0;
+    padding: 5px 0;
     color: black;
 }
 
