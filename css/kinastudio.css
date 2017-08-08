@@ -146,10 +146,11 @@ h2.widetext { margin-top: 12px; }
 }
 
 .mainbutton {
-    background: black;
-    color: #dfdfdf;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
     display: inline-block;
-    padding: 8px 28px 6px 28px;
+    padding: 6px 30px 5px 30px;
     font-size: 11px;
     font-weight: normal;
     text-align: center;
@@ -161,7 +162,7 @@ h2.widetext { margin-top: 12px; }
     margin-bottom: 20px;
 }
 .mainbutton:hover {
-    background: #666;
+    background: black;
     color:white;
 }
 
