@@ -7,8 +7,8 @@ var kinaShowStickyMobile = 0;
 var kinaShowStickyDesktop = 70;
 
 // SCROLL TO OFFSET:
-var kinaScrollOffsetMobile = 75;
-var kinaScrollOffsetDesktop = 100;
+var kinaScrollOffsetMobile = 80;
+var kinaScrollOffsetDesktop = 115;
 
 // DESKTOP : MOBILE
 
