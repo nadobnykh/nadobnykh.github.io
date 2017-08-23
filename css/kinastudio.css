@@ -694,16 +694,16 @@ body .instagram-element .instagram-photo:hover img {
     padding-top: 40px;
 }
 
-
 .element-description {
     position: relative;
-    color:black;
-    font-size: 18px;
-    line-height: 24px;
+    color: black;
+    font-size: 28px;
+    line-height: 32px;
     background: white;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-family: 'Bellefair', serif;
+    letter-spacing: 0px;
+    font-style: italic;
 }
-
 
 
