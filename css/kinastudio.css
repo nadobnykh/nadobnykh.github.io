@@ -696,6 +696,7 @@ body .instagram-element .instagram-photo:hover img {
 
 
 .element-description {
+    position: relative;
     color:black;
     font-size: 18px;
     line-height: 24px;
