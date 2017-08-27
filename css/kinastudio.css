@@ -694,16 +694,29 @@ body .instagram-element .instagram-photo:hover img {
     padding-top: 40px;
 }
 
+.element-description-title {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    line-height: 18px;
+    background: white;
+    padding: 20px 0 7px 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 .element-description {
     position: relative;
     color: black;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 11px;
+    line-height: 15px;
     background: white;
-    padding: 10px 20px;
-    font-family: 'Bellefair', serif;
-    letter-spacing: 0px;
-    font-style: italic;
+    padding: 5px 50px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
+
+
 
 
