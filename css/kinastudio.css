@@ -450,7 +450,7 @@ body .instagram-element .instagram-photo:hover img {
 @media (max-width: 1400px) {
     /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
     .instagram-element { margin: 0 1.2%; padding-top: 0; }
-    .instagram-element .instagram-photo { width: 31.7%; margin: 0 0.8% 40px 0.8%; }
+    .instagram-element .instagram-photo { width: 33%; margin: 0 0.15% 40px 0.15%; }
 
     .instagram-kinastudio-love .instagram-photo { width: 48.4%; }
 }
