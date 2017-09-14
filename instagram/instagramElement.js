@@ -2,7 +2,7 @@
 function getFormattedInstaDescriptionTitle(s)
 {
     s = s.replace(/"/g, "'");
-    return (s.indexOf(':') > -1) ? s.substr(0, s.indexOf(':')) : 'X-PHOTOGRAPHY';
+    return (s.indexOf(':') > -1) ? s.substr(0, s.indexOf(':')) : '';
 }
 function getFormattedInstaDescription(s)
 {
@@ -155,7 +155,7 @@ function onPhotoLoaded(e, a, t) {
                 d = d.replace("#", ""), "video" == s.type && 1 == a.video ? (i = '<a class="instagram-photo video" id="p' + s.id + '" href="#video-' + s.id + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-video="' + c + '" data-profile="' + s.user.profile_picture + '" data-fancybox="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>", i += '<span class="icon">Video</span>', i += '<div id="video-' + s.id + '" style="display:none; height:auto; width:1080px;">', i += '<video class="instagram-element-video" width="100%" height="100%">', i += '<source src="' + c + '"></source>', i += "</video>", i += "</div>", i += "</a>") : (i = '<a class="instagram-photo image" id="p' + s.id + '" href="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" data-name="' + s.user.full_name + '" data-fancybox-title="' + l + '" data-created="' + s.created_time + '" data-author="' + s.user.username + '" data-likes="' + s.likes.count + '" data-comments="' + s.comments.count + '" data-profile="' + s.user.profile_picture + '" data-fancybox="group-' + d + '">', i += '<img src="' + s.images.standard_resolution.url.replace('/s640x640/', '/') + '" />', i += '<span class="element-meta"><strong>' + s.user.full_name + "</strong><span>" + s.user.username + "</span></span>" 
 
 
-                    + '<!--KINA_STUFF--><p class="element-description-title">' + getFormattedInstaDescriptionTitle(s.caption.text) + '</p><p class="element-description">' + getFormattedInstaDescription(s.caption.text) + '</p><!--END:KINA_STUFF-->', 
+                    + '<!--KINA_STUFF--><!--<p class="element-description-title">' + getFormattedInstaDescriptionTitle(s.caption.text) + '</p>--><p class="element-description">' + getFormattedInstaDescription(s.caption.text) + '</p><!--END:KINA_STUFF-->', 
 
 
                     i += '<span class="icon">Image</span>', i += "</a>"), jQuery(i).appendTo(a.element)

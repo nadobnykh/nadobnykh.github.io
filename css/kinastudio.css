@@ -443,12 +443,16 @@ body .instagram-element .instagram-photo:hover img {
     /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
     .instagram-element { margin: 0 3%; padding-top: 0; }
     .instagram-element .instagram-photo { width: 31.3%; margin: 0 1% 50px 1%; }
+
+    .instagram-kinastudio-love .instagram-photo { width: 48%; }
 }
 
 @media (max-width: 1400px) {
     /*.instagram-element .instagram-photo { width: 33.35%; margin: -0.01%; }*/
     .instagram-element { margin: 0 1.2%; padding-top: 0; }
     .instagram-element .instagram-photo { width: 31.7%; margin: 0 0.8% 40px 0.8%; }
+
+    .instagram-kinastudio-love .instagram-photo { width: 48.4%; }
 }
 
 @media (max-width: 900px) {
@@ -707,14 +711,13 @@ body .instagram-element .instagram-photo:hover img {
 }
 .element-description {
     position: relative;
-    color: black;
-    font-size: 11px;
+    color: grey;
+    font-size: 9px;
     line-height: 15px;
     background: white;
     padding: 5px 50px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
 }
 
 
