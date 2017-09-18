@@ -272,8 +272,8 @@ img.img-block {
 }
 
 /* LAYOUT */
-.wrapper {
-    max-width: 1920px;
+.content-wrapper {
+    max-width: 1400px;
     margin: auto;
 }
 .block {
@@ -719,7 +719,4 @@ body .instagram-element .instagram-photo:hover img {
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
-
-
-
 
