@@ -4,11 +4,11 @@ var stickyMenuDiv = {};
 
 // SHOW STICKY: mobile immer, desktop ab N px
 var kinaShowStickyMobile = 0;
-var kinaShowStickyDesktop = 58;
+var kinaShowStickyDesktop = 65;
 
 // SCROLL TO OFFSET:
 var kinaScrollOffsetMobile = 80;
-var kinaScrollOffsetDesktop = 120;
+var kinaScrollOffsetDesktop = 132;
 
 // DESKTOP : MOBILE
 
