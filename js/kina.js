@@ -1,5 +1,5 @@
 
-var kinaMobileBreakpoint = 820;
+var kinaMobileBreakpoint = 920;
 var stickyMenuDiv = {};
 
 // SHOW STICKY: mobile immer, desktop ab N px
