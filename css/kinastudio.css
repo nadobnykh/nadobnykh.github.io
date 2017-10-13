@@ -512,6 +512,10 @@ body .instagram-element .instagram-photo:hover img {
         border-top: 1px solid #dedede;
     }
 
+    .mainnav a.menuitem {
+        padding: 20px 0;
+    }
+
 	.mainnav a.menuitem:hover {
         color: #dfdfdf;
         text-decoration: underline;
