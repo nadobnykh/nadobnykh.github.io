@@ -512,8 +512,15 @@ body .instagram-element .instagram-photo:hover img {
         border-top: 1px solid #dedede;
     }
 
+    .mainnav a.desktoplogo-wrapper { display: none; }
+
     .mainnav a.menuitem {
-        padding: 20px 0;
+        padding: 20px 5px 18px 5px;
+    }
+
+    .mainnav a.weddinglink {
+        font-size: 24px;
+        padding: 25px 5px 18px 5px;
     }
 
 	.mainnav a.menuitem:hover {
@@ -522,11 +529,7 @@ body .instagram-element .instagram-photo:hover img {
         border-bottom: 1px solid transparent;
     }
 
-    .mainnav a.desktoplogo-wrapper { display: none; }
 
-    .mainnav a.weddinglink {
-        font-size: 26px;
-    }
 	
 	
 	
