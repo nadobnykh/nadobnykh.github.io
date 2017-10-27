@@ -258,7 +258,7 @@ img.img-block {
 }
 
 .mainnav a.menuitem:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .mainnav a.weddinglink {
